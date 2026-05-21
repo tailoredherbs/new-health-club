@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bali Index - The New Health Club</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: #1a1614; background-color: #fafaf8; line-height: 1.6; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    header { padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e8e6e1; }
+    .back-link { font-size: 0.8125rem; color: #1a1614; text-decoration: none; }
+    .logo { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; }
+    .page-intro { padding: 80px 48px 60px; max-width: 1000px; margin: 0 auto; }
+    .page-intro h1 { font-size: 2.5rem; font-weight: 400; margin-bottom: 24px; letter-spacing: -0.01em; }
+    .intro-copy { font-size: 1rem; line-height: 1.7; color: #3a3630; margin-bottom: 16px; max-width: 700px; }
+    .intro-subcopy { font-size: 0.875rem; color: #7a7066; margin-bottom: 32px; max-width: 700px; }
+    .btn-suggest { display: inline-block; padding: 12px 24px; background-color: #1a1614; color: #fafaf8; text-decoration: none; font-size: 0.8125rem; letter-spacing: 0.03em; }
+    .map-section { padding: 0 48px 60px; max-width: 1000px; margin: 0 auto; }
+    .map-container { height: 400px; border: 1px solid #e8e6e1; border-radius: 2px; overflow: hidden; margin-bottom: 12px; }
+    #map { height: 100%; width: 100%; }
+    .map-expand { font-size: 0.75rem; color: #7a7066; text-align: right; }
+    .filters { padding: 60px 48px 40px; max-width: 1000px; margin: 0 auto; border-top: 1px solid #e8e6e1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .filter-label { font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7a7066; margin-bottom: 8px; }
+    .filter-dropdown { position: relative; }
+    .filter-select { width: 100%; padding: 10px 16px; font-size: 0.8125rem; border: 1px solid #d4cfc5; background: #fafaf8; cursor: pointer; border-radius: 2px; display: flex; justify-content: space-between; }
+    .filter-select:hover, .filter-select.active { border-color: #1a1614; background-color: #f5f3ef; }
+    .dropdown-arrow { font-size: 0.625rem; color: #7a7066; }
+    .filter-options { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border: 1px solid #d4cfc5; border-top: none; max-height: 280px; overflow-y: auto; z-index: 10; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
+    .filter-options.show { display: block; }
+    .filter-option { padding: 10px 16px; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 10px; }
+    .filter-option:hover { background-color: #f5f3ef; }
+    .filter-checkbox { width: 16px; height: 16px; border: 1px solid #d4cfc5; border-radius: 2px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .filter-checkbox.checked { background-color: #1a1614; border-color: #1a1614; }
+    .filter-checkbox.checked::after { content: '✓'; color: #fafaf8; font-size: 0.6875rem; }
+    .clear-filters { font-size: 0.75rem; color: #7a7066; background: none; border: none; cursor: pointer; text-decoration: underline; margin-top: 16px; grid-column: span 3; }
+    .spaces-section { padding: 40px 48px 100px; max-width: 1000px; margin: 0 auto; }
+    .spaces-count { font-size: 0.75rem; color: #7a7066; margin-bottom: 32px; letter-spacing: 0.05em; }
+    .space-card { padding: 32px 0; border-top: 1px solid #e8e6e1; cursor: pointer; transition: opacity 0.2s; }
+    .space-card:hover { opacity: 0.7; }
+    .space-card.active { background-color: #f5f3ef; margin: 0 -24px; padding: 32px 24px; }
+    .space-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 16px; }
+    .space-name { font-size: 1.375rem; font-weight: 400; }
+    .space-area { font-size: 0.8125rem; color: #7a7066; }
+    .space-meta { display: flex; gap: 24px; margin-bottom: 16px; font-size: 0.8125rem; color: #5a5248; flex-wrap: wrap; }
+    .meta-item { display: flex; gap: 8px; }
+    .meta-label { color: #7a7066; }
+    .space-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .tag { padding: 4px 10px; font-size: 0.6875rem; background-color: #f5f3ef; border-radius: 2px; color: #5a5248; }
+    .space-status { font-size: 0.75rem; color: #7a7066; font-style: italic; margin-bottom: 16px; }
+    .space-note { font-size: 0.9375rem; line-height: 1.7; color: #3a3630; margin-bottom: 16px; }
+    .space-links a { font-size: 0.8125rem; color: #1a1614; text-decoration: underline; margin-right: 16px; }
+    footer { padding: 40px 48px; background-color: #1a1614; color: #7a7066; text-align: center; font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    @media (max-width: 1024px) { .filters { grid-template-columns: 1fr; } .clear-filters { grid-column: span 1; } }
+    @media (max-width: 768px) { header, .page-intro, .map-section, .filters, .spaces-section, footer { padding-left: 24px; padding-right: 24px; } .page-intro h1 { font-size: 2rem; } .map-container { height: 300px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="the-new-health-club-v3.html" class="back-link sans">← Back</a>
+    <div class="logo sans">The New Health Club</div>
+    <div style="width: 60px;"></div>
+  </header>
+  <section class="page-intro">
+    <h1>Global Index — Early Nodes</h1>
+    <p class="intro-copy sans">A living map of premium wellness spaces in select global hubs.</p>
+    <p class="intro-subcopy sans">Starting with training, recovery, wellness lifestyle, and community spaces.</p>
+    <a href="#contact" class="btn-suggest sans">Suggest a Space</a>
+  </section>
+  <section class="map-section">
+    <div class="map-container"><div id="map"></div></div>
+    <div class="map-expand sans">Click markers to view spaces</div>
+  </section>
+  <section class="filters">
+    <div class="filter-group"><div class="filter-label sans">Area</div><div class="filter-dropdown"><div class="filter-select sans" id="area-select"><span id="area-label">Select areas</span><span class="dropdown-arrow">▼</span></div><div class="filter-options" id="area-options"></div></div></div>
+    <div class="filter-group"><div class="filter-label sans">Type</div><div class="filter-dropdown"><div class="filter-select sans" id="type-select"><span id="type-label">Select types</span><span class="dropdown-arrow">▼</span></div><div class="filter-options" id="type-options"></div></div></div>
+    <div class="filter-group"><div class="filter-label sans">Best For</div><div class="filter-dropdown"><div class="filter-select sans" id="bestfor-select"><span id="bestfor-label">Select options</span><span class="dropdown-arrow">▼</span></div><div class="filter-options" id="bestfor-options"></div></div></div>
+    <button class="clear-filters sans" id="clear-filters" style="display: none;">Clear all filters</button>
+  </section>
+  <section class="spaces-section">
+    <div class="spaces-count sans" id="spaces-count">20 spaces mapped</div>
+    <div id="spaces-list"></div>
+  </section>
+  <footer class="sans">© The New Health Club — Mapping the New Health Infrastructure</footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    window.addEventListener('load', function() {
+      if (typeof L === 'undefined') { console.error('Leaflet failed'); return; }
+      
+      // =============================================================================
+      // SPACES DATA - Edit this section to add/update spaces
+      // =============================================================================
+      // To get coordinates for a new space:
+      // 1. Go to Google Maps
+      // 2. Right-click on the exact location
+      // 3. Click the coordinates at the top (e.g., "-8.6505, 115.1355")
+      // 4. Paste those numbers as lat and lng below
+      // 
+      // Format: {lat: LATITUDE, lng: LONGITUDE}
+      // Canggu area is roughly: lat -8.64 to -8.66, lng 115.13 to 115.15
+      // =============================================================================
+      
+      const spaces = [
+{
+          id: 1,
+          name: "Omni Bali",
+          area: "Canggu / Berawa",
+          coordinates: { lat: -8.6520, lng: 115.1395 },
+          primaryType: "Wellness Club",
+          bestFor: ["Training", "Recovery", "Longevity", "Work / Coworking", "Lifestyle", "Premium Fitness Crowd"],
+          tags: ["Wellness Club", "Training", "Recovery", "Longevity", "Spa", "Gym", "Co-working", "Nutrition Cafe", "Blood Testing", "Gut Testing", "Biotech Lab", "Social Wellness", "Premium Fitness Crowd"],
+          status: "To map",
+          note: "A high-end wellness club in Bali combining gym, recovery, spa-style services, co-working, nutrition cafe, blood and gut testing, therapy, and biotech-oriented wellness infrastructure. Omni is relevant as one of Bali's clearest full-stack wellness lifestyle nodes: less a single-purpose gym or spa, more a physical base where training, recovery, diagnostics, work, nutrition, and premium social wellness overlap.",
+          links: { website: "", instagram: "@omni_bali" }
+        },
+        {
+          id: 2,
+          name: "Nirvana Life Bali",
+          area: "Canggu / Berawa",
+          coordinates: { lat: -8.6525, lng: 115.1405 },
+          primaryType: "Wellness Club",
+          bestFor: ["Training", "Recovery", "Classes", "Community", "Lifestyle", "Work / Coworking"],
+          tags: ["Wellness Club", "Training", "Recovery", "Yoga", "Classes", "Sauna", "Steam Room", "Ice Bath", "Infrared Sauna", "Hyperbaric Chamber", "Pool", "Kitchen", "Community", "Lifestyle"],
+          status: "To map",
+          note: "A large wellness club in Canggu combining open-air gym facilities, yoga, 100+ weekly classes, recovery spa, dry sauna, steam room, infrared sauna, hot tub, ice baths, pools, clubhouse, kitchen, and member/community spaces. Nirvana Life is relevant as one of Bali's established wellness lifestyle hubs, bringing together fitness, recovery, food, work-friendly zones, and repeat-use community infrastructure in one destination.",
+          links: { website: "", instagram: "@nirvanalifebali" }
+        },
+        {
+          id: 3,
+          name: "Body Factory Bali",
+          area: "Canggu / Nelayan",
+          coordinates: { lat: -8.6485, lng: 115.1390 },
+          primaryType: "Premium Gym",
+          bestFor: ["Training", "Recovery", "Strength", "Lifestyle", "Premium Fitness Crowd"],
+          tags: ["Premium Gym", "Training", "Strength", "Fitness Lifestyle", "Recovery", "Spa", "Ice Bath", "Sauna", "Cold Pools", "Pool", "Cafe", "Meal Plans", "Premium Fitness Crowd"],
+          status: "To map",
+          note: "A premium fitness and lifestyle facility in Canggu combining serious gym training, classes, personal training, recovery spa, ice bath, cold pools, sauna, swimming pool, cafe, and meal-plan support. Body Factory is relevant as a strong Bali training-and-recovery node: more fitness-led than Omni or Nirvana, but still operating beyond a standard gym through its recovery, cafe, lifestyle, and community-oriented setup.",
+          links: { website: "", instagram: "@bodyfactory_bali" }
+        },
+        {
+          id: 4,
+          name: "Bambu Fitness Bali",
+          area: "Bingin / Uluwatu",
+          coordinates: { lat: -8.8290, lng: 115.0850 },
+          primaryType: "Functional Fitness",
+          bestFor: ["Training", "Classes", "Community", "Fitness Lifestyle", "Food / Cafe"],
+          tags: ["Functional Fitness", "Training", "Strength", "Conditioning", "Group Classes", "Personal Training", "Community", "Cafe", "Nutrition", "Fitness Lifestyle", "Uluwatu"],
+          status: "To map",
+          note: "A premium functional fitness gym in Bingin / Uluwatu built around group classes, strength and conditioning, personal training, coaching quality, community, and a healthy cafe. Bambu is less full-spectrum recovery or longevity infrastructure than Omni, Nirvana, or Body Factory, but highly relevant as Uluwatu's strong fitness-community node: a place where training, nutrition, social routine, and active coastal lifestyle come together.",
+          links: { website: "", instagram: "@bambufitnessbali" }
+        },
+        {
+          id: 5,
+          name: "Hume",
+          area: "Venice",
+          coordinates: { lat: 33.9850, lng: -118.4695 },
+          primaryType: "Wellness Club",
+          bestFor: ["Training", "Recovery", "Lifestyle", "Social Wellness", "Premium Fitness Crowd"],
+          tags: ["Wellness Club", "Recovery", "Lifestyle", "Social Wellness", "Training", "Bodywork", "Premium Fitness Crowd"],
+          status: "To map",
+          note: "A private wellness club in Venice built around fitness, recovery, bodywork, spa-style services, hospitality, and member routine. Hume is relevant as an LA lifestyle wellness node because it sits between gym, spa, recovery club, and private members club - designed less as a one-off treatment destination and more as a premium daily base for training, restoration, and social wellness.",
+          links: { website: "", instagram: "@hume.losangeles" }
+        },
+        {
+          id: 6,
+          name: "HEIMAT",
+          area: "Hollywood",
+          coordinates: { lat: 34.0928, lng: -118.3287 },
+          primaryType: "Premium Gym",
+          bestFor: ["Training", "Fitness Lifestyle", "Lifestyle", "Community", "Premium Fitness Crowd"],
+          tags: ["Premium Gym", "Fitness Lifestyle", "Training", "Community", "Spa", "Dining", "Rooftop", "Premium Fitness Crowd"],
+          status: "To map",
+          note: "A members-only fitness and lifestyle club in Hollywood combining high-design training facilities, group classes, spa, dining, rooftop pool, work/social areas, and private-club energy. HEIMAT is less recovery-led than Hume or Remedy Place, but highly relevant as a polished LA node where premium fitness, hospitality, design, and lifestyle culture overlap.",
+          links: { website: "", instagram: "@heimatclub" }
+        },
+        {
+          id: 7,
+          name: "Remedy Place",
+          area: "West Hollywood",
+          coordinates: { lat: 34.0900, lng: -118.3617 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Longevity", "Social Wellness"],
+          tags: ["Recovery Club", "Recovery", "Sauna", "Ice Bath", "Longevity", "IV Therapy", "Red Light", "Hyperbaric Oxygen", "Social Wellness"],
+          status: "To map",
+          note: "A recovery-led social wellness club in West Hollywood built around contrast therapy, ice baths, infrared sauna, IV therapy, NAD+, red light, hyperbaric oxygen, acupuncture, chiropractic, and high-touch hospitality. Remedy Place is important as one of the clearest LA examples of self-care becoming a social wellness format rather than a private spa or clinical appointment.",
+          links: { website: "", instagram: "@remedyplace" }
+        },
+        {
+          id: 8,
+          name: "Inner Flow",
+          area: "Barcelona / Barceloneta",
+          coordinates: { lat: 41.3794, lng: 2.1885 },
+          primaryType: "Wellness Club",
+          bestFor: ["Training", "Recovery", "Practice", "Lifestyle", "Social Wellness"],
+          tags: ["Wellness Club", "Training", "Recovery", "Practice", "Spa", "Community", "Biohacking", "Float Tank", "Hot/Cold", "Performance"],
+          status: "To map",
+          note: "A full-spectrum wellness and performance studio combining indoor and outdoor training, yoga, meditation, immersive cycling, biohacking-style facilities, functional spa, hot and cold plunges, saunas, infrared light, and float tank. Inner Flow is relevant as one of Barcelona's stronger full-stack wellness lifestyle nodes rather than a single-purpose studio, gym, or spa.",
+          links: { website: "", instagram: "@innerflow_barcelona" }
+        },
+        {
+          id: 9,
+          name: "ILO Studios",
+          area: "Barcelona / Eixample",
+          coordinates: { lat: 41.3874, lng: 2.1686 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Social Wellness", "Community"],
+          tags: ["Recovery Club", "Recovery", "Sauna", "Ice Bath", "Breathwork", "Contrast Therapy", "Social Wellness", "Community"],
+          status: "To map",
+          note: "A focused sauna and ice bath studio in Eixample built around guided sessions, open recovery, Finnish sauna, cold immersion, breathwork, and communal nervous-system reset. ILO is more specialized than Inner Flow, but highly aligned with the modern recovery-club movement: recovery as ritual, practice, and social experience rather than just an add-on after training.",
+          links: { website: "", instagram: "@ilostudios_" }
+        },
+        {
+          id: 10,
+          name: "SABDA Studios",
+          area: "Barcelona / Eixample",
+          coordinates: { lat: 41.3910, lng: 2.1640 },
+          primaryType: "Retreat / Practice Hub",
+          bestFor: ["Practice", "Classes", "Community", "Lifestyle", "Social Wellness"],
+          tags: ["Retreat / Practice Hub", "Practice", "Classes", "Community", "Immersive Studio", "Breathwork", "Sound Healing", "Yoga", "Pilates", "Social Wellness"],
+          status: "To map",
+          note: "An immersive wellness studio in Barcelona's Eixample district combining 360° projections, spatial audio, yoga, pilates, breathwork, sound healing, and multidisciplinary wellness experiences. SABDA is relevant less as a conventional fitness venue and more as a brand-forward practice and culture space where wellness, sensory design, classes, and community-oriented experience overlap.",
+          links: { website: "", instagram: "@sabda_studio" }
+        },
+        {
+          id: 11,
+          name: "Othership",
+          area: "Flatiron / Williamsburg",
+          coordinates: { lat: 40.7410, lng: -73.9896 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Community", "Social Wellness"],
+          tags: ["Recovery Club", "Sauna", "Ice Bath", "Breathwork", "Guided Sessions", "Community", "Social Wellness", "Alcohol-Free Social"],
+          status: "To map",
+          note: "A social sauna and ice bath concept built around guided thermal sessions, breathwork, music, group experience, tea/lounge space, and alcohol-free connection. Othership is one of New York's clearest wellness-social nodes: recovery and emotional regulation packaged as a repeatable communal ritual rather than a private spa treatment or standard bathhouse visit.",
+          links: { website: "", instagram: "@othership" }
+        },
+        {
+          id: 12,
+          name: "Remedy Place Flatiron",
+          area: "Flatiron",
+          coordinates: { lat: 40.7411, lng: -73.9897 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Longevity", "Social Wellness"],
+          tags: ["Recovery Club", "Recovery", "Sauna", "Ice Bath", "Longevity", "IV Therapy", "NAD+", "Red Light", "Hyperbaric Oxygen", "Acupuncture", "Social Wellness"],
+          status: "To map",
+          note: "A polished recovery and longevity club in Flatiron combining guided ice baths, saunas, IV therapy, NAD+, red light, hyperbaric oxygen, acupuncture, chiropractic, and social wellness positioning. Remedy Place is stronger on premium treatment infrastructure than organic community depth, but important as a leading clinical-luxury version of the social wellness club model.",
+          links: { website: "", instagram: "@remedyplace" }
+        },
+        {
+          id: 13,
+          name: "Bathhouse",
+          area: "Flatiron / Williamsburg / Atlantic Ave",
+          coordinates: { lat: 40.7412, lng: -73.9899 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Lifestyle", "Social Wellness"],
+          tags: ["Recovery Club", "Bathhouse", "Sauna", "Steam", "Cold Plunge", "Thermal Pools", "Massage", "Scrub", "Social Wellness", "Lifestyle"],
+          status: "To map",
+          note: "A modern urban bathhouse brand built around thermal pools, saunas, steam rooms, cold plunges, massage, scrubs, and repeat-use recovery. Bathhouse is more public-facing and less curated than private wellness clubs, but highly relevant as a New York bathing and recovery node where functional recovery, urban ritual, and social bathing culture overlap.",
+          links: { website: "", instagram: "@bathhouse" }
+        },
+        {
+          id: 14,
+          name: "Continuum Club",
+          area: "Greenwich Village",
+          coordinates: { lat: 40.7335, lng: -74.0027 },
+          primaryType: "Longevity / Clinic",
+          bestFor: ["Longevity", "Recovery", "Training", "Strength", "Premium Fitness Crowd"],
+          tags: ["Longevity / Clinic", "Longevity", "Diagnostics", "AI Health Optimization", "Recovery", "Training", "Strength", "Biometrics", "Concierge Wellness", "Premium Fitness Crowd"],
+          status: "To map",
+          note: "An ultra-premium longevity and performance club in Greenwich Village combining diagnostics, biometrics, AI-driven health optimization, strength training, recovery, wearable data, and concierge-level wellness care. Continuum is less public-facing and less socially open than recovery clubs like Othership or Bathhouse, but strategically important as part of New York's elite precision-health and longevity club layer.",
+          links: { website: "", instagram: "@continuumclub" }
+        },
+        {
+          id: 15,
+          name: "Wheelhouse Lisboa",
+          area: "Lapa / Lisbon",
+          coordinates: { lat: 38.7071, lng: -9.1611 },
+          primaryType: "Wellness Coworking",
+          bestFor: ["Work / Coworking", "Community", "Practice", "Treatments", "Lifestyle"],
+          tags: ["Wellness Coworking", "Community", "Classes", "Events", "Treatments", "Sound Baths", "Breathwork", "Yoga", "Salt Cave", "Lifestyle"],
+          status: "To map",
+          note: "A creative social wellness hub in Lisbon combining coworking, events, classes, treatments, tea/lounge space, and a salt cave experience. Wheelhouse Lisboa is relevant as a hybrid wellness-work-community node rather than a single-purpose studio: a place where bodywork, practice, creative work, workshops, and social wellness programming overlap.",
+          links: { website: "", instagram: "@wheelhouse.lisboa" }
+        },
+        {
+          id: 16,
+          name: "Soul Plunge",
+          area: "La Jolla",
+          coordinates: { lat: 32.8328, lng: -117.2713 },
+          primaryType: "Recovery Club",
+          bestFor: ["Recovery", "Sauna", "Ice Bath", "Breathwork", "Practice", "Social Wellness"],
+          tags: ["Recovery Club", "Cold Plunge", "Sauna", "Yoga", "Breathwork", "Sound Healing", "Red Light", "Contrast Therapy", "Social Wellness"],
+          status: "To map",
+          note: "A La Jolla studio built around yoga, breathwork, cold plunge, sauna, red light, sound healing, and guided contrast therapy. Soul Plunge is relevant as a smaller-scale recovery and practice node where discomfort, nervous-system training, and communal wellness rituals are packaged into a repeatable local experience rather than a standard spa appointment.",
+          links: { website: "", instagram: "@soulplunge" }
+        },
+        {
+          id: 17,
+          name: "LIVV Longevity Club",
+          area: "Cardiff / San Diego County",
+          coordinates: { lat: 33.0242, lng: -117.2803 },
+          primaryType: "Longevity / Clinic",
+          bestFor: ["Longevity", "Diagnostics", "Recovery", "Concierge Care", "Advanced Therapies"],
+          tags: ["Longevity / Clinic", "Diagnostics", "Concierge Care", "Cold Plunge", "Infrared Sauna", "HBOT", "NAD+", "Peptides", "Hormone Optimization", "Medical Aesthetics", "Recovery"],
+          status: "To map",
+          note: "A private members-only longevity club in Cardiff built around naturopathic medicine, biomarker-guided protocols, concierge care, cold plunge, infrared sauna, hyperbaric oxygen, NAD+ infusions, peptide therapy, hormone optimization, and medical aesthetics. LIVV is relevant as San Diego's clinical-luxury longevity layer: less of an open social wellness club and more of a high-touch precision-health environment for people pursuing measurable health optimization.",
+          links: { website: "", instagram: "@livvnatural" }
+        },
+        {
+          id: 18,
+          name: "Trilogy Sanctuary",
+          area: "La Jolla",
+          coordinates: { lat: 32.8495, lng: -117.2748 },
+          primaryType: "Retreat / Practice Hub",
+          bestFor: ["Practice", "Classes", "Community", "Lifestyle", "Food / Cafe", "Social Wellness"],
+          tags: ["Retreat / Practice Hub", "Yoga", "Aerial Yoga", "Rooftop Cafe", "Vegan Cafe", "Events", "Spiritual Healing", "Boutique", "Community", "Lifestyle"],
+          status: "To map",
+          note: "A long-running La Jolla wellness sanctuary combining indoor and outdoor yoga, aerial yoga, spiritual healing, events, trainings, a rooftop organic vegan cafe, boutique, and community programming. Trilogy Sanctuary is relevant as a lifestyle-oriented practice hub rather than a single-purpose studio, bringing together movement, food, events, spiritual wellness, and social community in one physical space.",
+          links: { website: "", instagram: "@trilogysanctuary" }
+        },
+        {
+          id: 19,
+          name: "Riffs Studios",
+          area: "Bird Rock / La Jolla",
+          coordinates: { lat: 32.8227, lng: -117.2620 },
+          primaryType: "Retreat / Practice Hub",
+          bestFor: ["Practice", "Classes", "Recovery", "Community", "Lifestyle", "Social Wellness"],
+          tags: ["Retreat / Practice Hub", "Yoga", "Live Music", "Outdoor Studio", "Massage", "Sound Healing", "Sauna", "Cold Plunge", "Red Light", "Community", "Lifestyle"],
+          status: "To map",
+          note: "A Bird Rock wellness sanctuary combining outdoor yoga, live music, massage, sound healing, sauna, cold plunge, red light, and community-oriented programming. Riffs is relevant as a neighborhood lifestyle wellness node where practice, music, recovery, bodywork, and social connection overlap in a more grounded coastal format than a luxury club or clinical longevity space.",
+          links: { website: "", instagram: "@riffsyogastudios" }
+        },
+        {
+          id: 20,
+          name: "ARC Community",
+          area: "Canary Wharf / London",
+          coordinates: { lat: 51.5045, lng: -0.0195 },
+          primaryType: "Wellness Club",
+          bestFor: ["Training", "Recovery", "Community", "Lifestyle", "Social Wellness"],
+          tags: ["Wellness Club", "Training", "Recovery", "Strength", "Classes", "Ice Bath", "Sauna", "Breathwork", "Community", "Social Wellness", "Lifestyle"],
+          status: "To map",
+          note: "A community-led wellness club in Canary Wharf combining training, recovery, classes, sauna, ice bath, breathwork, and social programming. ARC Community is relevant as a London wellness lifestyle node because it sits between gym, recovery space, and social club - designed around repeat practice, community, and a more integrated approach to urban health rather than a single-purpose fitness or spa model.",
+          links: { website: "", instagram: "@arc.community" }
+        }
+      ];
+
+      const filterOptions = {
+        area:["Canggu","Berawa","Pererenan","Seseh / Cemagi","Canggu / Berawa","Canggu / Pererenan","Ubud","Uluwatu","Venice","Hollywood","West Hollywood","Barcelona / Barceloneta","Barcelona / Eixample","Flatiron / Williamsburg","Flatiron","Flatiron / Williamsburg / Atlantic Ave","Greenwich Village","Lapa / Lisbon","La Jolla","Cardiff / San Diego County","Bird Rock / La Jolla","Canary Wharf / London"],
+        type:["Premium Gym","Recovery Club","Functional Fitness","Wellness Club","Retreat / Practice Hub","Wellness Coworking","Longevity / Clinic","Traditional Rejuvenation"],
+        bestfor:["Training","Recovery","Community","Work / Coworking","Practice","Lifestyle","Longevity","Sauna","Ice Bath","Strength","Conditioning","Classes","Functional Training","Social Wellness","Fitness Lifestyle","Community Fitness","Premium Fitness Crowd"]
+      };
+
+      let activeFilters = {area:[],type:[],bestfor:[]};
+      const map = L.map('map').setView([30, -20], 2);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap',maxZoom:19}).addTo(map);
+      const markers = {};
+      
+      spaces.forEach(space => {
+        const marker = L.marker([space.coordinates.lat,space.coordinates.lng]).addTo(map);
+        marker.bindPopup('<div style="font-weight:600;margin-bottom:4px;">'+space.name+'</div><div style="font-size:0.8125rem;color:#7a7066;">'+space.area+'</div>');
+        marker.on('click',() => highlightCard(space.id));
+        markers[space.id] = marker;
+      });
+
+      function createDropdown(cat,opts) {
+        const cont = document.getElementById(cat+'-options');
+        const sel = document.getElementById(cat+'-select');
+        opts.forEach(opt => {
+          const div = document.createElement('div');
+          div.className = 'filter-option sans';
+          div.innerHTML = '<div class="filter-checkbox" data-cat="'+cat+'" data-val="'+opt+'"></div><span>'+opt+'</span>';
+          div.onclick = (e) => { e.stopPropagation(); toggleFilter(cat,opt); };
+          cont.appendChild(div);
+        });
+        sel.onclick = (e) => {
+          e.stopPropagation();
+          const open = cont.classList.contains('show');
+          document.querySelectorAll('.filter-options').forEach(d => d.classList.remove('show'));
+          document.querySelectorAll('.filter-select').forEach(s => s.classList.remove('active'));
+          if (!open) { cont.classList.add('show'); sel.classList.add('active'); }
+        };
+      }
+
+      document.addEventListener('click',() => {
+        document.querySelectorAll('.filter-options').forEach(d => d.classList.remove('show'));
+        document.querySelectorAll('.filter-select').forEach(s => s.classList.remove('active'));
+      });
+
+      function toggleFilter(cat,val) {
+        const idx = activeFilters[cat].indexOf(val);
+        if (idx > -1) activeFilters[cat].splice(idx,1);
+        else activeFilters[cat].push(val);
+        updateUI(cat);
+        updateClear();
+        renderSpaces();
+      }
+
+      function updateUI(cat) {
+        const lbl = document.getElementById(cat+'-label');
+        const cnt = activeFilters[cat].length;
+        lbl.textContent = cnt === 0 ? (cat==='area'?'Select areas':cat==='type'?'Select types':'Select options') : cnt+' selected';
+        document.querySelectorAll('[data-cat="'+cat+'"]').forEach(cb => {
+          cb.classList.toggle('checked',activeFilters[cat].includes(cb.getAttribute('data-val')));
+        });
+      }
+
+      function updateClear() {
+        document.getElementById('clear-filters').style.display = (activeFilters.area.length||activeFilters.type.length||activeFilters.bestfor.length) ? 'inline-block' : 'none';
+      }
+
+      document.getElementById('clear-filters').onclick = () => {
+        activeFilters = {area:[],type:[],bestfor:[]};
+        ['area','type','bestfor'].forEach(updateUI);
+        updateClear();
+        renderSpaces();
+      };
+
+      function renderSpaces() {
+        const filt = spaces.filter(s => {
+          const aOk = !activeFilters.area.length || activeFilters.area.includes(s.area);
+          const tOk = !activeFilters.type.length || activeFilters.type.includes(s.primaryType);
+          const bOk = !activeFilters.bestfor.length || s.bestFor.some(bf => activeFilters.bestfor.includes(bf));
+          return aOk && tOk && bOk;
+        });
+        const cont = document.getElementById('spaces-list');
+        cont.innerHTML = '';
+        filt.forEach(s => {
+          const card = document.createElement('div');
+          card.className = 'space-card';
+          card.id = 'card-'+s.id;
+          card.innerHTML = '<div class="space-header"><div class="space-name">'+s.name+'</div><div class="space-area sans">'+s.area+'</div></div><div class="space-meta sans"><div class="meta-item"><span class="meta-label">Type:</span><span>'+s.primaryType+'</span></div><div class="meta-item"><span class="meta-label">Best for:</span><span>'+s.bestFor.join(', ')+'</span></div></div><div class="space-tags sans">'+s.tags.map(t => '<span class="tag">'+t+'</span>').join('')+'</div><div class="space-status sans">'+s.status+'</div><div class="space-note sans">'+s.note+'</div>'+(s.links.website||s.links.instagram ? '<div class="space-links sans">'+(s.links.website?'<a href="'+s.links.website+'" target="_blank">Website</a>':'')+(s.links.instagram?'<a href="https://instagram.com/'+s.links.instagram.replace('@','')+'" target="_blank">'+s.links.instagram+'</a>':'')+'</div>' : '');
+          card.onclick = () => { map.setView([s.coordinates.lat,s.coordinates.lng],15); markers[s.id].openPopup(); highlightCard(s.id); };
+          cont.appendChild(card);
+        });
+        document.getElementById('spaces-count').textContent = filt.length+' '+(filt.length===1?'space':'spaces')+' mapped';
+      }
+
+      function highlightCard(id) {
+        document.querySelectorAll('.space-card').forEach(c => c.classList.remove('active'));
+        const card = document.getElementById('card-'+id);
+        if (card) { card.classList.add('active'); card.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+      }
+
+      createDropdown('area',filterOptions.area);
+      createDropdown('type',filterOptions.type);
+      createDropdown('bestfor',filterOptions.bestfor);
+      renderSpaces();
+    });
+  </script>
+</body>
+</html>
