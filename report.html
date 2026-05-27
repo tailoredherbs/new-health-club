@@ -159,7 +159,7 @@
           document.getElementById('report-meta').innerHTML = `
             <span>${formatDate(fm.date)}</span>
             
-            ${fm.readTime ? `<span>· ${fm.readTime}</span>` : ''}
+            
           `;
           document.getElementById('report-desc').textContent = fm.description || '';
           document.getElementById('report-body').innerHTML = marked.parse(fm.body || '');
