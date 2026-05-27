@@ -3,27 +3,13 @@ const path = require('path');
 
 exports.handler = async function(event, context) {
   try {
-    // Try multiple possible paths
-    const possiblePaths = [
-      path.join(process.cwd(), '_signals'),
-      path.join(__dirname, '../../_signals'),
-      path.join(__dirname, '../../../_signals'),
-      '/var/task/_signals'
-    ];
+    const signalsDir = path.join(process.cwd(), '_signals');
 
-    let signalsDir = null;
-    for (const p of possiblePaths) {
-      if (fs.existsSync(p)) {
-        signalsDir = p;
-        break;
-      }
-    }
-
-    if (!signalsDir) {
+    if (!fs.existsSync(signalsDir)) {
       return {
         statusCode: 200,
         headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-        body: JSON.stringify({ debug: 'no dir found', cwd: process.cwd(), dirname: __dirname })
+        body: JSON.stringify([])
       };
     }
 
@@ -67,7 +53,7 @@ exports.handler = async function(event, context) {
     return {
       statusCode: 500,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: err.message, cwd: process.cwd(), dirname: __dirname })
+      body: JSON.stringify({ error: err.message })
     };
   }
 };
