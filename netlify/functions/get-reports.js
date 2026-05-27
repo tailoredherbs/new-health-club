@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-exports.handler = async function() {
+export const handler = async function() {
   try {
-    const data = fs.readFileSync(path.join(process.cwd(), 'reports-data.json'), 'utf8');
+    const data = readFileSync(join(process.cwd(), 'reports-data.json'), 'utf8');
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
