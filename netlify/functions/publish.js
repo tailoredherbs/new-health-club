@@ -110,7 +110,7 @@ exports.handler = async function(event) {
     return {
       statusCode: res.status,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: JSON.parse(res.body).message })
+      body: JSON.stringify({ error: res.body || 'Unknown error' })
     };
   }
 };
