@@ -30,7 +30,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Type", name: "type", widget: "select", options: ["Category Brief", "Market Report", "Operator Analysis", "City Focus", "Special Briefing"] }
       - { label: "Date", name: "date", widget: "datetime", date_format: "MMM D, YYYY", time_format: false }
-      - { label: "Read Time", name: "readTime", widget: "string", hint: "e.g. 12 min read" }
       - { label: "Tag", name: "tag", widget: "string", hint: "e.g. Real Estate, Recovery Clubs" }
       - { label: "Short Description", name: "description", widget: "text", hint: "2-3 sentences shown in the list view" }
       - { label: "Full Body", name: "body", widget: "markdown" }
