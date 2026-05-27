@@ -131,7 +131,7 @@
             <div class="report-title">${r.title}</div>
             <div class="report-desc sans">${r.description || ''}</div>
             <div class="report-footer sans">
-              <span class="report-meta">${formatDate(r.date)}${r.readTime ? ' · ' + r.readTime : ''}</span>
+              <span class="report-meta">${formatDate(r.date)}</span>
               ${r.tag ? r.tag.split(',').slice(0,2).map(t => `<span class="report-tag">${t.trim()}</span>`).join('') : ''}
             </div>
           </div>
