@@ -56,17 +56,26 @@
     .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; display: inline-block; }
     .empty-state { text-align: center; padding: 60px 0; color: #9a9088; font-size: 0.875rem; grid-column: span 3; }
 
-    .signals-list { display: flex; flex-direction: column; }
-    .signal-row { display: grid; grid-template-columns: 100px 1fr auto; gap: 28px; padding: 28px 0; border-top: 1px solid #e8e6e1; align-items: start; text-decoration: none; color: inherit; transition: opacity 0.2s; }
-    .signal-row:hover { opacity: 0.6; }
-    .signal-icon { width: 100px; height: 100px; background: #f0ede8; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .signal-icon svg { width: 32px; height: 32px; stroke: #9a9088; fill: none; stroke-width: 1.5; }
-    .signal-meta-top { font-size: 0.6375rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7a7066; margin-bottom: 8px; display: flex; gap: 10px; align-items: center; }
-    .meta-sep { color: #c8c0b4; }
-    .signal-title { font-size: 1.0625rem; font-weight: 400; margin-bottom: 8px; line-height: 1.35; }
-    .signal-desc { font-size: 0.85rem; line-height: 1.6; color: #5a5248; }
-    .signal-date { font-size: 0.75rem; color: #9a9088; white-space: nowrap; }
-    .signals-empty { padding: 60px 0; color: #9a9088; font-size: 0.875rem; text-align: center; }
+    .signals-list { display: flex; flex-direction: column; border: 1px solid #e8e6e1; }
+    .signal-row { display: grid; grid-template-columns: 64px 1fr; gap: 0; border-bottom: 1px solid #e8e6e1; text-decoration: none; color: inherit; transition: background 0.15s; }
+    .signal-row:last-child { border-bottom: none; }
+    .signal-row:hover { background: #f5f3ef; }
+    .signal-time { padding: 16px 0 16px 16px; font-size: 0.72rem; color: #9a9088; white-space: nowrap; padding-top: 18px; }
+    .signal-content { padding: 16px 20px 16px 0; }
+    .signal-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .signal-badge { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 7px; border-radius: 2px; white-space: nowrap; }
+    .badge-opening { background: #e8f4e8; color: #2d6e2d; }
+    .badge-expansion { background: #e8eef8; color: #1e3a6e; }
+    .badge-funding { background: #fdf3e3; color: #7a4f00; }
+    .badge-partnership { background: #f3e8f8; color: #5a1e7a; }
+    .badge-product-launch { background: #fde8e8; color: #7a1e1e; }
+    .badge-real-estate { background: #e8f4f0; color: #1e5a45; }
+    .badge-leadership-move { background: #f0ede8; color: #5a4a3a; }
+    .badge-other { background: #f0ede8; color: #5a4a3a; }
+    .signal-title { font-size: 0.9375rem; font-weight: 400; line-height: 1.35; margin-bottom: 4px; }
+    .signal-desc { font-size: 0.8375rem; line-height: 1.6; color: #3a3630; margin-bottom: 6px; }
+    .signal-meta { font-size: 0.72rem; color: #7a7066; display: flex; gap: 6px; align-items: center; }
+    .signals-empty { padding: 40px; color: #9a9088; font-size: 0.875rem; text-align: center; }
 
     .footer-bar { background: #1a1614; color: #fafaf8; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; }
     .footer-left { display: flex; align-items: center; gap: 16px; }
@@ -190,19 +199,32 @@
           container.innerHTML = '<div class="signals-empty sans">Signals coming soon.</div>';
           return;
         }
+        const badgeClass = {
+          'Opening':'badge-opening','Expansion':'badge-expansion','Funding':'badge-funding',
+          'Partnership':'badge-partnership','Product Launch':'badge-product-launch',
+          'Real Estate':'badge-real-estate','Leadership Move':'badge-leadership-move','Other':'badge-other'
+        };
+        function timeAgo(dateStr) {
+          if (!dateStr) return '';
+          const d = new Date(dateStr);
+          const now = new Date();
+          const diff = Math.floor((now - d) / 1000 / 60);
+          if (diff < 60) return diff <= 1 ? 'NOW' : diff + 'm ago';
+          if (diff < 1440) return Math.floor(diff/60) + 'h ago';
+          const days = Math.floor(diff/1440);
+          return days === 1 ? '1d ago' : days + 'd ago';
+        }
         container.innerHTML = latest.map(s => `
           <a href="signal.html?id=${s.id}" class="signal-row">
-            <div class="signal-icon">${icons[s.category] || icons['Other']}</div>
-            <div>
-              <div class="signal-meta-top sans">
-                <span>${s.category}</span>
-                <span class="meta-sep">·</span>
-                <span>${s.location}</span>
+            <div class="signal-time sans">${timeAgo(s.date)}</div>
+            <div class="signal-content">
+              <div class="signal-top">
+                <span class="signal-badge sans ${badgeClass[s.category] || 'badge-other'}">${s.category}</span>
               </div>
               <div class="signal-title">${s.title}</div>
-              <div class="signal-desc sans">${s.description}</div>
+              <div class="signal-desc sans">${s.description || ''}</div>
+              <div class="signal-meta sans">${s.location || ''}${s.tag ? ' · ' + s.tag : ''}</div>
             </div>
-            <div class="signal-date sans">${formatDate(s.date)}</div>
           </a>
         `).join('');
       })
