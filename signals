@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Signals — The New Health Club</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: #1a1614; background: #fafaf8; line-height: 1.6; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 48px; border-bottom: 1px solid #e8e6e1; position: sticky; top: 0; background: #fafaf8; z-index: 100; }
+    .nav-logo { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: #1a1614; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: #5a5248; transition: color 0.2s; }
+    .nav-links a:hover { color: #1a1614; }
+    .nav-links a.active { color: #1a1614; border-bottom: 1px solid #1a1614; padding-bottom: 2px; }
+
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 380px; }
+    .hero-left { padding: 72px 48px; display: flex; flex-direction: column; justify-content: center; }
+    .hero-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 20px; }
+    .hero-title { font-size: 3rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .hero-divider { width: 40px; height: 1px; background: #c8c0b4; margin-bottom: 20px; }
+    .hero-copy { font-size: 0.9375rem; line-height: 1.75; color: #3a3630; max-width: 380px; margin-bottom: 20px; }
+    .hero-link { font-size: 0.8125rem; color: #1a1614; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .hero-link:hover { opacity: 0.6; }
+    .hero-right { overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* FILTERS */
+    .filter-bar { padding: 24px 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .filter-select { padding: 8px 14px; font-size: 0.8rem; border: 1px solid #d4cfc5; background: #fafaf8; cursor: pointer; border-radius: 2px; display: flex; align-items: center; gap: 8px; }
+    .filter-select:hover { border-color: #1a1614; }
+    .filter-spacer { flex: 1; }
+    .search-box { display: flex; align-items: center; gap: 10px; border: 1px solid #d4cfc5; padding: 8px 14px; flex: 0 0 280px; }
+    .search-box input { border: none; background: transparent; font-size: 0.8rem; outline: none; width: 100%; }
+
+    /* TABS */
+    .filter-tabs { padding: 0 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 0; overflow-x: auto; }
+    .filter-tab { padding: 16px 20px; font-size: 0.8rem; color: #7a7066; cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; transition: all 0.2s; background: none; border-left: none; border-right: none; border-top: none; }
+    .filter-tab:hover { color: #1a1614; }
+    .filter-tab.active { color: #1a1614; border-bottom-color: #1a1614; }
+
+    /* LIST */
+    .signals-section { padding: 0 48px 80px; }
+    .signal-row { display: grid; grid-template-columns: 200px 1fr auto; gap: 32px; padding: 32px 0; border-bottom: 1px solid #e8e6e1; align-items: start; text-decoration: none; color: inherit; transition: opacity 0.2s; cursor: pointer; }
+    .signal-row:hover { opacity: 0.65; }
+    .signal-img { height: 120px; background: #e8e6e1; overflow: hidden; }
+    .signal-img img { width: 100%; height: 100%; object-fit: cover; }
+    .signal-category { font-size: 0.6375rem; letter-spacing: 0.12em; text-transform: uppercase; color: #7a7066; margin-bottom: 8px; }
+    .signal-title { font-size: 1.125rem; font-weight: 400; margin-bottom: 10px; line-height: 1.35; }
+    .signal-desc { font-size: 0.875rem; line-height: 1.65; color: #5a5248; margin-bottom: 12px; max-width: 520px; }
+    .signal-meta { font-size: 0.75rem; color: #9a9088; display: flex; gap: 8px; align-items: center; }
+    .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; display: inline-block; }
+    .signal-tag { font-size: 0.7rem; padding: 5px 12px; border: 1px solid #d4cfc5; color: #5a5248; white-space: nowrap; align-self: center; }
+
+    .load-more { display: flex; justify-content: center; padding: 48px 0; }
+    .load-more-btn { padding: 14px 32px; border: 1px solid #d4cfc5; background: transparent; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+    .load-more-btn:hover { border-color: #1a1614; background: #1a1614; color: #fafaf8; }
+
+    .empty-state { padding: 80px 0; text-align: center; color: #9a9088; font-size: 0.9rem; }
+    .empty-state p { margin-bottom: 8px; }
+
+    /* FOOTER */
+    .footer-subscribe { background: #f5f3ef; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+    .footer-sub-left { }
+    .footer-sub-asterisk { font-size: 1.5rem; color: #7a7066; margin-bottom: 8px; }
+    .footer-sub-title { font-size: 1rem; font-weight: 400; margin-bottom: 4px; }
+    .footer-sub-desc { font-size: 0.875rem; color: #7a7066; }
+    .subscribe-form { display: flex; gap: 0; flex: 0 0 420px; }
+    .subscribe-form input { flex: 1; padding: 13px 18px; border: 1px solid #d4cfc5; background: #ffffff; font-size: 0.875rem; outline: none; }
+    .subscribe-form button { padding: 13px 24px; background: #1a1614; color: #fafaf8; border: none; cursor: pointer; font-size: 0.875rem; white-space: nowrap; transition: opacity 0.2s; }
+    .subscribe-form button:hover { opacity: 0.85; }
+    .footer-bar { background: #1a1614; padding: 20px 48px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-size: 0.75rem; color: #5a5248; letter-spacing: 0.06em; }
+    .footer-nav { display: flex; gap: 24px; }
+    .footer-nav a { font-size: 0.75rem; color: #5a5248; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; }
+    .footer-nav a:hover { color: #9a9088; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      nav, .hero-left, .filter-bar, .filter-tabs, .signals-section, .footer-subscribe, .footer-bar { padding-left: 24px; padding-right: 24px; }
+      .signal-row { grid-template-columns: 120px 1fr; }
+      .signal-tag { display: none; }
+      .footer-subscribe { flex-direction: column; }
+      .subscribe-form { flex: none; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="sans">
+    <a href="index.html" class="nav-logo">The New Health Club</a>
+    <ul class="nav-links">
+      <li><a href="map.html">Index</a></li>
+      <li><a href="signals.html" class="active">Signals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="about.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow sans">Market Signals</div>
+      <h1 class="hero-title">What's happening<br>in the category.</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-copy sans">Curated developments, openings, partnerships, funding rounds, and strategic moves shaping the new health club landscape.</p>
+      <a href="about.html" class="hero-link sans">About our signals →</a>
+    </div>
+    <div class="hero-right">
+      <img src="new-health-club-hero-image.png" alt="Wellness space" />
+    </div>
+  </section>
+
+  <div class="filter-bar sans">
+    <div class="filter-select">All Categories <span>▾</span></div>
+    <div class="filter-select">All Regions <span>▾</span></div>
+    <div class="filter-select">All Types <span>▾</span></div>
+    <div class="filter-select">Latest <span>▾</span></div>
+    <div class="filter-spacer"></div>
+    <div class="search-box">
+      <span style="color:#9a9088;font-size:0.8rem;">🔍</span>
+      <input type="text" placeholder="Search signals..." />
+    </div>
+  </div>
+
+  <div class="filter-tabs sans">
+    <button class="filter-tab active">All</button>
+    <button class="filter-tab">Openings</button>
+    <button class="filter-tab">Expansions</button>
+    <button class="filter-tab">Funding</button>
+    <button class="filter-tab">Partnerships</button>
+    <button class="filter-tab">Memberships</button>
+    <button class="filter-tab">Product Launches</button>
+    <button class="filter-tab">Real Estate</button>
+    <button class="filter-tab">Leadership Moves</button>
+    <button class="filter-tab">Other</button>
+  </div>
+
+  <section class="signals-section">
+    <div id="signals-list"></div>
+    <div class="load-more" id="load-more" style="display:none;">
+      <button class="load-more-btn sans">Load more signals <span>▾</span></button>
+    </div>
+  </section>
+
+  <div class="footer-subscribe sans">
+    <div class="footer-sub-left">
+      <div class="footer-sub-asterisk">✳</div>
+      <div class="footer-sub-title">Stay ahead of the category.</div>
+      <div class="footer-sub-desc">New signals, reports, and analysis — straight to your inbox.</div>
+    </div>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Your email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <footer class="footer-bar sans">
+    <span class="footer-copy">© The New Health Club</span>
+    <nav class="footer-nav">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="content.js"></script>
+  <script>
+    const list = document.getElementById('signals-list');
+    if (signals.length === 0) {
+      list.innerHTML = '<div class="empty-state sans"><p>Signals coming soon.</p><p style="font-size:0.8rem;margin-top:4px;">Check back shortly — the first batch is being prepared.</p></div>';
+    } else {
+      signals.forEach(s => {
+        list.innerHTML += `
+          <a href="signals/${s.id}.html" class="signal-row">
+            <div class="signal-img">${s.image ? `<img src="${s.image}" alt="${s.title}">` : ''}</div>
+            <div>
+              <div class="signal-category sans">${s.category}</div>
+              <div class="signal-title">${s.title}</div>
+              <div class="signal-desc sans">${s.description}</div>
+              <div class="signal-meta sans"><span>${s.date}</span><span class="dot"></span><span>${s.location}</span></div>
+            </div>
+            <div class="signal-tag sans">${s.tag}</div>
+          </a>
+        `;
+      });
+      if (signals.length > 6) document.getElementById('load-more').style.display = 'flex';
+    }
+
+    // Tab filtering (UI only for now)
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
