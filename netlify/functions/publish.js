@@ -91,6 +91,16 @@ exports.handler = async function(event) {
   }, payload);
 
   if (res.status === 200 || res.status === 201) {
+    // Trigger Netlify rebuild so new content appears immediately
+    try {
+      await makeRequest({
+        hostname: 'api.netlify.com',
+        path: '/build_hooks/6a16e59e82643e1cfcdebf08',
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Content-Length': '0' }
+      }, '');
+    } catch(e) {}
+
     return {
       statusCode: 200,
       headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
