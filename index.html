@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The New Health Club</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Georgia, serif; color: #1a1614; background: #fafaf8; line-height: 1.6; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 
-    /* NAV */
     nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 48px; border-bottom: 1px solid #e8e6e1; position: sticky; top: 0; background: #fafaf8; z-index: 100; }
     .nav-logo { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: #1a1614; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
@@ -17,9 +17,8 @@
     .nav-links a:hover, .nav-links a.active { color: #1a1614; }
     .nav-links a.active { border-bottom: 1px solid #1a1614; padding-bottom: 2px; }
 
-    /* HERO */
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
-    .hero-left { padding: 80px 48px 80px; display: flex; flex-direction: column; justify-content: center; }
+    .hero-left { padding: 80px 48px; display: flex; flex-direction: column; justify-content: center; }
     .hero-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 28px; }
     .hero-title { font-size: 3.5rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 28px; }
     .hero-divider { width: 40px; height: 1px; background: #c8c0b4; margin-bottom: 28px; }
@@ -35,7 +34,6 @@
     .hero-caption { position: absolute; bottom: 24px; right: 24px; text-align: right; }
     .hero-caption span { font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff; background: rgba(26,22,20,0.5); padding: 6px 10px; }
 
-    /* SECTION SHARED */
     .section { padding: 80px 48px; }
     .section-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 24px; }
     .section-header { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 48px; align-items: end; }
@@ -46,7 +44,6 @@
     .section-link:hover { opacity: 0.6; }
     .section-border { border-top: 1px solid #e8e6e1; }
 
-    /* REPORTS GRID */
     .reports-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
     .report-card { text-decoration: none; color: inherit; }
     .report-card-img { height: 200px; background: #e8e6e1; overflow: hidden; margin-bottom: 20px; }
@@ -56,11 +53,9 @@
     .report-card-title { font-size: 1.125rem; font-weight: 400; line-height: 1.35; margin-bottom: 12px; }
     .report-card-desc { font-size: 0.85rem; line-height: 1.65; color: #5a5248; margin-bottom: 12px; }
     .report-card-meta { font-size: 0.75rem; color: #9a9088; display: flex; gap: 8px; align-items: center; }
-    .report-card-meta span { display: inline-block; }
     .report-card-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; }
     .empty-state { text-align: center; padding: 60px 0; color: #9a9088; font-size: 0.875rem; grid-column: span 3; }
 
-    /* SIGNALS LIST */
     .signals-list { display: flex; flex-direction: column; }
     .signal-row { display: grid; grid-template-columns: 180px 1fr auto; gap: 32px; padding: 28px 0; border-top: 1px solid #e8e6e1; align-items: start; text-decoration: none; color: inherit; transition: opacity 0.2s; }
     .signal-row:hover { opacity: 0.6; }
@@ -70,10 +65,10 @@
     .signal-title { font-size: 1.0625rem; font-weight: 400; margin-bottom: 8px; line-height: 1.35; }
     .signal-desc { font-size: 0.85rem; line-height: 1.6; color: #5a5248; margin-bottom: 10px; }
     .signal-meta { font-size: 0.75rem; color: #9a9088; display: flex; gap: 8px; align-items: center; }
+    .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; display: inline-block; }
     .signal-tag { font-size: 0.7rem; padding: 4px 10px; border: 1px solid #d4cfc5; color: #5a5248; white-space: nowrap; }
     .signals-empty { padding: 60px 0; color: #9a9088; font-size: 0.875rem; text-align: center; }
 
-    /* FOOTER BAR */
     .footer-bar { background: #1a1614; color: #fafaf8; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; }
     .footer-left { display: flex; align-items: center; gap: 16px; }
     .footer-asterisk { font-size: 1.25rem; color: #7a7066; }
@@ -106,7 +101,6 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
       <div class="hero-eyebrow sans">Field Intelligence for Wellness-Led Physical Spaces</div>
@@ -127,7 +121,6 @@
     </div>
   </section>
 
-  <!-- REPORTS SECTION -->
   <section class="section section-border">
     <div class="section-eyebrow sans">Latest Reports & Briefings</div>
     <div class="section-header">
@@ -140,12 +133,9 @@
         <a href="reports.html" class="section-link sans">View all reports →</a>
       </div>
     </div>
-    <div class="reports-grid" id="homepage-reports">
-      <!-- Populated by content.js -->
-    </div>
+    <div class="reports-grid" id="homepage-reports"></div>
   </section>
 
-  <!-- SIGNALS SECTION -->
   <section class="section section-border">
     <div class="section-eyebrow sans">Recent Signals</div>
     <div class="section-header">
@@ -158,12 +148,9 @@
         <a href="signals.html" class="section-link sans">View all signals →</a>
       </div>
     </div>
-    <div class="signals-list" id="homepage-signals">
-      <!-- Populated by content.js -->
-    </div>
+    <div class="signals-list" id="homepage-signals"></div>
   </section>
 
-  <!-- FOOTER BAR -->
   <footer class="footer-bar sans">
     <div class="footer-left">
       <span class="footer-asterisk">✳</span>
@@ -182,7 +169,7 @@
     } else {
       latestReports.forEach(r => {
         reportsContainer.innerHTML += `
-          <a href="reports/${r.id}.html" class="report-card">
+          <a href="report.html?id=${r.id}" class="report-card">
             <div class="report-card-img">${r.image ? `<img src="${r.image}" alt="${r.title}">` : ''}</div>
             <div class="report-card-eyebrow sans">${r.type}</div>
             <div class="report-card-title">${r.title}</div>
@@ -201,30 +188,30 @@
     } else {
       latestSignals.forEach(s => {
         signalsContainer.innerHTML += `
-          <a href="signals/${s.id}.html" class="signal-row">
+          <a href="signal.html?id=${s.id}" class="signal-row">
             <div class="signal-img">${s.image ? `<img src="${s.image}" alt="${s.title}">` : ''}</div>
             <div>
               <div class="signal-category sans">${s.category}</div>
               <div class="signal-title">${s.title}</div>
               <div class="signal-desc sans">${s.description}</div>
-              <div class="signal-meta sans"><span>${s.date}</span><span class="dot" style="width:3px;height:3px;border-radius:50%;background:#c8c0b4;display:inline-block;"></span><span>${s.location}</span></div>
+              <div class="signal-meta sans"><span>${s.date}</span><span class="dot"></span><span>${s.location}</span></div>
             </div>
             <div class="signal-tag sans">${s.tag}</div>
           </a>
         `;
       });
     }
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
+
+    // Netlify Identity redirect
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
