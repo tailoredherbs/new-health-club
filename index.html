@@ -181,7 +181,7 @@
     }
 
     // Fetch latest signals
-    fetch('/.netlify/functions/get-signals')
+    fetch('/signals-data.json')
       .then(r => r.json())
       .then(signals => {
         const container = document.getElementById('homepage-signals');
@@ -211,7 +211,7 @@
       });
 
     // Fetch latest reports
-    fetch('/.netlify/functions/get-reports')
+    fetch('/reports-data.json')
       .then(r => r.json())
       .then(reports => {
         const container = document.getElementById('homepage-reports');
@@ -244,3 +244,4 @@
     }
   </script>
 </body>
+</html>
