@@ -148,17 +148,6 @@
       <h1 class="hero-title">What's happening<br>in the category.</h1>
       <p class="hero-copy sans">A live feed of openings, expansions, funding rounds, partnerships, product launches and strategic moves shaping the future of <strong>wellness-led physical spaces</strong>.</p>
     </div>
-    <div class="subscribe-box sans">
-      <div class="subscribe-box-header">
-        <span class="subscribe-asterisk">✳</span>
-        <span class="subscribe-title">Stay ahead of the category.</span>
-      </div>
-      <p class="subscribe-desc">New signals, reports, and analysis — straight to your inbox.</p>
-      <div class="subscribe-form">
-        <input type="email" placeholder="Your email" />
-        <button>Subscribe</button>
-      </div>
-    </div>
   </div>
 
   <!-- FILTER BAR -->
@@ -238,21 +227,7 @@
     <button class="load-more-btn sans" id="load-more-btn">Load more signals ▾</button>
   </div>
 
-  <!-- FOOTER -->
-  <div class="footer-bottom sans">
-    <div class="footer-left">
-      <span class="footer-asterisk">✳</span>
-      <div>
-        <div class="footer-text" style="font-weight:500;">New signals, every day.</div>
-        <div class="footer-text">Built for operators, investors and builders.</div>
-      </div>
-    </div>
-    <div class="footer-subscribe-bar">
-      <input type="email" placeholder="Your email" />
-      <button>Subscribe</button>
-    </div>
-  </div>
-  <div class="footer-nav-bar sans">
+  <!-- FOOTER --><div class="footer-nav-bar sans" style="background:#1a1614;padding:20px 48px;display:flex;justify-content:space-between;align-items:center;">
     <span class="footer-copy">© The New Health Club</span>
     <div class="footer-links">
       <a href="#">Privacy</a>
@@ -276,12 +251,15 @@
     function timeAgo(dateStr) {
       if (!dateStr) return '';
       const d = new Date(dateStr);
+      if (isNaN(d)) return dateStr;
       const now = new Date();
       const diff = Math.floor((now - d) / 1000 / 60);
       if (diff < 60) return diff <= 1 ? 'NOW' : `${diff}m ago`;
       if (diff < 1440) return `${Math.floor(diff/60)}h ago`;
       const days = Math.floor(diff/1440);
-      return days === 1 ? '1d ago' : `${days}d ago`;
+      if (days < 30) return days === 1 ? '1d ago' : `${days}d ago`;
+      const months = Math.floor(days/30);
+      return months === 1 ? '1mo ago' : `${months}mo ago`;
     }
 
     let allSignals = [];
