@@ -2,7 +2,7 @@
 title: REVO Studios launches urban biohacking studio in Barcelona
 category: Opening
 location: Barcelona, Spain
-date: May 27, 2026
+date: Nov 20, 2025
 tag: Biohacking, Recovery Studios, Longevity, Performance
 description: REVO Studios is positioning itself in Barcelona as a biohacking
   studio for urban life. Its offer includes cryotherapy, hyperbaric oxygen
