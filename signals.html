@@ -25,22 +25,18 @@
     .hero-right { overflow: hidden; }
     .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* FILTERS */
     .filter-bar { padding: 20px 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .filter-dropdown { position: relative; }
     .filter-select { padding: 9px 14px; font-size: 0.8rem; border: 1px solid #d4cfc5; background: #fafaf8; cursor: pointer; border-radius: 2px; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
     .filter-select:hover { border-color: #1a1614; }
     .filter-spacer { flex: 1; }
     .search-wrap { display: flex; align-items: center; gap: 10px; border: 1px solid #d4cfc5; padding: 9px 14px; min-width: 260px; }
     .search-wrap input { border: none; background: transparent; font-size: 0.8rem; outline: none; width: 100%; }
 
-    /* TABS */
-    .filter-tabs { padding: 0 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 0; overflow-x: auto; }
+    .filter-tabs { padding: 0 48px; border-bottom: 1px solid #e8e6e1; display: flex; overflow-x: auto; }
     .filter-tab { padding: 14px 18px; font-size: 0.8rem; color: #7a7066; cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; background: none; border-left: none; border-right: none; border-top: none; transition: all 0.15s; }
     .filter-tab:hover { color: #1a1614; }
     .filter-tab.active { color: #1a1614; border-bottom-color: #1a1614; }
 
-    /* SIGNALS */
     .signals-section { padding: 0 48px 80px; }
     .signal-row { display: grid; grid-template-columns: 100px 1fr auto; gap: 28px; padding: 28px 0; border-bottom: 1px solid #e8e6e1; align-items: start; text-decoration: none; color: inherit; transition: opacity 0.2s; }
     .signal-row:hover { opacity: 0.65; }
@@ -50,14 +46,16 @@
     .meta-sep { color: #c8c0b4; }
     .signal-title { font-size: 1.125rem; font-weight: 400; margin-bottom: 10px; line-height: 1.35; }
     .signal-desc { font-size: 0.875rem; line-height: 1.7; color: #5a5248; max-width: 540px; }
-    .signal-date { font-size: 0.8rem; color: #9a9088; white-space: nowrap; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; padding-top: 4px; }
+    .signal-right { font-size: 0.8rem; color: #9a9088; white-space: nowrap; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; padding-top: 4px; }
     .signal-arrow { font-size: 1rem; color: #c8c0b4; }
+    .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; display: inline-block; }
 
     .load-more { display: flex; justify-content: center; padding: 48px 0; }
     .load-more-btn { padding: 14px 32px; border: 1px solid #d4cfc5; background: transparent; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
     .load-more-btn:hover { border-color: #1a1614; background: #1a1614; color: #fafaf8; }
 
     .empty-state { padding: 80px 0; text-align: center; color: #9a9088; font-size: 0.9rem; line-height: 1.8; }
+    .loading { padding: 80px 0; text-align: center; color: #9a9088; font-size: 0.875rem; }
 
     .footer-subscribe { background: #f5f3ef; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px; }
     .footer-sub-left .asterisk { font-size: 1.5rem; color: #7a7066; margin-bottom: 8px; }
@@ -77,7 +75,7 @@
       nav, .hero-left, .filter-bar, .filter-tabs, .signals-section, .footer-subscribe, .footer-bar { padding-left: 24px; padding-right: 24px; }
       .signal-row { grid-template-columns: 64px 1fr; }
       .signal-icon { width: 64px; height: 64px; }
-      .signal-date { display: none; }
+      .signal-right { display: none; }
       .footer-subscribe { flex-direction: column; }
       .subscribe-form { flex: none; width: 100%; }
     }
@@ -110,7 +108,6 @@
   <div class="filter-bar sans">
     <div class="filter-select">All Categories <span>▾</span></div>
     <div class="filter-select">All Regions <span>▾</span></div>
-    <div class="filter-select">All Types <span>▾</span></div>
     <div class="filter-select">Latest <span>▾</span></div>
     <div class="filter-spacer"></div>
     <div class="search-wrap">
@@ -132,7 +129,7 @@
   </div>
 
   <section class="signals-section">
-    <div id="signals-list"></div>
+    <div id="signals-list"><div class="loading sans">Loading signals...</div></div>
     <div class="load-more" id="load-more" style="display:none;">
       <button class="load-more-btn sans" id="load-more-btn">Load more signals <span>▾</span></button>
     </div>
@@ -159,44 +156,34 @@
   </footer>
 
   <script>
-    // Icon map by category
     const icons = {
       'Real Estate': `<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
       'Opening': `<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>`,
       'Expansion': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>`,
-      'Funding': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/><path d="M12 6v2M12 16v2M8 12h2M14 12h2"/></svg>`,
+      'Funding': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v2M12 16v2M8 12h2M14 12h2"/></svg>`,
       'Partnership': `<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>`,
       'Product Launch': `<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>`,
       'Leadership Move': `<svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
       'Other': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`
     };
 
-    // Signals index — add new entries here when you publish a new signal
-    // Format: { id, title, category, location, date, tag, description }
-    // The id must match the filename in _signals/ (without .md)
-    const signalIndex = [
-      {
-        id: "body-factory-property",
-        title: "Body Factory turns wellness demand into property",
-        category: "Real Estate",
-        location: "Bali, Indonesia",
-        date: "May 20, 2026",
-        tag: "Real Estate",
-        description: "Body Factory's property arm says its first two lifestyle residence projects in Canggu and Uluwatu have been delivered, with the Uluwatu residence now fully sold out."
-      }
-      // Add new signals above this line
-    ];
-
+    let allSignals = [];
     let activeCategory = 'All';
     let searchQuery = '';
     const PAGE_SIZE = 10;
     let showing = PAGE_SIZE;
 
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
     function getFiltered() {
-      return signalIndex.filter(s => {
+      return allSignals.filter(s => {
         const catMatch = activeCategory === 'All' || s.category === activeCategory;
-        const searchMatch = !searchQuery || 
-          s.title.toLowerCase().includes(searchQuery) || 
+        const searchMatch = !searchQuery ||
+          s.title.toLowerCase().includes(searchQuery) ||
           s.description.toLowerCase().includes(searchQuery) ||
           s.location.toLowerCase().includes(searchQuery);
         return catMatch && searchMatch;
@@ -209,16 +196,14 @@
       const toShow = filtered.slice(0, showing);
 
       if (filtered.length === 0) {
-        list.innerHTML = '<div class="empty-state sans"><p>No signals yet.</p><p style="font-size:0.8rem;margin-top:8px;">Check back soon — the first signals are being prepared.</p></div>';
+        list.innerHTML = '<div class="empty-state sans"><p>No signals yet.</p><p style="font-size:0.8rem;margin-top:8px;">Check back soon.</p></div>';
         document.getElementById('load-more').style.display = 'none';
         return;
       }
 
       list.innerHTML = toShow.map(s => `
         <a href="signal.html?id=${s.id}" class="signal-row">
-          <div class="signal-icon">
-            ${icons[s.category] || icons['Other']}
-          </div>
+          <div class="signal-icon">${icons[s.category] || icons['Other']}</div>
           <div>
             <div class="signal-meta-top sans">
               <span>${s.category}</span>
@@ -228,8 +213,8 @@
             <div class="signal-title">${s.title}</div>
             <div class="signal-desc sans">${s.description}</div>
           </div>
-          <div class="signal-date sans">
-            <span>${s.date}</span>
+          <div class="signal-right sans">
+            <span>${formatDate(s.date)}</span>
             <span class="signal-arrow">→</span>
           </div>
         </a>
@@ -237,6 +222,17 @@
 
       document.getElementById('load-more').style.display = filtered.length > showing ? 'flex' : 'none';
     }
+
+    // Fetch from Netlify Function
+    fetch('/.netlify/functions/get-signals')
+      .then(r => r.json())
+      .then(data => {
+        allSignals = data;
+        renderSignals();
+      })
+      .catch(() => {
+        document.getElementById('signals-list').innerHTML = '<div class="empty-state sans">Signals coming soon.</div>';
+      });
 
     // Tabs
     document.querySelectorAll('.filter-tab').forEach(tab => {
@@ -261,8 +257,6 @@
       showing += PAGE_SIZE;
       renderSignals();
     });
-
-    renderSignals();
   </script>
 </body>
 </html>
