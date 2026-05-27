@@ -1,12 +1,16 @@
 ---
+readTime: 5 min read
+theme: Wellness Real Estate
+date: 2026-05-27
+location: Global
 title: Wellness real estate moves from amenity to anchor
 type: Report
-theme: Wellness Real Estate
-location: Global
-date: 2026-05-27
-readTime: 5 min read
 tag: Wellness Real Estate, Branded Residences, Hospitality, Longevity, Members Clubs
-description: Wellness is moving from an amenity inside luxury property to a central part of the real estate product. New projects are using clubs, recovery spaces, diagnostics and longevity brands to define how people live, stay and invest.
+description: Wellness is moving from an amenity inside luxury property to a
+  central part of the real estate product. New projects are using clubs,
+  recovery spaces, diagnostics and longevity brands to define how people live,
+  stay and invest.
+image: /images/uploads/image12.png
 ---
 
 Wellness is moving deeper into the real estate stack.
