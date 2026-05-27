@@ -1,3 +1,18 @@
+const https = require('https');
+
+function makeRequest(options, body) {
+  return new Promise((resolve, reject) => {
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve({ status: res.statusCode, body: data }));
+    });
+    req.on('error', reject);
+    if (body) req.write(body);
+    req.end();
+  });
+}
+
 exports.handler = async function(event) {
   // Debug endpoint
   if (event.httpMethod === 'GET') {
@@ -5,7 +20,7 @@ exports.handler = async function(event) {
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
+      body: JSON.stringify({
         hasToken: !!token,
         tokenLength: token ? token.length : 0,
         tokenStart: token ? token.substring(0, 6) : 'none'
@@ -25,7 +40,7 @@ exports.handler = async function(event) {
   let body;
   try {
     body = JSON.parse(event.body);
-  } catch {
+  } catch(e) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON' }) };
   }
 
@@ -34,45 +49,58 @@ exports.handler = async function(event) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Missing path, content or message' }) };
   }
 
-  // Base64 encode the content
   const encoded = Buffer.from(content).toString('base64');
+  const repo = 'tailoredherbs/new-health-club';
 
-  // Check if file exists (to get sha for updates)
+  // Check if file exists to get sha
   let sha;
-  const checkRes = await fetch(
-    `https://api.github.com/repos/tailoredherbs/new-health-club/contents/${path}`,
-    { headers: { Authorization: `token ${token}`, 'User-Agent': 'NewHealthClub' } }
-  );
-  if (checkRes.ok) {
-    const existing = await checkRes.json();
-    sha = existing.sha;
-  }
-
-  // Create or update file
-  const res = await fetch(
-    `https://api.github.com/repos/tailoredherbs/new-health-club/contents/${path}`,
-    {
-      method: 'PUT',
+  try {
+    const checkRes = await makeRequest({
+      hostname: 'api.github.com',
+      path: `/repos/${repo}/contents/${path}`,
+      method: 'GET',
       headers: {
-        Authorization: `token ${token}`,
-        'Content-Type': 'application/json',
-        'User-Agent': 'NewHealthClub'
-      },
-      body: JSON.stringify({ message, content: encoded, ...(sha ? { sha } : {}) })
+        'Authorization': `token ${token}`,
+        'User-Agent': 'NewHealthClub',
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+    if (checkRes.status === 200) {
+      sha = JSON.parse(checkRes.body).sha;
     }
-  );
+  } catch(e) {}
 
-  const result = await res.json();
-  if (res.ok) {
+  // Publish file
+  const payload = JSON.stringify({
+    message,
+    content: encoded,
+    ...(sha ? { sha } : {})
+  });
+
+  const res = await makeRequest({
+    hostname: 'api.github.com',
+    path: `/repos/${repo}/contents/${path}`,
+    method: 'PUT',
+    headers: {
+      'Authorization': `token ${token}`,
+      'User-Agent': 'NewHealthClub',
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+      'Content-Length': Buffer.byteLength(payload)
+    }
+  }, payload);
+
+  if (res.status === 200 || res.status === 201) {
     return {
       statusCode: 200,
-      headers: { 'Access-Control-Allow-Origin': '*' },
+      headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
       body: JSON.stringify({ success: true, path })
     };
   } else {
     return {
       statusCode: res.status,
-      body: JSON.stringify({ error: result.message })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ error: JSON.parse(res.body).message })
     };
   }
 };
