@@ -2,7 +2,7 @@
 title: Nirvana Life markets hotel-suite ownership with club access
 category: Expansion
 location: Bali, Indonesia
-date: May 27, 2026
+date: Apr 15, 2026
 tag: Wellness Real Estate, Hospitality, Recovery Clubs
 description: Nirvana Life is presenting The Sanctuary Hotel Suites as a
   part-ownership hospitality product connected to its Canggu wellness club. The
