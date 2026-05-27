@@ -59,3 +59,5 @@ fs.writeFileSync('signals-data.json', JSON.stringify(signals, null, 2));
 fs.writeFileSync('reports-data.json', JSON.stringify(reports, null, 2));
 
 console.log(`Built ${signals.length} signals and ${reports.length} reports`);
+
+
