@@ -6,8 +6,11 @@ date: May 27, 2026
 tag: Wellness Real Estate, Hospitality, Recovery Clubs
 description: Nirvana Life is presenting The Sanctuary Hotel Suites as a
   part-ownership hospitality product connected to its Canggu wellness club. The
-  offer combines operator-managed rentals, a shared rental pool, projected
-  returns, and lifetime access to Nirvana Life’s club facilities.
+  offer combines managed rentals, a shared rental pool, projected returns, and
+  lifetime club access, turning the wellness facility into part of the
+  investment case. It reflects a broader move in Bali where fitness, recovery,
+  and lifestyle brands are starting to support real estate and hospitality
+  products.
 ---
 Nirvana Life is presenting The Sanctuary Hotel Suites as a part-ownership hospitality product connected to its Canggu wellness club. The offer includes operator-managed rentals, a shared rental pool, projected returns, and lifetime access to Nirvana Life’s club facilities.
 
