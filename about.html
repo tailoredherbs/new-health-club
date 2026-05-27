@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — The New Health Club</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: #1a1614; background: #fafaf8; line-height: 1.6; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 48px; border-bottom: 1px solid #e8e6e1; position: sticky; top: 0; background: #fafaf8; z-index: 100; }
+    .nav-logo { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: #1a1614; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: #5a5248; transition: color 0.2s; }
+    .nav-links a:hover { color: #1a1614; }
+    .nav-links a.active { color: #1a1614; border-bottom: 1px solid #1a1614; padding-bottom: 2px; }
+
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 540px; }
+    .hero-left { padding: 72px 48px; display: flex; flex-direction: column; justify-content: center; }
+    .hero-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 24px; }
+    .hero-title { font-size: 2.75rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px; }
+    .hero-divider { width: 40px; height: 1px; background: #c8c0b4; margin-bottom: 28px; }
+    .hero-bio p { font-size: 0.9375rem; line-height: 1.8; color: #3a3630; margin-bottom: 16px; }
+    .hero-bio p strong { color: #1a1614; font-weight: 500; }
+    .hero-right { overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* FOCUS */
+    .focus-section { padding: 80px 48px; border-top: 1px solid #e8e6e1; }
+    .focus-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 48px; }
+    .focus-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 32px; }
+    .focus-item { }
+    .focus-icon { font-size: 1.5rem; color: #c8c0b4; margin-bottom: 16px; }
+    .focus-title { font-size: 0.9375rem; font-weight: 500; margin-bottom: 12px; }
+    .focus-desc { font-size: 0.8125rem; line-height: 1.65; color: #5a5248; }
+
+    /* CONNECT + CONTACT */
+    .bottom-section { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #e8e6e1; }
+    .connect-col { padding: 72px 48px; border-right: 1px solid #e8e6e1; }
+    .contact-col { padding: 72px 48px; }
+    .col-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 28px; }
+    .col-title { font-size: 2rem; font-weight: 400; line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 20px; }
+    .col-desc { font-size: 0.9rem; line-height: 1.75; color: #5a5248; margin-bottom: 40px; max-width: 400px; }
+    .contact-detail { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .contact-icon { font-size: 1rem; color: #7a7066; width: 20px; text-align: center; }
+    .contact-text { font-size: 0.9rem; color: #3a3630; }
+    .contact-text a { color: #1a1614; text-decoration: none; }
+    .contact-text a:hover { opacity: 0.6; }
+
+    /* FOOTER */
+    .footer-subscribe { background: #f5f3ef; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+    .footer-sub-asterisk { font-size: 1.5rem; color: #7a7066; margin-bottom: 8px; }
+    .footer-sub-title { font-size: 1rem; font-weight: 400; margin-bottom: 4px; }
+    .footer-sub-desc { font-size: 0.875rem; color: #7a7066; }
+    .subscribe-form { display: flex; gap: 0; flex: 0 0 420px; }
+    .subscribe-form input { flex: 1; padding: 13px 18px; border: 1px solid #d4cfc5; background: #ffffff; font-size: 0.875rem; outline: none; }
+    .subscribe-form button { padding: 13px 24px; background: #1a1614; color: #fafaf8; border: none; cursor: pointer; font-size: 0.875rem; white-space: nowrap; }
+    .footer-bar { background: #1a1614; padding: 20px 48px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-size: 0.75rem; color: #5a5248; letter-spacing: 0.06em; }
+    .footer-nav { display: flex; gap: 24px; }
+    .footer-nav a { font-size: 0.75rem; color: #5a5248; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    @media (max-width: 1100px) { .focus-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .bottom-section { grid-template-columns: 1fr; }
+      .connect-col { border-right: none; border-bottom: 1px solid #e8e6e1; }
+      nav, .hero-left, .focus-section, .connect-col, .contact-col, .footer-subscribe, .footer-bar { padding-left: 24px; padding-right: 24px; }
+      .focus-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-subscribe { flex-direction: column; }
+      .subscribe-form { flex: none; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="sans">
+    <a href="index.html" class="nav-logo">The New Health Club</a>
+    <ul class="nav-links">
+      <li><a href="map.html">Index</a></li>
+      <li><a href="signals.html">Signals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="about.html" class="active">About & Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / ABOUT -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow sans">About</div>
+      <h1 class="hero-title">Field intelligence<br>at the intersection of<br>health, lifestyle, business,<br>and deeper vitality.</h1>
+      <div class="hero-divider"></div>
+      <div class="hero-bio sans">
+        <p>I'm Jakob, originally from Austria.</p>
+        <p>My background combines psychology, Chinese medicine, Qigong/Taiji, wellness business, markets, and years of living across Asia and Europe.</p>
+        <p>I'm interested in the places where health, lifestyle, community, business models, and traditional vitality systems meet.</p>
+        <p><strong>The New Health Club</strong> is my field map for understanding the operators, models, and relationships shaping this category.</p>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="new-health-club-hero-image.png" alt="Wellness space" />
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section class="focus-section">
+    <div class="focus-eyebrow sans">What I Focus On</div>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">Business Models</div>
+        <p class="focus-desc sans">How wellness-led spaces make money: membership, hospitality, real estate, franchising, and hybrids.</p>
+      </div>
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">Operators</div>
+        <p class="focus-desc sans">The teams, founders, and brands building the next generation of physical wellness infrastructure.</p>
+      </div>
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">Market Signals</div>
+        <p class="focus-desc sans">Capital moves, expansions, partnerships, openings, and shifts in consumer behavior.</p>
+      </div>
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">Cities & Hubs</div>
+        <p class="focus-desc sans">Which cities are becoming wellness nodes — and why certain places compound faster than others.</p>
+      </div>
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">Communities</div>
+        <p class="focus-desc sans">How spaces build belonging, culture, and identity beyond facilities and programming.</p>
+      </div>
+      <div class="focus-item">
+        <div class="focus-icon">◻</div>
+        <div class="focus-title">The Future Landscape</div>
+        <p class="focus-desc sans">Emerging models, adjacency plays, and the next wave of wellness-led infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT + CONTACT -->
+  <div class="bottom-section" id="contact">
+    <div class="connect-col">
+      <div class="col-eyebrow sans">Let's Connect</div>
+      <h2 class="col-title">I speak with operators, founders, investors, practitioners, and builders.</h2>
+      <p class="col-desc sans">I'm always open to conversations about new spaces, emerging models, market shifts, and the future of wellness-led physical infrastructure.</p>
+      <div class="contact-detail">
+        <span class="contact-icon">✉</span>
+        <span class="contact-text sans"><a href="mailto:jakob.rohrauer@gmail.com">jakob.rohrauer@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <div class="col-eyebrow sans">Get in Touch</div>
+      <h2 class="col-title">Run a space, build a brand, or working on something interesting?</h2>
+      <p class="col-desc sans">I'd love to hear about it. Whether you want visibility, to be part of the index, or just want to connect — reach out.</p>
+      <div class="contact-detail">
+        <span class="contact-icon">✉</span>
+        <span class="contact-text sans"><a href="mailto:jakob.rohrauer@gmail.com">jakob.rohrauer@gmail.com</a></span>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">◎</span>
+        <span class="contact-text sans"><a href="https://instagram.com/jakob.vis" target="_blank">@jakob.vis</a></span>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">⊙</span>
+        <span class="contact-text sans">Based between Asia and Europe</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-subscribe sans">
+    <div>
+      <div class="footer-sub-asterisk">✳</div>
+      <div class="footer-sub-title">Stay ahead of the category.</div>
+      <div class="footer-sub-desc">New signals, reports, and analysis — straight to your inbox.</div>
+    </div>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Your email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <footer class="footer-bar sans">
+    <span class="footer-copy">© The New Health Club</span>
+    <nav class="footer-nav">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </nav>
+  </footer>
+</body>
+</html>
