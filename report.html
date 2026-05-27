@@ -90,10 +90,7 @@
         <div class="sidebar-label">Theme</div>
         <div class="sidebar-value" id="sb-theme"></div>
       </div>
-      <div class="sidebar-block">
-        <div class="sidebar-label">Geography</div>
-        <div class="sidebar-value" id="sb-location"></div>
-      </div>
+
       <div class="sidebar-block">
         <div class="sidebar-label">Tags</div>
         <div class="tag-list" id="sb-tags"></div>
@@ -161,14 +158,14 @@
           document.getElementById('report-title').textContent = fm.title || '';
           document.getElementById('report-meta').innerHTML = `
             <span>${formatDate(fm.date)}</span>
-            ${fm.location ? `<span>· ${fm.location}</span>` : ''}
+            
             ${fm.readTime ? `<span>· ${fm.readTime}</span>` : ''}
           `;
           document.getElementById('report-desc').textContent = fm.description || '';
           document.getElementById('report-body').innerHTML = marked.parse(fm.body || '');
           document.getElementById('sb-type').textContent = fm.type || '';
           document.getElementById('sb-theme').textContent = fm.theme || '';
-          document.getElementById('sb-location').textContent = fm.location || '';
+          
           if (fm.tag) {
             document.getElementById('sb-tags').innerHTML = fm.tag.split(',')
               .map(t => `<span class="tag-pill">${t.trim()}</span>`).join('');
