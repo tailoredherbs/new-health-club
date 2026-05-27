@@ -91,15 +91,15 @@ exports.handler = async function(event) {
   }, payload);
 
   if (res.status === 200 || res.status === 201) {
-    // Trigger Netlify rebuild so new content appears immediately
+    // Trigger Netlify rebuild
     try {
       await makeRequest({
         hostname: 'api.netlify.com',
         path: '/build_hooks/6a16e59e82643e1cfcdebf08',
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Content-Length': '0' }
-      }, '');
-    } catch(e) {}
+        headers: { 'Content-Type': 'application/json', 'Content-Length': '2' }
+      }, '{}');
+    } catch(e) { console.log('Build hook error:', e.message); }
 
     return {
       statusCode: 200,
@@ -107,6 +107,7 @@ exports.handler = async function(event) {
       body: JSON.stringify({ success: true, path })
     };
   } else {
+    console.log('GitHub error status:', res.status, 'body:', res.body);
     return {
       statusCode: res.status,
       headers: { 'Content-Type': 'application/json' },
