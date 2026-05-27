@@ -1,4 +1,18 @@
 exports.handler = async function(event) {
+  // Debug endpoint
+  if (event.httpMethod === 'GET') {
+    const token = process.env.GITHUB_TOKEN;
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        hasToken: !!token,
+        tokenLength: token ? token.length : 0,
+        tokenStart: token ? token.substring(0, 6) : 'none'
+      })
+    };
+  }
+
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method not allowed' };
   }
