@@ -8,6 +8,7 @@ description: Bathhouses and recovery clubs are moving from niche wellness
   concepts into expansion-stage urban formats. The strongest operators are
   combining contrast therapy with hospitality, membership, programming and
   social ritual.
+image: /images/uploads/image11.png
 ---
 The bathhouse category is moving beyond sauna and cold plunge access.
 
