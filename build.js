@@ -6,14 +6,30 @@ function parseMarkdown(content, filename) {
   const fm = {};
   const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (match) {
-    match[1].split('\n').forEach(line => {
-      const colonIndex = line.indexOf(': ');
-      if (colonIndex > -1) {
-        const key = line.substring(0, colonIndex).trim();
-        const val = line.substring(colonIndex + 2).trim().replace(/^"|"$/g, '');
-        fm[key] = val;
+    // Parse frontmatter properly - handles values with colons in them
+    const lines = match[1].split('\n');
+    let currentKey = null;
+    let currentVal = [];
+
+    lines.forEach(line => {
+      // Check if this is a new key: value line
+      const keyMatch = line.match(/^([a-zA-Z_]+):\s?"?(.*?)"?\s*$/);
+      if (keyMatch) {
+        // Save previous key if exists
+        if (currentKey) {
+          fm[currentKey] = currentVal.join(' ').trim().replace(/^"|"$/g, '');
+        }
+        currentKey = keyMatch[1].trim();
+        currentVal = [keyMatch[2].trim()];
+      } else if (currentKey && line.trim()) {
+        // Continuation of previous value
+        currentVal.push(line.trim());
       }
     });
+    // Save last key
+    if (currentKey) {
+      fm[currentKey] = currentVal.join(' ').trim().replace(/^"|"$/g, '');
+    }
     fm.body = match[2].trim();
   }
   return { id, ...fm };
@@ -39,7 +55,6 @@ if (fs.existsSync(reportsDir)) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-// Write JSON files
 fs.writeFileSync('signals-data.json', JSON.stringify(signals, null, 2));
 fs.writeFileSync('reports-data.json', JSON.stringify(reports, null, 2));
 
