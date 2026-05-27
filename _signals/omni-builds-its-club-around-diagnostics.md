@@ -2,7 +2,7 @@
 title: Omni adds diagnostics and performance testing to its Bali club
 category: Opening
 location: Bali, Indonesia
-date: May 27, 2026
+date: Jan 15, 2026
 tag: Longevity Clubs, Diagnostics, Recovery, Performance
 description: Omni is framing its Bali club around diagnostics, performance
   testing, recovery, gym, café and co-working. Its public materials mention 70+
