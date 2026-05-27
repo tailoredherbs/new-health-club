@@ -180,7 +180,11 @@
       
       spaces.forEach(space => {
         const marker = L.marker([space.coordinates.lat,space.coordinates.lng]).addTo(map);
-        marker.bindPopup('<div style="font-weight:600;margin-bottom:4px;">'+space.name+'</div><div style="font-size:0.8125rem;color:#7a7066;">'+space.area+'</div>');
+        marker.bindPopup(
+          '<div style="font-weight:600;margin-bottom:6px;font-size:0.9375rem;">'+space.name+'</div>' +
+          '<div style="font-size:0.8rem;color:#7a7066;margin-bottom:10px;">'+space.area+'</div>' +
+          '<a href="#card-'+space.id+'" onclick="document.getElementById(\'card-'+space.id+'\').scrollIntoView({behavior:\'smooth\',block:\'center\'});document.querySelectorAll(\'.space-card\').forEach(c=>c.classList.remove(\'active\'));document.getElementById(\'card-'+space.id+'\').classList.add(\'active\');" style="font-size:0.8rem;color:#1a1614;text-decoration:none;font-weight:500;">View details ↓</a>'
+        );
         marker.on('click',() => highlightCard(space.id));
         markers[space.id] = marker;
       });
@@ -261,7 +265,7 @@
       function highlightCard(id) {
         document.querySelectorAll('.space-card').forEach(c => c.classList.remove('active'));
         const card = document.getElementById('card-'+id);
-        if (card) { card.classList.add('active'); card.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+        if (card) { card.classList.add('active'); }
       }
 
       createDropdown('area',filterOptions.area);
