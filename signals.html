@@ -224,7 +224,7 @@
     }
 
     // Fetch from Netlify Function
-    fetch('/.netlify/functions/get-signals')
+    fetch('/signals-data.json')
       .then(r => r.json())
       .then(data => {
         allSignals = data;
