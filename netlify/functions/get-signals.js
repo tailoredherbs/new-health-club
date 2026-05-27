@@ -3,26 +3,35 @@ const path = require('path');
 
 exports.handler = async function(event, context) {
   try {
-    const signalsDir = path.join(__dirname, '../../_signals');
-    
-    // Check if directory exists
-    if (!fs.existsSync(signalsDir)) {
+    // Try multiple possible paths
+    const possiblePaths = [
+      path.join(process.cwd(), '_signals'),
+      path.join(__dirname, '../../_signals'),
+      path.join(__dirname, '../../../_signals'),
+      '/var/task/_signals'
+    ];
+
+    let signalsDir = null;
+    for (const p of possiblePaths) {
+      if (fs.existsSync(p)) {
+        signalsDir = p;
+        break;
+      }
+    }
+
+    if (!signalsDir) {
       return {
         statusCode: 200,
         headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-        body: JSON.stringify([])
+        body: JSON.stringify({ debug: 'no dir found', cwd: process.cwd(), dirname: __dirname })
       };
     }
 
-    const files = fs.readdirSync(signalsDir)
-      .filter(f => f.endsWith('.md'))
-      .reverse(); // newest first (alphabetical reverse works with date-prefixed names)
+    const files = fs.readdirSync(signalsDir).filter(f => f.endsWith('.md'));
 
     const signals = files.map(filename => {
       const content = fs.readFileSync(path.join(signalsDir, filename), 'utf8');
       const id = filename.replace('.md', '');
-      
-      // Parse frontmatter
       const fm = {};
       const match = content.match(/^---\n([\s\S]*?)\n---/);
       if (match) {
@@ -35,7 +44,6 @@ exports.handler = async function(event, context) {
           }
         });
       }
-
       return {
         id,
         title: fm.title || '',
@@ -48,7 +56,6 @@ exports.handler = async function(event, context) {
       };
     });
 
-    // Sort by date descending
     signals.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return {
@@ -59,7 +66,8 @@ exports.handler = async function(event, context) {
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: err.message })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ error: err.message, cwd: process.cwd(), dirname: __dirname })
     };
   }
 };
