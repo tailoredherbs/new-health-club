@@ -148,17 +148,21 @@
     }
 
     if (reportId) {
-      fetch(`_reports/${reportId}.md`)
-        .then(r => r.text())
-        .then(text => {
-          const fm = parseFrontmatter(text);
+      fetch('/reports-data.json')
+        .then(r => r.json())
+        .then(reports => {
+          const fm = reports.find(r => r.id === reportId);
+          if (!fm) {
+            document.getElementById('report-title').textContent = 'Report not found';
+            return;
+          }
           document.title = `${fm.title} — The New Health Club`;
           document.getElementById('report-type').textContent = fm.type || '';
           document.getElementById('report-title').textContent = fm.title || '';
           document.getElementById('report-meta').innerHTML = `
-            <span>📅 ${formatDate(fm.date)}</span>
-            <span>📍 ${fm.location || ''}</span>
-            ${fm.readTime ? `<span>⏱ ${fm.readTime}</span>` : ''}
+            <span>${formatDate(fm.date)}</span>
+            ${fm.location ? `<span>· ${fm.location}</span>` : ''}
+            ${fm.readTime ? `<span>· ${fm.readTime}</span>` : ''}
           `;
           document.getElementById('report-desc').textContent = fm.description || '';
           document.getElementById('report-body').innerHTML = marked.parse(fm.body || '');
