@@ -1,5 +1,5 @@
 ---
-title: Nirvana Life turns hotel ownership into a wellness-club produc
+title: Nirvana Life turns hotel ownership into a wellness-club product
 category: Expansion
 location: Bali, Indonesia
 date: May 27, 2026
