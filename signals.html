@@ -16,68 +16,117 @@
     .nav-links a:hover { color: #1a1614; }
     .nav-links a.active { color: #1a1614; border-bottom: 1px solid #1a1614; padding-bottom: 2px; }
 
-    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 380px; }
-    .hero-left { padding: 72px 48px; display: flex; flex-direction: column; justify-content: center; }
-    .hero-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 20px; }
-    .hero-title { font-size: 3rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 24px; }
-    .hero-divider { width: 40px; height: 1px; background: #c8c0b4; margin-bottom: 20px; }
-    .hero-copy { font-size: 0.9375rem; line-height: 1.75; color: #3a3630; max-width: 380px; }
-    .hero-right { overflow: hidden; }
-    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1fr 380px; gap: 48px; padding: 64px 48px 48px; border-bottom: 1px solid #e8e6e1; align-items: start; }
+    .hero-eyebrow { font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7a7066; margin-bottom: 16px; }
+    .hero-title { font-size: 2.75rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }
+    .hero-copy { font-size: 0.9375rem; line-height: 1.75; color: #3a3630; max-width: 480px; }
+    .hero-copy strong { font-weight: 500; color: #1a1614; }
 
-    .filter-bar { padding: 20px 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .filter-select { padding: 9px 14px; font-size: 0.8rem; border: 1px solid #d4cfc5; background: #fafaf8; cursor: pointer; border-radius: 2px; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+    /* SUBSCRIBE BOX */
+    .subscribe-box { border: 1px solid #e8e6e1; padding: 28px; background: #ffffff; }
+    .subscribe-box-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .subscribe-asterisk { font-size: 1.25rem; color: #7a7066; }
+    .subscribe-title { font-size: 0.9375rem; font-weight: 500; }
+    .subscribe-desc { font-size: 0.8125rem; color: #7a7066; line-height: 1.6; margin-bottom: 20px; }
+    .subscribe-form { display: flex; gap: 0; }
+    .subscribe-form input { flex: 1; padding: 11px 14px; border: 1px solid #d4cfc5; background: #fafaf8; font-size: 0.8125rem; outline: none; font-family: inherit; }
+    .subscribe-form button { padding: 11px 18px; background: #1a1614; color: #fafaf8; border: none; cursor: pointer; font-size: 0.8125rem; white-space: nowrap; font-family: inherit; }
+
+    /* FILTER BAR */
+    .filter-bar { padding: 16px 48px; border-bottom: 1px solid #e8e6e1; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .filter-dropdown { position: relative; }
+    .filter-select { padding: 8px 14px; font-size: 0.8rem; border: 1px solid #d4cfc5; background: #fafaf8; cursor: pointer; border-radius: 2px; display: flex; align-items: center; gap: 6px; white-space: nowrap; font-family: inherit; }
     .filter-select:hover { border-color: #1a1614; }
     .filter-spacer { flex: 1; }
-    .search-wrap { display: flex; align-items: center; gap: 10px; border: 1px solid #d4cfc5; padding: 9px 14px; min-width: 260px; }
-    .search-wrap input { border: none; background: transparent; font-size: 0.8rem; outline: none; width: 100%; }
+    .search-wrap { display: flex; align-items: center; gap: 8px; border: 1px solid #d4cfc5; padding: 8px 14px; min-width: 220px; }
+    .search-wrap input { border: none; background: transparent; font-size: 0.8rem; outline: none; width: 100%; font-family: inherit; }
+    .filter-icon-btn { padding: 8px 12px; border: 1px solid #d4cfc5; background: transparent; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 0.8rem; font-family: inherit; }
 
+    /* TABS */
     .filter-tabs { padding: 0 48px; border-bottom: 1px solid #e8e6e1; display: flex; overflow-x: auto; }
-    .filter-tab { padding: 14px 18px; font-size: 0.8rem; color: #7a7066; cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; background: none; border-left: none; border-right: none; border-top: none; transition: all 0.15s; }
+    .filter-tab { padding: 12px 16px; font-size: 0.8rem; color: #7a7066; cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; background: none; border-left: none; border-right: none; border-top: none; transition: all 0.15s; font-family: inherit; }
     .filter-tab:hover { color: #1a1614; }
     .filter-tab.active { color: #1a1614; border-bottom-color: #1a1614; }
 
-    .signals-section { padding: 0 48px 80px; }
-    .signal-row { display: grid; grid-template-columns: 100px 1fr auto; gap: 28px; padding: 28px 0; border-bottom: 1px solid #e8e6e1; align-items: start; text-decoration: none; color: inherit; transition: opacity 0.2s; }
-    .signal-row:hover { opacity: 0.65; }
-    .signal-icon { width: 100px; height: 100px; background: #f0ede8; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .signal-icon svg { width: 32px; height: 32px; stroke: #9a9088; fill: none; stroke-width: 1.5; }
-    .signal-meta-top { font-size: 0.6375rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7a7066; margin-bottom: 10px; display: flex; gap: 10px; align-items: center; }
-    .meta-sep { color: #c8c0b4; }
-    .signal-title { font-size: 1.125rem; font-weight: 400; margin-bottom: 10px; line-height: 1.35; }
-    .signal-desc { font-size: 0.875rem; line-height: 1.7; color: #5a5248; max-width: 540px; }
-    .signal-right { font-size: 0.8rem; color: #9a9088; white-space: nowrap; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; padding-top: 4px; }
-    .signal-arrow { font-size: 1rem; color: #c8c0b4; }
-    .dot { width: 3px; height: 3px; border-radius: 50%; background: #c8c0b4; display: inline-block; }
+    /* MAIN LAYOUT */
+    .main-layout { display: grid; grid-template-columns: 1fr 280px; gap: 0; }
 
-    .load-more { display: flex; justify-content: center; padding: 48px 0; }
-    .load-more-btn { padding: 14px 32px; border: 1px solid #d4cfc5; background: transparent; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+    /* FEED */
+    .feed { border-right: 1px solid #e8e6e1; }
+    .signal-item { display: grid; grid-template-columns: 72px 1fr; gap: 0; border-bottom: 1px solid #e8e6e1; text-decoration: none; color: inherit; transition: background 0.15s; }
+    .signal-item:hover { background: #f5f3ef; }
+    .signal-time { padding: 20px 16px 20px 48px; font-size: 0.75rem; color: #9a9088; white-space: nowrap; padding-top: 22px; }
+    .signal-content { padding: 20px 32px 20px 0; }
+    .signal-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+    .signal-badge { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; white-space: nowrap; }
+    .badge-opening { background: #e8f4e8; color: #2d6e2d; }
+    .badge-expansion { background: #e8eef8; color: #1e3a6e; }
+    .badge-funding { background: #fdf3e3; color: #7a4f00; }
+    .badge-partnership { background: #f3e8f8; color: #5a1e7a; }
+    .badge-product-launch { background: #fde8e8; color: #7a1e1e; }
+    .badge-real-estate { background: #e8f4f0; color: #1e5a45; }
+    .badge-leadership-move { background: #f0ede8; color: #5a4a3a; }
+    .badge-other { background: #f0ede8; color: #5a4a3a; }
+    .signal-title-text { font-size: 1rem; font-weight: 400; line-height: 1.35; }
+    .signal-desc-text { font-size: 0.875rem; line-height: 1.65; color: #3a3630; margin-bottom: 10px; }
+    .signal-footer { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .signal-location-text { font-size: 0.75rem; color: #7a7066; display: flex; align-items: center; gap: 4px; }
+    .signal-sep { color: #d4cfc5; font-size: 0.75rem; }
+    .signal-tag-item { font-size: 0.72rem; color: #7a7066; }
+
+    .load-more { padding: 32px 48px; }
+    .load-more-btn { padding: 12px 24px; border: 1px solid #d4cfc5; background: transparent; font-size: 0.8125rem; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.2s; font-family: inherit; }
     .load-more-btn:hover { border-color: #1a1614; background: #1a1614; color: #fafaf8; }
 
-    .empty-state { padding: 80px 0; text-align: center; color: #9a9088; font-size: 0.9rem; line-height: 1.8; }
-    .loading { padding: 80px 0; text-align: center; color: #9a9088; font-size: 0.875rem; }
+    .empty-state { padding: 80px 48px; color: #9a9088; font-size: 0.9rem; }
 
-    .footer-subscribe { background: #f5f3ef; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px; }
-    .footer-sub-left .asterisk { font-size: 1.5rem; color: #7a7066; margin-bottom: 8px; }
-    .footer-sub-left .title { font-size: 1rem; font-weight: 400; margin-bottom: 4px; }
-    .footer-sub-left .desc { font-size: 0.875rem; color: #7a7066; }
-    .subscribe-form { display: flex; flex: 0 0 420px; }
-    .subscribe-form input { flex: 1; padding: 13px 18px; border: 1px solid #d4cfc5; background: #fff; font-size: 0.875rem; outline: none; }
-    .subscribe-form button { padding: 13px 24px; background: #1a1614; color: #fafaf8; border: none; cursor: pointer; font-size: 0.875rem; white-space: nowrap; }
-    .footer-bar { background: #1a1614; padding: 20px 48px; display: flex; justify-content: space-between; align-items: center; }
-    .footer-copy { font-size: 0.75rem; color: #5a5248; }
-    .footer-nav { display: flex; gap: 24px; }
-    .footer-nav a { font-size: 0.75rem; color: #5a5248; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; }
+    /* SIDEBAR */
+    .sidebar { padding: 32px 28px; }
+    .sidebar-section { margin-bottom: 40px; }
+    .sidebar-title { font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: #7a7066; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #e8e6e1; }
+    .sidebar-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0ede8; cursor: pointer; transition: opacity 0.15s; }
+    .sidebar-item:hover { opacity: 0.6; }
+    .sidebar-item-name { font-size: 0.8375rem; color: #1a1614; }
+    .sidebar-item-count { font-size: 0.75rem; color: #9a9088; }
+    .sidebar-item.active .sidebar-item-name { font-weight: 500; }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-pill { font-size: 0.72rem; padding: 4px 10px; border: 1px solid #d4cfc5; color: #5a5248; cursor: pointer; border-radius: 2px; transition: all 0.15s; }
+    .tag-pill:hover { border-color: #1a1614; background: #1a1614; color: #fafaf8; }
+    .view-all-tags { font-size: 0.8rem; color: #1a1614; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; }
+    .submit-box { border: 1px solid #e8e6e1; padding: 20px; background: #ffffff; }
+    .submit-box-title { font-size: 0.9375rem; font-weight: 400; margin-bottom: 8px; }
+    .submit-box-desc { font-size: 0.8rem; color: #7a7066; line-height: 1.6; margin-bottom: 16px; }
+    .submit-link { font-size: 0.8rem; color: #1a1614; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
 
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { display: none; }
-      nav, .hero-left, .filter-bar, .filter-tabs, .signals-section, .footer-subscribe, .footer-bar { padding-left: 24px; padding-right: 24px; }
-      .signal-row { grid-template-columns: 64px 1fr; }
-      .signal-icon { width: 64px; height: 64px; }
-      .signal-right { display: none; }
-      .footer-subscribe { flex-direction: column; }
-      .subscribe-form { flex: none; width: 100%; }
+    /* FOOTER */
+    .footer-bottom { background: #1a1614; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-left { display: flex; align-items: center; gap: 16px; }
+    .footer-asterisk { font-size: 1rem; color: #5a5248; }
+    .footer-text { font-size: 0.8125rem; color: #7a7066; }
+    .footer-subscribe-bar { display: flex; gap: 0; flex: 0 0 300px; }
+    .footer-subscribe-bar input { flex: 1; padding: 10px 14px; border: 1px solid #3a3630; background: transparent; color: #fafaf8; font-size: 0.8125rem; outline: none; font-family: inherit; }
+    .footer-subscribe-bar input::placeholder { color: #5a5248; }
+    .footer-subscribe-bar button { padding: 10px 18px; background: #fafaf8; color: #1a1614; border: none; cursor: pointer; font-size: 0.8125rem; font-family: inherit; white-space: nowrap; }
+    .footer-nav-bar { background: #111; padding: 14px 48px; display: flex; justify-content: space-between; }
+    .footer-copy { font-size: 0.72rem; color: #3a3630; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 0.72rem; color: #3a3630; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    @media (max-width: 1024px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .feed { border-right: none; }
+      .sidebar { border-top: 1px solid #e8e6e1; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    }
+    @media (max-width: 768px) {
+      nav, .hero, .filter-bar, .filter-tabs, .load-more, .sidebar, .footer-bottom, .footer-nav-bar { padding-left: 20px; padding-right: 20px; }
+      .hero { grid-template-columns: 1fr; gap: 32px; }
+      .signal-time { padding-left: 20px; }
+      .signal-content { padding-right: 20px; }
+      .hero-title { font-size: 2rem; }
+      .sidebar { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 20px; }
+      .footer-subscribe-bar { flex: none; width: 100%; }
     }
   </style>
 </head>
@@ -88,34 +137,45 @@
       <li><a href="map.html">Index</a></li>
       <li><a href="signals.html" class="active">Signals</a></li>
       <li><a href="reports.html">Reports</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="about.html#contact">Contact</a></li>
+      <li><a href="about.html">About & Contact</a></li>
     </ul>
   </nav>
 
-  <section class="hero">
+  <!-- HERO -->
+  <div class="hero">
     <div class="hero-left">
       <div class="hero-eyebrow sans">Market Signals</div>
       <h1 class="hero-title">What's happening<br>in the category.</h1>
-      <div class="hero-divider"></div>
-      <p class="hero-copy sans">Curated intelligence on openings, partnerships, funding rounds, real estate moves, product launches and the signals shaping the future of health and longevity.</p>
+      <p class="hero-copy sans">A live feed of openings, expansions, funding rounds, partnerships, product launches and strategic moves shaping the future of <strong>wellness-led physical spaces</strong>.</p>
     </div>
-    <div class="hero-right">
-      <img src="new-health-club-hero-image.png" alt="Wellness space" />
-    </div>
-  </section>
-
-  <div class="filter-bar sans">
-    <div class="filter-select">All Categories <span>▾</span></div>
-    <div class="filter-select">All Regions <span>▾</span></div>
-    <div class="filter-select">Latest <span>▾</span></div>
-    <div class="filter-spacer"></div>
-    <div class="search-wrap">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a9088" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="text" placeholder="Search signals..." id="search-input" />
+    <div class="subscribe-box sans">
+      <div class="subscribe-box-header">
+        <span class="subscribe-asterisk">✳</span>
+        <span class="subscribe-title">Stay ahead of the category.</span>
+      </div>
+      <p class="subscribe-desc">New signals, reports, and analysis — straight to your inbox.</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Your email" />
+        <button>Subscribe</button>
+      </div>
     </div>
   </div>
 
+  <!-- FILTER BAR -->
+  <div class="filter-bar sans">
+    <div class="filter-select">All Categories <span>▾</span></div>
+    <div class="filter-select">All Regions <span>▾</span></div>
+    <div class="filter-select">All Types <span>▾</span></div>
+    <div class="filter-select">Latest <span>▾</span></div>
+    <div class="filter-spacer"></div>
+    <div class="search-wrap">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9a9088" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search signals..." id="search-input" />
+    </div>
+    <div class="filter-icon-btn">Filter ≡</div>
+  </div>
+
+  <!-- TABS -->
   <div class="filter-tabs sans">
     <button class="filter-tab active" data-cat="All">All</button>
     <button class="filter-tab" data-cat="Opening">Openings</button>
@@ -128,94 +188,148 @@
     <button class="filter-tab" data-cat="Other">Other</button>
   </div>
 
-  <section class="signals-section">
-    <div id="signals-list"><div class="loading sans">Loading signals...</div></div>
-    <div class="load-more" id="load-more" style="display:none;">
-      <button class="load-more-btn sans" id="load-more-btn">Load more signals <span>▾</span></button>
+  <!-- MAIN -->
+  <div class="main-layout">
+    <div class="feed" id="feed">
+      <div class="empty-state sans">Loading signals...</div>
     </div>
-  </section>
 
-  <div class="footer-subscribe sans">
-    <div class="footer-sub-left">
-      <div class="asterisk">✳</div>
-      <div class="title">Stay ahead of the category.</div>
-      <div class="desc">New signals, reports, and analysis — straight to your inbox.</div>
+    <!-- SIDEBAR -->
+    <div class="sidebar sans">
+      <div class="sidebar-section">
+        <div class="sidebar-title">Categories</div>
+        <div id="sidebar-cats">
+          <div class="sidebar-item active" data-cat="All"><span class="sidebar-item-name">All Categories</span></div>
+          <div class="sidebar-item" data-cat="Opening"><span class="sidebar-item-name">Openings</span></div>
+          <div class="sidebar-item" data-cat="Expansion"><span class="sidebar-item-name">Expansions</span></div>
+          <div class="sidebar-item" data-cat="Funding"><span class="sidebar-item-name">Funding</span></div>
+          <div class="sidebar-item" data-cat="Partnership"><span class="sidebar-item-name">Partnerships</span></div>
+          <div class="sidebar-item" data-cat="Product Launch"><span class="sidebar-item-name">Product Launches</span></div>
+          <div class="sidebar-item" data-cat="Real Estate"><span class="sidebar-item-name">Real Estate</span></div>
+          <div class="sidebar-item" data-cat="Leadership Move"><span class="sidebar-item-name">Leadership Moves</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Regions</div>
+        <div id="sidebar-regions">
+          <div class="sidebar-item active" data-region="All"><span class="sidebar-item-name">All Regions</span></div>
+          <div class="sidebar-item" data-region="Europe"><span class="sidebar-item-name">Europe</span></div>
+          <div class="sidebar-item" data-region="North America"><span class="sidebar-item-name">North America</span></div>
+          <div class="sidebar-item" data-region="Asia"><span class="sidebar-item-name">Asia</span></div>
+          <div class="sidebar-item" data-region="Global"><span class="sidebar-item-name">Global</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Top Tags</div>
+        <div class="tag-cloud" id="tag-cloud"></div>
+      </div>
+
+      <div class="submit-box">
+        <div class="submit-box-title">Have a signal to share?</div>
+        <p class="submit-box-desc">Let us know about key moves shaping the category.</p>
+        <a href="about.html#contact" class="submit-link">Submit a signal →</a>
+      </div>
     </div>
-    <div class="subscribe-form">
+  </div>
+
+  <div class="load-more" id="load-more" style="display:none;">
+    <button class="load-more-btn sans" id="load-more-btn">Load more signals ▾</button>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bottom sans">
+    <div class="footer-left">
+      <span class="footer-asterisk">✳</span>
+      <div>
+        <div class="footer-text" style="font-weight:500;">New signals, every day.</div>
+        <div class="footer-text">Built for operators, investors and builders.</div>
+      </div>
+    </div>
+    <div class="footer-subscribe-bar">
       <input type="email" placeholder="Your email" />
       <button>Subscribe</button>
     </div>
   </div>
-  <footer class="footer-bar sans">
+  <div class="footer-nav-bar sans">
     <span class="footer-copy">© The New Health Club</span>
-    <nav class="footer-nav">
+    <div class="footer-links">
       <a href="#">Privacy</a>
       <a href="#">Terms</a>
       <a href="about.html#contact">Contact</a>
-    </nav>
-  </footer>
+    </div>
+  </div>
 
   <script>
-    const icons = {
-      'Real Estate': `<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-      'Opening': `<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>`,
-      'Expansion': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>`,
-      'Funding': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v2M12 16v2M8 12h2M14 12h2"/></svg>`,
-      'Partnership': `<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>`,
-      'Product Launch': `<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>`,
-      'Leadership Move': `<svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
-      'Other': `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`
+    const badgeClass = {
+      'Opening': 'badge-opening',
+      'Expansion': 'badge-expansion',
+      'Funding': 'badge-funding',
+      'Partnership': 'badge-partnership',
+      'Product Launch': 'badge-product-launch',
+      'Real Estate': 'badge-real-estate',
+      'Leadership Move': 'badge-leadership-move',
+      'Other': 'badge-other'
     };
+
+    function timeAgo(dateStr) {
+      if (!dateStr) return '';
+      const d = new Date(dateStr);
+      const now = new Date();
+      const diff = Math.floor((now - d) / 1000 / 60);
+      if (diff < 60) return diff <= 1 ? 'NOW' : `${diff}m ago`;
+      if (diff < 1440) return `${Math.floor(diff/60)}h ago`;
+      const days = Math.floor(diff/1440);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
 
     let allSignals = [];
     let activeCategory = 'All';
+    let activeRegion = 'All';
     let searchQuery = '';
-    const PAGE_SIZE = 10;
+    const PAGE_SIZE = 15;
     let showing = PAGE_SIZE;
-
-    function formatDate(dateStr) {
-      if (!dateStr) return '';
-      const d = new Date(dateStr);
-      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-    }
 
     function getFiltered() {
       return allSignals.filter(s => {
         const catMatch = activeCategory === 'All' || s.category === activeCategory;
+        const regionMatch = activeRegion === 'All' || (s.location && s.location.includes(activeRegion)) || s.region === activeRegion;
         const searchMatch = !searchQuery ||
           s.title.toLowerCase().includes(searchQuery) ||
-          s.description.toLowerCase().includes(searchQuery) ||
-          s.location.toLowerCase().includes(searchQuery);
-        return catMatch && searchMatch;
+          (s.description && s.description.toLowerCase().includes(searchQuery)) ||
+          (s.location && s.location.toLowerCase().includes(searchQuery));
+        return catMatch && regionMatch && searchMatch;
       });
     }
 
-    function renderSignals() {
+    function renderFeed() {
       const filtered = getFiltered();
-      const list = document.getElementById('signals-list');
+      const feed = document.getElementById('feed');
       const toShow = filtered.slice(0, showing);
 
       if (filtered.length === 0) {
-        list.innerHTML = '<div class="empty-state sans"><p>No signals yet.</p><p style="font-size:0.8rem;margin-top:8px;">Check back soon.</p></div>';
+        feed.innerHTML = '<div class="empty-state sans">No signals yet. Check back soon.</div>';
         document.getElementById('load-more').style.display = 'none';
         return;
       }
 
-      list.innerHTML = toShow.map(s => `
-        <a href="signal.html?id=${s.id}" class="signal-row">
-          <div class="signal-icon">${icons[s.category] || icons['Other']}</div>
-          <div>
-            <div class="signal-meta-top sans">
-              <span>${s.category}</span>
-              <span class="meta-sep">·</span>
-              <span>${s.location}</span>
+      feed.innerHTML = toShow.map(s => `
+        <a href="signal.html?id=${s.id}" class="signal-item">
+          <div class="signal-time sans">${timeAgo(s.date)}</div>
+          <div class="signal-content">
+            <div class="signal-top">
+              <span class="signal-badge sans ${badgeClass[s.category] || 'badge-other'}">${s.category}</span>
             </div>
-            <div class="signal-title">${s.title}</div>
-            <div class="signal-desc sans">${s.description}</div>
-          </div>
-          <div class="signal-right sans">
-            <span>${formatDate(s.date)}</span>
-            <span class="signal-arrow">→</span>
+            <div class="signal-title-text">${s.title}</div>
+            <div class="signal-desc-text sans">${s.description || ''}</div>
+            <div class="signal-footer sans">
+              <span class="signal-location-text">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                ${s.location || ''}
+              </span>
+              ${s.tag ? `<span class="signal-sep">·</span><span class="signal-tag-item">${s.tag}</span>` : ''}
+            </div>
           </div>
         </a>
       `).join('');
@@ -223,25 +337,63 @@
       document.getElementById('load-more').style.display = filtered.length > showing ? 'flex' : 'none';
     }
 
-    // Fetch from Netlify Function
+    function buildTagCloud(signals) {
+      const tagCount = {};
+      signals.forEach(s => {
+        if (s.tag) s.tag.split(',').forEach(t => {
+          const tag = t.trim();
+          tagCount[tag] = (tagCount[tag] || 0) + 1;
+        });
+      });
+      const top = Object.entries(tagCount).sort((a,b) => b[1]-a[1]).slice(0,8);
+      document.getElementById('tag-cloud').innerHTML = top.map(([tag]) =>
+        `<span class="tag-pill">${tag}</span>`
+      ).join('');
+    }
+
     fetch('/signals-data.json')
       .then(r => r.json())
       .then(data => {
         allSignals = data;
-        renderSignals();
+        renderFeed();
+        buildTagCloud(data);
       })
       .catch(() => {
-        document.getElementById('signals-list').innerHTML = '<div class="empty-state sans">Signals coming soon.</div>';
+        document.getElementById('feed').innerHTML = '<div class="empty-state sans">Signals coming soon.</div>';
       });
 
     // Tabs
     document.querySelectorAll('.filter-tab').forEach(tab => {
       tab.addEventListener('click', () => {
         document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('[data-cat]').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         activeCategory = tab.dataset.cat;
         showing = PAGE_SIZE;
-        renderSignals();
+        renderFeed();
+      });
+    });
+
+    // Sidebar cats
+    document.querySelectorAll('[data-cat]').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('[data-cat]').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        item.classList.add('active');
+        activeCategory = item.dataset.cat;
+        showing = PAGE_SIZE;
+        renderFeed();
+      });
+    });
+
+    // Sidebar regions
+    document.querySelectorAll('[data-region]').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('[data-region]').forEach(t => t.classList.remove('active'));
+        item.classList.add('active');
+        activeRegion = item.dataset.region;
+        showing = PAGE_SIZE;
+        renderFeed();
       });
     });
 
@@ -249,13 +401,13 @@
     document.getElementById('search-input').addEventListener('input', e => {
       searchQuery = e.target.value.toLowerCase();
       showing = PAGE_SIZE;
-      renderSignals();
+      renderFeed();
     });
 
     // Load more
     document.getElementById('load-more-btn').addEventListener('click', () => {
       showing += PAGE_SIZE;
-      renderSignals();
+      renderFeed();
     });
   </script>
 </body>
