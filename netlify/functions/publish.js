@@ -1,5 +1,12 @@
 const https = require('https');
 
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Content-Type': 'application/json'
+};
+
 function makeRequest(options, body) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
@@ -14,6 +21,11 @@ function makeRequest(options, body) {
 }
 
 exports.handler = async function(event) {
+  // Handle CORS preflight
+  if (event.httpMethod === 'OPTIONS') {
+    return { statusCode: 200, headers: CORS_HEADERS, body: '' };
+  }
+
   // Debug endpoint
   if (event.httpMethod === 'GET') {
     const token = process.env.GITHUB_TOKEN;
@@ -90,6 +102,9 @@ exports.handler = async function(event) {
     }
   }, payload);
 
+  console.log('GitHub response status:', res.status);
+  console.log('GitHub response body:', res.body);
+
   if (res.status === 200 || res.status === 201) {
     // Trigger Netlify rebuild
     try {
@@ -111,7 +126,7 @@ exports.handler = async function(event) {
     return {
       statusCode: res.status,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: res.body || 'Unknown error' })
+      body: JSON.stringify({ error: res.body, status: res.status })
     };
   }
 };
