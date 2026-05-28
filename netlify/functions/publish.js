@@ -3,7 +3,7 @@ const https = require('https');
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Headers': 'Content-Type, x-deploy-secret',
   'Content-Type': 'application/json'
 };
 
@@ -21,73 +21,62 @@ function makeRequest(options, body) {
 }
 
 exports.handler = async function(event) {
-  // Handle CORS preflight
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 200, headers: CORS_HEADERS, body: '' };
   }
 
-  // Debug endpoint
   if (event.httpMethod === 'GET') {
     const token = process.env.GITHUB_TOKEN;
     return {
       statusCode: 200,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        hasToken: !!token,
-        tokenLength: token ? token.length : 0,
-        tokenStart: token ? token.substring(0, 6) : 'none'
-      })
+      headers: CORS_HEADERS,
+      body: JSON.stringify({ hasToken: !!token, tokenLength: token ? token.length : 0, tokenStart: token ? token.substring(0, 6) : 'none' })
     };
   }
 
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method not allowed' };
+    return { statusCode: 405, headers: CORS_HEADERS, body: 'Method not allowed' };
+  }
+
+  // Check deploy secret
+  const secret = process.env.DEPLOY_SECRET;
+  const provided = event.headers['x-deploy-secret'];
+  if (secret && provided !== secret) {
+    return { statusCode: 401, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Unauthorized' }) };
   }
 
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
-    return { statusCode: 500, body: JSON.stringify({ error: 'No token configured' }) };
+    return { statusCode: 500, headers: CORS_HEADERS, body: JSON.stringify({ error: 'No token configured' }) };
   }
 
   let body;
   try {
     body = JSON.parse(event.body);
   } catch(e) {
-    return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON' }) };
+    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Invalid JSON' }) };
   }
 
   const { path, content, message } = body;
   if (!path || !content || !message) {
-    return { statusCode: 400, body: JSON.stringify({ error: 'Missing path, content or message' }) };
+    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Missing path, content or message' }) };
   }
 
   const encoded = Buffer.from(content).toString('base64');
   const repo = 'tailoredherbs/new-health-club';
 
-  // Check if file exists to get sha
   let sha;
   try {
     const checkRes = await makeRequest({
       hostname: 'api.github.com',
       path: `/repos/${repo}/contents/${path}`,
       method: 'GET',
-      headers: {
-        'Authorization': `token ${token}`,
-        'User-Agent': 'NewHealthClub',
-        'Accept': 'application/vnd.github.v3+json'
-      }
+      headers: { 'Authorization': `token ${token}`, 'User-Agent': 'NewHealthClub', 'Accept': 'application/vnd.github.v3+json' }
     });
-    if (checkRes.status === 200) {
-      sha = JSON.parse(checkRes.body).sha;
-    }
+    if (checkRes.status === 200) sha = JSON.parse(checkRes.body).sha;
   } catch(e) {}
 
-  // Publish file
-  const payload = JSON.stringify({
-    message,
-    content: encoded,
-    ...(sha ? { sha } : {})
-  });
+  const payload = JSON.stringify({ message, content: encoded, ...(sha ? { sha } : {}) });
 
   const res = await makeRequest({
     hostname: 'api.github.com',
@@ -102,11 +91,7 @@ exports.handler = async function(event) {
     }
   }, payload);
 
-  console.log('GitHub response status:', res.status);
-  console.log('GitHub response body:', res.body);
-
   if (res.status === 200 || res.status === 201) {
-    // Trigger Netlify rebuild
     try {
       await makeRequest({
         hostname: 'api.netlify.com',
@@ -114,19 +99,9 @@ exports.handler = async function(event) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Content-Length': '2' }
       }, '{}');
-    } catch(e) { console.log('Build hook error:', e.message); }
-
-    return {
-      statusCode: 200,
-      headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ success: true, path })
-    };
+    } catch(e) {}
+    return { statusCode: 200, headers: CORS_HEADERS, body: JSON.stringify({ success: true, path }) };
   } else {
-    console.log('GitHub error status:', res.status, 'body:', res.body);
-    return {
-      statusCode: res.status,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: res.body, status: res.status })
-    };
+    return { statusCode: res.status, headers: CORS_HEADERS, body: JSON.stringify({ error: res.body }) };
   }
 };
