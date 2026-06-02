@@ -40,7 +40,14 @@ exports.handler = async function(event) {
 
   // Check deploy secret
   const secret = process.env.DEPLOY_SECRET;
-  const provided = event.headers['x-deploy-secret'];
+  let body;
+  try {
+    body = JSON.parse(event.body);
+  } catch(e) {
+    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Invalid JSON' }) };
+  }
+
+  const provided = event.headers['x-deploy-secret'] || body.secret;
   if (secret && provided !== secret) {
     return { statusCode: 401, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Unauthorized' }) };
   }
@@ -48,13 +55,6 @@ exports.handler = async function(event) {
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
     return { statusCode: 500, headers: CORS_HEADERS, body: JSON.stringify({ error: 'No token configured' }) };
-  }
-
-  let body;
-  try {
-    body = JSON.parse(event.body);
-  } catch(e) {
-    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Invalid JSON' }) };
   }
 
   const { path, content, message } = body;
