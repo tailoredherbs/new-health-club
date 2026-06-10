@@ -60,7 +60,39 @@ if (fs.existsSync(reportsDir)) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+// Build spaces — venue index for the map (markdown -> spaces-data.json)
+const spacesDir = path.join(__dirname, '_spaces');
+let spaces = [];
+if (fs.existsSync(spacesDir)) {
+  const CATEGORY_ORDER = ['Longevity Sanctuaries', 'Execution Hubs', 'Practitioner-Led Boutiques', 'Retreats', 'Clubs'];
+  spaces = fs.readdirSync(spacesDir)
+    .filter(f => f.endsWith('.md'))
+    .map(f => {
+      const fm = parseMarkdown(fs.readFileSync(path.join(spacesDir, f), 'utf8'), f);
+      return {
+        id: fm.id,
+        name: fm.title || '',
+        area: fm.area || '',
+        region: fm.region || '',
+        category: fm.category || '',
+        primaryType: fm.primaryType || '',
+        status: fm.status || '',
+        coordinates: { lat: parseFloat(fm.lat), lng: parseFloat(fm.lng) },
+        bestFor: (fm.bestFor || '').split(',').map(s => s.trim()).filter(Boolean),
+        tags: (fm.tags || '').split(',').map(s => s.trim()).filter(Boolean),
+        note: fm.body || '',
+        links: { website: fm.website || '', instagram: fm.instagram || '' }
+      };
+    })
+    .filter(s => !isNaN(s.coordinates.lat) && !isNaN(s.coordinates.lng))
+    .sort((a, b) => {
+      const c = CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category);
+      return c !== 0 ? c : a.name.localeCompare(b.name);
+    });
+}
+
 fs.writeFileSync('signals-data.json', JSON.stringify(signals, null, 2));
 fs.writeFileSync('reports-data.json', JSON.stringify(reports, null, 2));
+fs.writeFileSync('spaces-data.json', JSON.stringify(spaces, null, 2));
 
-console.log(`Built ${signals.length} signals and ${reports.length} reports`);
+console.log(`Built ${signals.length} signals, ${reports.length} reports, ${spaces.length} spaces`);
