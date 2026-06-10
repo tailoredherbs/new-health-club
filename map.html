@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Index - The New Health Club</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Georgia, serif; color: #1a1614; background-color: #fafaf8; line-height: 1.6; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { font-family: 'Lora', Georgia, serif; color: #1a1614; background-color: #fafaf8; line-height: 1.6; }
+    .sans { font-family: 'Inter', -apple-system, sans-serif; }
     header { padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e8e6e1; }
     .back-link { font-size: 0.8125rem; color: #1a1614; text-decoration: none; }
     .logo { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; }
@@ -54,13 +57,23 @@
     footer { padding: 40px 48px; background-color: #1a1614; color: #7a7066; text-align: center; font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; }
     @media (max-width: 1024px) { .filters { grid-template-columns: 1fr; } .clear-filters { grid-column: span 1; } }
     @media (max-width: 768px) { header, .page-intro, .map-section, .filters, .spaces-section, footer { padding-left: 24px; padding-right: 24px; } .page-intro h1 { font-size: 2rem; } .map-container { height: 300px; } }
+  
+    /* --- Custom map identity --- */
+    .leaflet-popup-content-wrapper { background: #fafaf8; border: 1px solid #d4cfc5; border-radius: 2px; box-shadow: 0 2px 12px rgba(26,22,20,0.08); }
+    .leaflet-popup-tip { background: #fafaf8; border: 1px solid #d4cfc5; }
+    .leaflet-popup-content { margin: 16px 18px; font-family: 'Inter', -apple-system, sans-serif; }
+    .popup-name { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 1rem; color: #1a1614; margin-bottom: 4px; }
+    .popup-meta { font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: #7a7066; margin-bottom: 10px; }
+    .popup-link { font-size: 0.8rem; color: #1a1614; text-decoration: none; font-weight: 500; border-bottom: 1px solid #d4cfc5; }
+    .map-legend { background: #fafaf8; border: 1px solid #d4cfc5; border-radius: 2px; padding: 12px 14px; font-family: 'Inter', -apple-system, sans-serif; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: #5a5248; line-height: 2; }
+    .map-legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; vertical-align: middle; border: 1.5px solid #fafaf8; box-shadow: 0 0 0 1px rgba(26,22,20,0.15); }
   </style>
 </head>
 <body>
   <header>
     <a href="index.html" class="nav-logo sans" style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:#1a1614;">The New Health Club</a>
     <div class="logo sans">The New Health Club</div>
-    <ul style="display:flex;gap:32px;list-style:none;font-family:-apple-system,sans-serif;"><li><a href="map.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#1a1614;border-bottom:1px solid #1a1614;padding-bottom:2px;">Index</a></li><li><a href="signals.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Signals</a></li><li><a href="reports.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Reports</a></li><li><a href="about.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">About</a></li><li><a href="about.html#contact" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Contact</a></li></ul>
+    <ul style="display:flex;gap:32px;list-style:none;font-family: 'Inter', -apple-system, sans-serif;"><li><a href="map.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#1a1614;border-bottom:1px solid #1a1614;padding-bottom:2px;">Index</a></li><li><a href="signals.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Signals</a></li><li><a href="reports.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Reports</a></li><li><a href="about.html" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">About</a></li><li><a href="about.html#contact" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;color:#5a5248;">Contact</a></li></ul>
   </header>
   <section class="page-intro">
     <h1>Global Index</h1>
