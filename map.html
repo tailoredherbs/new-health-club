@@ -126,17 +126,40 @@
       const map = L.map('map').setView([30, -20], 2);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap',maxZoom:19}).addTo(map);
       const markers = {};
+      const CATEGORY_COLORS = {
+        'Longevity Sanctuaries': '#5b6d5e',
+        'Execution Hubs': '#9a4f3f',
+        'Practitioner-Led Boutiques': '#8a6f4d',
+        'Retreats': '#5e6d7d',
+        'Clubs': '#1a1614'
+      };
 
       spaces.forEach(space => {
-        const marker = L.marker([space.coordinates.lat,space.coordinates.lng]).addTo(map);
+        const color = CATEGORY_COLORS[space.category] || '#1a1614';
+        const marker = L.circleMarker([space.coordinates.lat, space.coordinates.lng], {
+          radius: 6.5, fillColor: color, fillOpacity: 0.95,
+          color: '#fafaf8', weight: 1.5
+        }).addTo(map);
+        marker.on('mouseover', () => marker.setStyle({ radius: 9 }));
+        marker.on('mouseout', () => marker.setStyle({ radius: 6.5 }));
         marker.bindPopup(
-          '<div style="font-weight:600;margin-bottom:6px;font-size:0.9375rem;">'+space.name+'</div>' +
-          '<div style="font-size:0.8rem;color:#7a7066;margin-bottom:10px;">'+space.area+'</div>' +
-          '<a href="#card-'+space.id+'" onclick="document.getElementById(\'card-'+space.id+'\').scrollIntoView({behavior:\'smooth\',block:\'center\'});document.querySelectorAll(\'.space-card\').forEach(c=>c.classList.remove(\'active\'));document.getElementById(\'card-'+space.id+'\').classList.add(\'active\');" style="font-size:0.8rem;color:#1a1614;text-decoration:none;font-weight:500;">View details ↓</a>'
+          '<div class="popup-name">'+space.name+'</div>' +
+          '<div class="popup-meta">'+space.category+' \u00b7 '+space.area+'</div>' +
+          '<a class="popup-link" href="#card-'+space.id+'" onclick="document.getElementById(\'card-'+space.id+'\').scrollIntoView({behavior:\'smooth\',block:\'center\'});document.querySelectorAll(\'.space-card\').forEach(c=>c.classList.remove(\'active\'));document.getElementById(\'card-'+space.id+'\').classList.add(\'active\');">View details \u2193</a>'
         );
         marker.on('click',() => highlightCard(space.id));
         markers[space.id] = marker;
       });
+
+      const legend = L.control({ position: 'bottomleft' });
+      legend.onAdd = function() {
+        const div = L.DomUtil.create('div', 'map-legend');
+        div.innerHTML = CATEGORY_ORDER
+          .filter(c => spaces.some(s => s.category === c))
+          .map(c => '<div><span class="dot" style="background:'+CATEGORY_COLORS[c]+'"></span>'+c+'</div>').join('');
+        return div;
+      };
+      legend.addTo(map);
 
       function createDropdown(cat,opts) {
         const cont = document.getElementById(cat+'-options');
