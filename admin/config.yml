@@ -6,6 +6,26 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "spaces"
+    label: "Spaces (Index)"
+    folder: "_spaces"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Area / City", name: "area", widget: "string", hint: "e.g. Canggu / Berawa, Mayfair / London" }
+      - { label: "Region", name: "region", widget: "select", options: ["North America", "Europe", "Middle East", "Asia-Pacific", "Latin America", "Africa"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Longevity Sanctuaries", "Execution Hubs", "Practitioner-Led Boutiques", "Retreats", "Clubs"] }
+      - { label: "Type", name: "primaryType", widget: "string", hint: "e.g. Recovery Club, Premium Gym, Longevity / Clinic, Wellness Resort" }
+      - { label: "Status", name: "status", widget: "select", options: ["Mapped", "To verify", "Announced", "Closed"] }
+      - { label: "Latitude", name: "lat", widget: "number", value_type: "float" }
+      - { label: "Longitude", name: "lng", widget: "number", value_type: "float" }
+      - { label: "Best For", name: "bestFor", widget: "string", hint: "Comma-separated, e.g. Recovery, Longevity, Social Wellness" }
+      - { label: "Tags", name: "tags", widget: "string", hint: "Comma-separated" }
+      - { label: "Website", name: "website", widget: "string", required: false }
+      - { label: "Instagram", name: "instagram", widget: "string", required: false, hint: "e.g. @othership" }
+      - { label: "Editorial Note", name: "body", widget: "markdown", hint: "1-3 sentences: what the venue is and why it matters" }
+
   - name: "signals"
     label: "Signals"
     folder: "_signals"
