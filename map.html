@@ -51,7 +51,7 @@
     .meta-label { color: #7a7066; }
     .space-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
     .tag { padding: 4px 10px; font-size: 0.6875rem; background-color: #f5f3ef; border-radius: 2px; color: #5a5248; }
-    .space-status { font-size: 0.75rem; color: #7a7066; font-style: italic; margin-bottom: 16px; }
+
     .space-note { font-size: 0.9375rem; line-height: 1.7; color: #3a3630; margin-bottom: 16px; }
     .space-links a { font-size: 0.8125rem; color: #1a1614; text-decoration: underline; margin-right: 16px; }
     footer { padding: 40px 48px; background-color: #1a1614; color: #7a7066; text-align: center; font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -229,7 +229,7 @@
           const card = document.createElement('div');
           card.className = 'space-card';
           card.id = 'card-'+s.id;
-          card.innerHTML = '<div class="space-header"><div class="space-name">'+s.name+'</div><div class="space-area sans">'+s.area+'</div></div><div class="space-meta sans"><div class="meta-item"><span class="meta-label">Category:</span><span>'+s.category+'</span></div><div class="meta-item"><span class="meta-label">Type:</span><span>'+s.primaryType+'</span></div><div class="meta-item"><span class="meta-label">Best for:</span><span>'+s.bestFor.join(', ')+'</span></div></div><div class="space-tags sans">'+s.tags.map(t => '<span class="tag">'+t+'</span>').join('')+'</div><div class="space-status sans">'+s.status+'</div><div class="space-note sans">'+s.note+'</div>'+(s.links.website||s.links.instagram ? '<div class="space-links sans">'+(s.links.website?'<a href="'+s.links.website+'" target="_blank">Website</a>':'')+(s.links.instagram?'<a href="https://instagram.com/'+s.links.instagram.replace('@','')+'" target="_blank">'+s.links.instagram+'</a>':'')+'</div>' : '');
+          card.innerHTML = '<div class="space-header"><div class="space-name">'+s.name+'</div><div class="space-area sans">'+s.area+'</div></div><div class="space-meta sans"><div class="meta-item"><span class="meta-label">Category:</span><span>'+s.category+'</span></div><div class="meta-item"><span class="meta-label">Type:</span><span>'+s.primaryType+'</span></div><div class="meta-item"><span class="meta-label">Best for:</span><span>'+s.bestFor.join(', ')+'</span></div></div><div class="space-tags sans">'+s.tags.map(t => '<span class="tag">'+t+'</span>').join('')+'</div><div class="space-note sans">'+s.note+'</div>'+(s.links.website||s.links.instagram ? '<div class="space-links sans">'+(s.links.website?'<a href="'+s.links.website+'" target="_blank">Website</a>':'')+(s.links.instagram?'<a href="https://instagram.com/'+s.links.instagram.replace('@','')+'" target="_blank">'+s.links.instagram+'</a>':'')+'</div>' : '');
           card.onclick = () => { map.setView([s.coordinates.lat,s.coordinates.lng],15); markers[s.id].openPopup(); highlightCard(s.id); };
           cont.appendChild(card);
         });
