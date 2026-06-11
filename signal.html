@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal — The New Health Club</title>
+  <title>Signal — The New Health Clubs</title>
+  <link rel="canonical" href="https://thenewhealthclubs.com/signals" />
+  <meta property="og:url" content="https://thenewhealthclubs.com/signals" />
+  <meta property="og:site_name" content="The New Health Clubs" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -51,7 +54,7 @@
 </head>
 <body>
   <nav class="sans">
-    <a href="index.html" class="nav-logo">The New Health Club</a>
+    <a href="index.html" class="nav-logo">The New Health Clubs</a>
     <ul class="nav-links">
       <li><a href="map.html">Index</a></li>
       <li><a href="signals.html" class="active">Signals</a></li>
@@ -80,7 +83,7 @@
   </article>
 
   <footer class="footer-bar sans">
-    <span class="footer-copy">© The New Health Club</span>
+    <span class="footer-copy">© The New Health Clubs</span>
     <nav class="footer-nav">
       <a href="#">Privacy</a>
       <a href="#">Terms</a>
@@ -107,7 +110,7 @@
               if (key) fm[key.trim()] = val.join(': ').trim().replace(/^"|"$/g, '');
             });
             const body = fmMatch[2];
-            document.title = `${fm.title} — The New Health Club`;
+            document.title = `${fm.title} — The New Health Clubs`;
             document.getElementById('signal-category').textContent = fm.category || '';
             document.getElementById('signal-location').textContent = fm.location || '';
             document.getElementById('signal-date').textContent = fm.date ? new Date(fm.date).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '';
