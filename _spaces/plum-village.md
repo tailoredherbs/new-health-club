@@ -10,7 +10,7 @@ lng: 0.47
 bestFor: "Meditation, Mindfulness, Community, Contemplative"
 tags: "Thich Nhat Hanh, Engaged Buddhism, Monastic Community, Mindfulness Retreats, France"
 website: "https://plumvillage.org"
-instagram: ""
+instagram: "plumvillagefrance"
 ---
 
 Thich Nhat Hanh's monastic community in the Dordogne — the largest Buddhist monastery in Europe, running lay retreats in engaged mindfulness. Not luxury; included on significance.

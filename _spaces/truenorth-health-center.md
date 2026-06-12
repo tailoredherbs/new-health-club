@@ -10,7 +10,7 @@ lng: -122.71
 bestFor: "Fasting, Detox, Medical Supervision"
 tags: "Water Fasting, Medically Supervised, Plant-Based, Clinical Research, California"
 website: "https://www.healthpromoting.com"
-instagram: ""
+instagram: "truenorthhealthfoundation"
 ---
 
 The leading center for medically supervised water-only fasting, with resident physicians and a clinical research record — the rigorous-clinical end of the fasting spectrum.

@@ -10,7 +10,7 @@ lng: 115.26
 bestFor: "Ayurveda, Panchakarma, Detox"
 tags: "Panchakarma Center, Doctor-Led, Ubud, Bali"
 website: "https://oneworldayurveda.com"
-instagram: ""
+instagram: "oneworldayurveda"
 ---
 
 A dedicated panchakarma center outside Ubud running physician-led classical programs — Bali's serious-Ayurveda counterpoint to spa-style offerings.

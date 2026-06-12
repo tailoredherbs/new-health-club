@@ -10,7 +10,7 @@ lng: 76.95
 bestFor: "Ayurveda, Panchakarma, Healing"
 tags: "Classical Ayurveda, Panchakarma, Physician-Led, Healing Village, Authentic Clinical"
 website: "https://vaidyagrama.com"
-instagram: ""
+instagram: "vaidyagramaayurveda"
 ---
 
 A physician-led classical Ayurveda healing village near Coimbatore practicing textbook panchakarma without resort softening — the authentic-clinical reference point of the category.

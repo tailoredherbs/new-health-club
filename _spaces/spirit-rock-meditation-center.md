@@ -10,7 +10,7 @@ lng: -122.64
 bestFor: "Meditation, Contemplative, Silent Retreats"
 tags: "Insight Meditation, Vipassana, Teacher Training, Marin County, Institution"
 website: "https://www.spiritrock.org"
-instagram: ""
+instagram: "spirit_rock"
 ---
 
 The West Coast institution of insight meditation — silent vipassana retreats and teacher training in the Marin hills, anchoring the secular-dharma end of the contemplative category.

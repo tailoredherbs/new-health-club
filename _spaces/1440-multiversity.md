@@ -10,7 +10,7 @@ lng: -122.06
 bestFor: "Workshops, Contemplative, Nature, Community"
 tags: "Learning Destination, Redwoods, Faculty-Led Programs, Wellbeing Campus, California"
 website: "https://www.1440.org"
-instagram: ""
+instagram: "1440multiversity"
 ---
 
 A redwood-campus learning destination near Santa Cruz hosting faculty-led programs across psychology, contemplative practice, and wellbeing — the institutional scale of the workshop-retreat format.
