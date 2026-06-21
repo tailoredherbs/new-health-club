@@ -1,0 +1,4021 @@
+[
+  {
+    "id": "ameyalli",
+    "name": "Ameyalli",
+    "area": "Midway / Park City, Utah",
+    "region": "North America",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Wellness Resort",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 40.512,
+      "lng": -111.474
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Spa",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Resort",
+      "Deepak Chopra",
+      "Geothermal Springs",
+      "Wellbeing Center",
+      "Longevity",
+      "Wellness Real Estate"
+    ],
+    "note": "A wellness resort and residential development in Midway near Park City, co-founded with Deepak Chopra, built around a geothermal spring, a wellbeing center, integrative health programming, and wellness real estate.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "canyon-ranch",
+    "name": "Canyon Ranch",
+    "area": "Tucson",
+    "region": "North America",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 32.2967,
+      "lng": -110.845
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Training",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Resort / Longevity Retreat",
+      "Longevity",
+      "Diagnostics",
+      "Biomarkers",
+      "Medical Wellness",
+      "Fitness",
+      "Nutrition",
+      "Spa",
+      "Retreats",
+      "Consultations",
+      "Healthy Aging"
+    ],
+    "note": "A legacy wellness resort brand combining retreat stays, fitness, nutrition, spa, medical wellness, healthy aging programs, diagnostics, expert consultations, and daily activities. Its LONGEVITY8 program adds 15+ diagnostic tests, 200+ biomarkers, and 18 one-on-one consultations inside a four-day longevity retreat format.",
+    "links": {
+      "website": "",
+      "instagram": "@canyonranch"
+    }
+  },
+  {
+    "id": "clinique-la-prairie",
+    "name": "Clinique La Prairie",
+    "area": "Montreux / Switzerland",
+    "region": "Europe",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 46.4312,
+      "lng": 6.9143
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Diagnostics",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Luxury Longevity Clinic",
+      "Longevity",
+      "Medical Wellness",
+      "Diagnostics",
+      "Rejuvenation",
+      "Preventive Health",
+      "Wellness Programs",
+      "Spa",
+      "Nutrition",
+      "Health Optimization",
+      "Luxury Hospitality"
+    ],
+    "note": "A luxury longevity clinic in Montreux offering health, wellness, rejuvenation, detox, revitalisation, and preventive-health programs. The clinic combines medical assessment, longevity science, holistic spa treatments, nutrition, health optimization, and high-end hospitality inside a destination medical wellness environment.",
+    "links": {
+      "website": "",
+      "instagram": "@cliniquelaprairie"
+    }
+  },
+  {
+    "id": "lanserhof-tegernsee",
+    "name": "Lanserhof Tegernsee",
+    "area": "Tegernsee / Germany",
+    "region": "Europe",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 47.768,
+      "lng": 11.674
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Detox"
+    ],
+    "tags": [
+      "Medical Health Resort",
+      "LANS Med Concept",
+      "Diagnostics",
+      "Detox",
+      "Sleep Medicine",
+      "Regeneration",
+      "Preventive Medicine",
+      "Luxury Hospitality"
+    ],
+    "note": "The flagship Lanserhof medical health resort above Lake Tegernsee, built around the LANS Med Concept: medical diagnostics, regeneration, detox, sleep medicine, movement, and structured recovery programs. Sister properties operate in Lans (Austria) and Sylt (Germany), extending the same clinical-resort model.",
+    "links": {
+      "website": "",
+      "instagram": "@lanserhof"
+    }
+  },
+  {
+    "id": "palazzo-fiuggi",
+    "name": "Palazzo Fiuggi",
+    "area": "Fiuggi / Italy",
+    "region": "Europe",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 41.8,
+      "lng": 13.219
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Detox",
+      "Spa"
+    ],
+    "tags": [
+      "Medical Wellness Resort",
+      "Diagnostics",
+      "Detox",
+      "Nutrition",
+      "Thermal Water",
+      "Anti-Aging",
+      "Luxury Hospitality"
+    ],
+    "note": "A medical wellness retreat in a restored palazzo outside Rome combining full diagnostics, medical-grade programs, thermal water heritage, nutrition by Heinz Beck, and structured longevity and detox protocols.",
+    "links": {
+      "website": "",
+      "instagram": "@palazzofiuggi"
+    }
+  },
+  {
+    "id": "sensei-porcupine-creek",
+    "name": "Sensei Porcupine Creek",
+    "area": "Rancho Mirage / Palm Springs",
+    "region": "North America",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 33.7461,
+      "lng": -116.3716
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Practice",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Resort / Retreat",
+      "Retreats",
+      "Fitness",
+      "Nutrition",
+      "Mindfulness",
+      "Meditation",
+      "Spa",
+      "Bodywork",
+      "Yoga",
+      "Golf",
+      "Luxury Hospitality"
+    ],
+    "note": "A luxury wellness retreat in Rancho Mirage built around guided wellbeing programs, one-on-one wellness sessions, fitness, yoga, nutrition, mindfulness, meditation, spa garden treatments, golf, tennis, and resort hospitality. The property combines data-informed wellbeing, expert guidance, movement, nourishment, rest, and high-end desert hospitality into a personalized retreat environment.",
+    "links": {
+      "website": "",
+      "instagram": "@senseiwellness"
+    }
+  },
+  {
+    "id": "sha-wellness-clinic",
+    "name": "SHA Wellness Clinic",
+    "area": "Spain",
+    "region": "Europe",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 38.674,
+      "lng": -0.0568
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Medical Wellness / Longevity Clinic",
+      "Longevity",
+      "Diagnostics",
+      "Functional Medicine",
+      "Regenerative Medicine",
+      "Stem Cells",
+      "Detox",
+      "Weight Optimization",
+      "Performance",
+      "Nutrition",
+      "Personalized Programs"
+    ],
+    "note": "A medical wellness and longevity clinic brand combining advanced diagnostics, functional medicine, regenerative medicine, cellular regeneration, nutrition, detox and weight optimization, stress reduction, performance programs, and personalized health stays. The model brings clinical assessment, longevity medicine, therapeutic programming, hospitality, and lifestyle change into a structured destination health environment.",
+    "links": {
+      "website": "",
+      "instagram": "@shawellnessclinic"
+    }
+  },
+  {
+    "id": "three-forks-ranch",
+    "name": "Three Forks Ranch",
+    "area": "Colorado / Wyoming border",
+    "region": "North America",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Wellness Resort",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 41.02,
+      "lng": -107.107
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Lifestyle",
+      "Nature"
+    ],
+    "tags": [
+      "Wellness Ranch",
+      "Mayo Clinic Partnership",
+      "Diagnostics",
+      "Outdoor Pursuits",
+      "Luxury Hospitality",
+      "Longevity"
+    ],
+    "note": "A 200,000-acre luxury ranch on the Colorado–Wyoming border pairing outdoor pursuits with a Mayo Clinic-affiliated wellness program covering diagnostics, executive health, and longevity-oriented assessment in a remote destination setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "zem-wellness-clinic",
+    "name": "Zem Wellness Clinic",
+    "area": "Altea / Spain",
+    "region": "Europe",
+    "category": "Longevity Sanctuaries",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 38.599,
+      "lng": -0.052
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Performance"
+    ],
+    "tags": [
+      "Medical Wellness Clinic",
+      "Diagnostics",
+      "Longevity",
+      "Sports Medicine",
+      "Nutrition",
+      "Mediterranean"
+    ],
+    "note": "A destination medical wellness clinic in Altea on the Spanish Mediterranean combining diagnostics, longevity programs, sports medicine, nutrition, and recovery in a resort-clinic format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "amani-biohacking-club",
+    "name": "AMANI Biohacking Club",
+    "area": "Kuala Lumpur / Bangsar",
+    "region": "Asia-Pacific",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 3.1318,
+      "lng": 101.676
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Training",
+      "Community"
+    ],
+    "tags": [
+      "Biohacking / Longevity Club",
+      "Longevity",
+      "Biohacking",
+      "Regenerative Therapies",
+      "Infusion Therapy",
+      "Stem Cells",
+      "Smart Fitness",
+      "Private Members Club",
+      "Leadership Wellness",
+      "Performance",
+      "Premium Wellness"
+    ],
+    "note": "A private biohacking and longevity club in Kuala Lumpur positioned around executive wellness, performance optimization, infusion therapy, regenerative stem cells, smart fitness, personalized interventions, and members-club infrastructure. The venue combines longevity, biohacking, leadership wellness, and private-club networking inside a high-end performance-focused wellness environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "bangkok-life-longevity-and-biohacking-hub",
+    "name": "Bangkok LIFE Longevity & Biohacking Hub",
+    "area": "Bangkok",
+    "region": "Asia-Pacific",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 13.7244,
+      "lng": 100.5365
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Diagnostics",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity / Biohacking Hub",
+      "Longevity",
+      "Biohacking",
+      "Diagnostics",
+      "Medical Wellness",
+      "Hyperbaric Oxygen",
+      "Cryotherapy",
+      "Recovery",
+      "Deep Tissue Massage",
+      "Data-Driven Wellness",
+      "Urban Luxury"
+    ],
+    "note": "A luxury longevity and biohacking hub at The St. Regis Bangkok combining doctor consultation, hyperbaric oxygen therapy, cryotherapy, deep tissue massage, individualized wellness programs, and data-driven health optimization. The venue brings medical wellness, recovery therapies, biohacking, and hospitality into an urban luxury wellness setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "chi-longevity",
+    "name": "Chi Longevity",
+    "area": "Singapore",
+    "region": "Asia-Pacific",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 1.305,
+      "lng": 103.824
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity Clinic",
+      "Precision Medicine",
+      "Biological Age",
+      "Diagnostics",
+      "Healthspan",
+      "Medical-Led"
+    ],
+    "note": "A medical longevity clinic in Singapore led by clinical longevity specialists, built around biological age assessment, precision diagnostics, and physician-supervised healthspan programs.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "continuum-club",
+    "name": "Continuum Club",
+    "area": "Greenwich Village / New York",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7335,
+      "lng": -74.0027
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Training",
+      "Strength",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Longevity / Clinic",
+      "Longevity",
+      "Diagnostics",
+      "AI Health Optimization",
+      "Recovery",
+      "Training",
+      "Strength",
+      "Biometrics",
+      "Concierge Wellness",
+      "Premium Fitness Crowd"
+    ],
+    "note": "An ultra-premium longevity and performance club in Greenwich Village combining diagnostics, biometrics, AI-driven health optimization, strength training, recovery, wearable data, and concierge-level wellness care. The model brings medical-style diagnostics, performance training, recovery, and data-driven optimization into a private high-touch club format.",
+    "links": {
+      "website": "",
+      "instagram": "@continuumclub"
+    }
+  },
+  {
+    "id": "extension-health",
+    "name": "Extension Health",
+    "area": "West Village / New York",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7336,
+      "lng": -74.0048
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity / Clinic",
+      "Longevity",
+      "Diagnostics",
+      "Biomarker Testing",
+      "Regenerative Therapies",
+      "Plasmapheresis",
+      "EBOO",
+      "Neuro Reset",
+      "Personalized Protocols",
+      "Health Optimization",
+      "Concierge Wellness"
+    ],
+    "note": "A New York longevity clinic with locations in the West Village and Midtown East, built around advanced diagnostics, biomarker testing, regenerative therapies, personalized health plans, and brain/body optimization. The clinic combines medical testing, longevity protocols, and advanced therapeutic interventions in a high-touch urban health optimization setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "fountain-life",
+    "name": "Fountain Life",
+    "area": "Naples, FL (multi-location)",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 26.19,
+      "lng": -81.75
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity Clinic",
+      "Full-Body MRI",
+      "AI Diagnostics",
+      "Preventive Health",
+      "APEX Membership",
+      "Multi-Location"
+    ],
+    "note": "A US longevity clinic network co-founded by Peter Diamandis, Tony Robbins and Dr. William Kapp, built around AI-assisted full-body diagnostics, early detection, and APEX membership programs, with centers across Florida, Texas and New York and further cities announced.",
+    "links": {
+      "website": "",
+      "instagram": "@fountainlife"
+    }
+  },
+  {
+    "id": "healthy-horizon",
+    "name": "Healthy Horizon",
+    "area": "Lisbon",
+    "region": "Europe",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 38.72,
+      "lng": -9.14
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Sauna",
+      "Ice Bath"
+    ],
+    "tags": [
+      "Longevity / Recovery Club",
+      "Longevity",
+      "Sauna",
+      "Cold Plunge",
+      "Red Light",
+      "Hyperbaric Oxygen",
+      "Float Therapy",
+      "Hydrogen Therapy",
+      "IHHT",
+      "Vibroacoustic",
+      "Structured Protocols",
+      "Community"
+    ],
+    "note": "A Lisbon longevity club built around weekly rituals, structured protocols, community, sauna and cold plunge, red light therapy, vibroacoustic therapy, hydrogen therapy, float therapy, IHHT, and hyperbaric oxygen. The venue packages recovery and longevity tools into a repeat-use club format for people treating health optimization as a regular practice.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "hudson-health-longevity-center",
+    "name": "Hudson Health Longevity Center",
+    "area": "New York",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 40.739,
+      "lng": -74.002
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity Clinic",
+      "Integrative Medicine",
+      "Diagnostics",
+      "Regenerative Therapies",
+      "Pain Medicine",
+      "NYC"
+    ],
+    "note": "A New York integrative and longevity medicine center combining advanced diagnostics, regenerative therapies, pain and performance medicine, and physician-led optimization protocols.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "livv-longevity-club",
+    "name": "LIVV Longevity Club",
+    "area": "Cardiff / San Diego County",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 33.0242,
+      "lng": -117.2803
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity / Clinic",
+      "Diagnostics",
+      "Concierge Care",
+      "Cold Plunge",
+      "Infrared Sauna",
+      "HBOT",
+      "NAD+",
+      "Peptides",
+      "Hormone Optimization",
+      "Medical Aesthetics",
+      "Recovery"
+    ],
+    "note": "A private members-only longevity club in Cardiff built around naturopathic medicine, biomarker-guided protocols, concierge care, cold plunge, infrared sauna, hyperbaric oxygen, NAD+ infusions, peptide therapy, hormone optimization, and medical aesthetics. LIVV is relevant as San Diego's clinical-luxury longevity layer: less of an open social wellness club and more of a high-touch precision-health environment for people pursuing measurable health optimization.",
+    "links": {
+      "website": "",
+      "instagram": "@livvnatural"
+    }
+  },
+  {
+    "id": "longevity-hub-by-clinique-la-prairie",
+    "name": "Longevity Hub by Clinique La Prairie",
+    "area": "Madrid (multi-city)",
+    "region": "Europe",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 40.425,
+      "lng": -3.688
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Urban Longevity Hub",
+      "Clinique La Prairie",
+      "Diagnostics",
+      "IV Therapy",
+      "Cellular Health",
+      "City Format"
+    ],
+    "note": "Clinique La Prairie's urban format bringing the Montreux clinic's longevity methodology into city hubs — diagnostics, cellular health treatments, IV therapy, and maintenance protocols between destination stays. Locations span Madrid, Bangkok, Doha, Dubai and further announced cities.",
+    "links": {
+      "website": "",
+      "instagram": "@cliniquelaprairie"
+    }
+  },
+  {
+    "id": "next-health",
+    "name": "Next Health",
+    "area": "Los Angeles",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.062,
+      "lng": -118.41
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Advanced Therapies"
+    ],
+    "tags": [
+      "Longevity / Clinic",
+      "Longevity",
+      "Biomarker Testing",
+      "IV Therapy",
+      "NAD+",
+      "Hormone Therapy",
+      "Regenerative Aesthetics",
+      "Cryotherapy",
+      "Hyperbaric Oxygen",
+      "EBOO"
+    ],
+    "note": "A multi-location health optimization and longevity clinic combining biomarker testing, IV therapy, NAD+, hormone therapy, regenerative aesthetics, cryotherapy, hyperbaric oxygen, infrared LED and sauna therapy, EBOO ozone therapy, and therapeutic plasma exchange. The model packages diagnostics, advanced wellness therapies, and personalized protocols into a scalable medical wellness center format.",
+    "links": {
+      "website": "",
+      "instagram": "@nexthealth"
+    }
+  },
+  {
+    "id": "ouronyx",
+    "name": "Ouronyx",
+    "area": "St James's / London",
+    "region": "Europe",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5074,
+      "lng": -0.137
+    },
+    "bestFor": [
+      "Aesthetics",
+      "Longevity",
+      "Diagnostics"
+    ],
+    "tags": [
+      "Facial Aesthetics",
+      "Regenerative Aesthetics",
+      "Doctor-Led",
+      "Luxury Clinic",
+      "Skin Health"
+    ],
+    "note": "A doctor-led facial aesthetics institution in St James's positioning injectable and regenerative treatments as considered, diagnostic-led luxury medicine rather than retail aesthetics. Also operates in Dubai.",
+    "links": {
+      "website": "",
+      "instagram": "@ouronyx"
+    }
+  },
+  {
+    "id": "upgrade-labs",
+    "name": "Upgrade Labs",
+    "area": "Los Angeles",
+    "region": "North America",
+    "category": "Execution Hubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.058,
+      "lng": -118.39
+    },
+    "bestFor": [
+      "Longevity",
+      "Training",
+      "Recovery",
+      "Diagnostics"
+    ],
+    "tags": [
+      "Biohacking / Performance Lab",
+      "Biohacking",
+      "Performance",
+      "Diagnostics",
+      "AI Training",
+      "Adaptive Bike",
+      "Cryotherapy",
+      "Red Light",
+      "PEMF",
+      "Recovery"
+    ],
+    "note": "A biohacking and performance lab concept built around diagnostics, AI-assisted training, adaptive exercise equipment, cryotherapy, red light, PEMF therapy, metabolic training, and recovery technologies. The venue combines data-driven fitness, recovery tools, and longevity-oriented optimization inside a tech-forward physical performance environment.",
+    "links": {
+      "website": "",
+      "instagram": "@upgradelabs"
+    }
+  },
+  {
+    "id": "beond",
+    "name": "Beond",
+    "area": "Cancún / Mexico",
+    "region": "North America",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 21.16,
+      "lng": -86.85
+    },
+    "bestFor": [
+      "Ibogaine Therapy",
+      "Recovery",
+      "Medical Supervision"
+    ],
+    "tags": [
+      "Medicalized Ibogaine",
+      "Addiction & Trauma",
+      "Clinical Protocols",
+      "Cancún"
+    ],
+    "note": "A medicalized ibogaine clinic in Cancún applying clinical protocols, cardiac monitoring and psychiatric support to a treatment historically run informally — the instructive example of the medicalization of psychedelic care.",
+    "links": {
+      "website": "https://www.beond.us",
+      "instagram": "@beond.us"
+    }
+  },
+  {
+    "id": "lanserhof-at-the-arts-club",
+    "name": "Lanserhof at The Arts Club",
+    "area": "Mayfair / London",
+    "region": "Europe",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5103,
+      "lng": -0.1465
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Training",
+      "Recovery"
+    ],
+    "tags": [
+      "Private Wellness Clinic",
+      "Medical Fitness Club",
+      "Diagnostics",
+      "Preventive Medicine",
+      "Biomechanics",
+      "Physiology",
+      "Performance",
+      "Fitness",
+      "Treatment Clinic",
+      "Private Members Club"
+    ],
+    "note": "A private wellness clinic and fitness members club in Mayfair combining diagnostic medicine, treatment services, biomechanics, physiology, performance testing, fitness, therapy, and Lanserhof's medical-wellness approach. The venue brings preventive medicine, high-tech diagnostics, movement analysis, treatment, and private-club fitness into one clinical wellness environment.",
+    "links": {
+      "website": "",
+      "instagram": "@lanserhof"
+    }
+  },
+  {
+    "id": "rosebar-longevity",
+    "name": "Rosebar Longevity",
+    "area": "Six Senses Ibiza",
+    "region": "Europe",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 39.094,
+      "lng": 1.512
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Spa",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Longevity Club",
+      "Six Senses",
+      "Diagnostics",
+      "IV Therapy",
+      "Cryotherapy",
+      "Regenerative Wellness",
+      "Ibiza"
+    ],
+    "note": "The longevity and regenerative wellness club inside Six Senses Ibiza, combining diagnostics, IV therapy, cryotherapy, hyperbaric oxygen, and aesthetic medicine within a resort-club setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "run3d",
+    "name": "Run3D",
+    "area": "Oxford / UK",
+    "region": "Europe",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Specialist Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 51.752,
+      "lng": -1.258
+    },
+    "bestFor": [
+      "Biomechanics",
+      "Performance",
+      "Injury Prevention"
+    ],
+    "tags": [
+      "3D Gait Analysis",
+      "Biomechanics",
+      "Running Clinic",
+      "Clinical Assessment",
+      "Performance"
+    ],
+    "note": "A clinical 3D gait analysis specialist using infrared motion-capture to assess running and walking biomechanics for injury prevention and performance, delivered through clinic partners.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "soma-aesthetics-and-longevity-club",
+    "name": "SOMA Aesthetics & Longevity Club",
+    "area": "Uluwatu",
+    "region": "Asia-Pacific",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.828,
+      "lng": 115.086
+    },
+    "bestFor": [
+      "Longevity",
+      "Aesthetics",
+      "Recovery",
+      "Preventive Health"
+    ],
+    "tags": [
+      "Longevity / Clinic",
+      "Longevity",
+      "Aesthetics",
+      "Regenerative Medicine",
+      "Doctor-Led Care",
+      "IV Drips",
+      "Skin Health",
+      "Preventive Health",
+      "Medical Aesthetics",
+      "Uluwatu"
+    ],
+    "note": "A doctor-led aesthetics and longevity clinic in Uluwatu combining medical aesthetics, preventive care, regenerative medicine, IV drips, skin health, injury recovery, stem cell therapy, body treatments, and personalized science-backed protocols. The clinic brings aesthetic medicine, regenerative health, and longevity-oriented care into a premium medical wellness setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "soneva-soul",
+    "name": "Soneva Soul",
+    "area": "Soneva Fushi / Maldives",
+    "region": "Asia-Pacific",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Wellness Resort",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 5.111,
+      "lng": 73.069
+    },
+    "bestFor": [
+      "Longevity",
+      "Spa",
+      "Recovery",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Resort Wellness",
+      "Integrated Medicine",
+      "Ayurveda",
+      "TCM",
+      "Regenerative Therapies",
+      "Maldives"
+    ],
+    "note": "Soneva's wellness concept combining integrative medicine, Ayurveda, Chinese medicine, regenerative therapies and spa across its Maldives and Thailand resorts, anchored by visiting specialist practitioners.",
+    "links": {
+      "website": "",
+      "instagram": "@soneva"
+    }
+  },
+  {
+    "id": "swiss-biohealth-clinic",
+    "name": "Swiss Biohealth Clinic",
+    "area": "Kreuzlingen / Switzerland",
+    "region": "Europe",
+    "category": "Practitioner-Led Boutiques",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 47.645,
+      "lng": 9.175
+    },
+    "bestFor": [
+      "Biological Dentistry",
+      "Longevity",
+      "Diagnostics"
+    ],
+    "tags": [
+      "Biological Dentistry",
+      "Biological Medicine",
+      "Ceramic Implants",
+      "Detox Protocols",
+      "Specialist Clinic"
+    ],
+    "note": "A specialist biological dentistry and biological medicine clinic in Kreuzlingen known for ceramic implants, the SWISS BIOHEALTH CONCEPT, and protocol-driven integration of dental and systemic health.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "1440-multiversity",
+    "name": "1440 Multiversity",
+    "area": "Scotts Valley / California",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 37.05,
+      "lng": -122.06
+    },
+    "bestFor": [
+      "Workshops",
+      "Contemplative",
+      "Nature",
+      "Community"
+    ],
+    "tags": [
+      "Learning Destination",
+      "Redwoods",
+      "Faculty-Led Programs",
+      "Wellbeing Campus",
+      "California"
+    ],
+    "note": "A redwood-campus learning destination near Santa Cruz hosting faculty-led programs across psychology, contemplative practice, and wellbeing — the institutional scale of the workshop-retreat format.",
+    "links": {
+      "website": "https://www.1440.org",
+      "instagram": "@1440multiversity"
+    }
+  },
+  {
+    "id": "ananda-in-the-himalayas",
+    "name": "Ananda in the Himalayas",
+    "area": "Narendranagar / India",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Wellness Resort",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 30.16,
+      "lng": 78.29
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Yoga",
+      "Detox",
+      "Spa"
+    ],
+    "tags": [
+      "Destination Spa",
+      "Ayurveda",
+      "Yoga",
+      "Vedanta",
+      "Himalayan Foothills",
+      "Legacy Brand"
+    ],
+    "note": "The benchmark luxury Ayurveda and yoga destination in the Himalayan foothills above Rishikesh — palace-estate setting with clinical Ayurvedic depth and Vedanta programming.",
+    "links": {
+      "website": "https://www.anandaspa.com",
+      "instagram": "@anandainthehimalayas"
+    }
+  },
+  {
+    "id": "beckley-retreats",
+    "name": "Beckley Retreats",
+    "area": "Oxfordshire / UK (programs global)",
+    "region": "Europe",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 51.785,
+      "lng": -1.16
+    },
+    "bestFor": [
+      "Psychedelic-Assisted",
+      "Contemplative",
+      "Somatic"
+    ],
+    "tags": [
+      "Psilocybin Retreats",
+      "Beckley Foundation Lineage",
+      "Preparation & Integration",
+      "Jamaica",
+      "Netherlands"
+    ],
+    "note": "Science-led psilocybin retreat programs in jurisdictions where legal (Jamaica, Netherlands), built on the Beckley Foundation research lineage with structured preparation and integration around in-person retreats.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "buchinger-wilhelmi",
+    "name": "Buchinger Wilhelmi",
+    "area": "Überlingen / Lake Constance",
+    "region": "Europe",
+    "category": "Retreats",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 47.768,
+      "lng": 9.171
+    },
+    "bestFor": [
+      "Fasting",
+      "Detox",
+      "Longevity",
+      "Recovery"
+    ],
+    "tags": [
+      "Clinical Fasting",
+      "Therapeutic Fasting",
+      "Medical Supervision",
+      "Legacy Institution",
+      "Lake Constance",
+      "Marbella"
+    ],
+    "note": "The clinical fasting institution — a century of medically supervised therapeutic fasting on Lake Constance, with a sister clinic in Marbella. The global reference standard for the fasting retreat category.",
+    "links": {
+      "website": "https://www.buchinger-wilhelmi.com",
+      "instagram": "@buchingerwilhelmi"
+    }
+  },
+  {
+    "id": "chiva-som",
+    "name": "Chiva-Som",
+    "area": "Hua Hin / Thailand",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 12.553,
+      "lng": 99.961
+    },
+    "bestFor": [
+      "Longevity",
+      "Detox",
+      "Recovery",
+      "Spa"
+    ],
+    "tags": [
+      "Destination Health Resort",
+      "Diagnostics",
+      "Physiotherapy",
+      "Holistic Health",
+      "Hua Hin",
+      "Legacy Brand"
+    ],
+    "note": "One of Asia's original destination health resorts in Hua Hin, combining diagnostics, physiotherapy, holistic treatments, nutrition and retreat programming; the brand also operates Zulal Wellness Resort in Qatar.",
+    "links": {
+      "website": "",
+      "instagram": "@chivasom"
+    }
+  },
+  {
+    "id": "dimensions-algonquin-highlands",
+    "name": "Dimensions Algonquin Highlands",
+    "area": "Ontario / Canada",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 45.37,
+      "lng": -78.78
+    },
+    "bestFor": [
+      "Psychedelic-Assisted",
+      "Somatic",
+      "Nature",
+      "Recovery"
+    ],
+    "tags": [
+      "Legal Psilocybin-Adjacent Retreat",
+      "Clinical Team",
+      "Somatic Therapy",
+      "Nature Immersion",
+      "Luxury Retreat"
+    ],
+    "note": "A clinician-supported retreat in the Algonquin Highlands combining somatic and therapeutic programming with nature immersion in a luxury lakeside setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "esalen-institute",
+    "name": "Esalen Institute",
+    "area": "Big Sur / California",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 36.123,
+      "lng": -121.755
+    },
+    "bestFor": [
+      "Somatic",
+      "Contemplative",
+      "Workshops",
+      "Hot Springs"
+    ],
+    "tags": [
+      "Human Potential Movement",
+      "Workshops",
+      "Cliffside Hot Springs",
+      "Somatic Education",
+      "Big Sur",
+      "Legacy Institution"
+    ],
+    "note": "The original human-potential institute on the Big Sur cliffs — workshop-based somatic, psychological, and contemplative education above legendary oceanside hot springs.",
+    "links": {
+      "website": "https://www.esalen.org",
+      "instagram": "@esalen"
+    }
+  },
+  {
+    "id": "fivelements-retreat",
+    "name": "Fivelements Retreat",
+    "area": "Mambal / Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.553,
+      "lng": 115.236
+    },
+    "bestFor": [
+      "Healing",
+      "Plant-Based",
+      "Somatic",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Healing Retreat",
+      "Balinese Healing",
+      "Plant-Based Cuisine",
+      "Sacred Arts",
+      "Riverside",
+      "Bali"
+    ],
+    "note": "A riverside healing retreat near Ubud built around Balinese healing traditions, plant-based cuisine, water rituals and sacred arts in an eco-conscious retreat environment.",
+    "links": {
+      "website": "",
+      "instagram": "@fivelementsbali"
+    }
+  },
+  {
+    "id": "hoffman-institute",
+    "name": "Hoffman Institute",
+    "area": "St. Helena / California (global sites)",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 38.51,
+      "lng": -122.48
+    },
+    "bestFor": [
+      "Psychological Process",
+      "Transformation",
+      "Contemplative"
+    ],
+    "tags": [
+      "Hoffman Process",
+      "7-Day Intensive",
+      "Structured Process Work",
+      "Global Sites",
+      "High-Trust Brand"
+    ],
+    "note": "Home of the Hoffman Process — the structured seven-day psychological intensive with decades of track record and international sites. Arguably the most placeable transformational program for senior clients.",
+    "links": {
+      "website": "https://www.hoffmaninstitute.org",
+      "instagram": "@hoffmanprocess"
+    }
+  },
+  {
+    "id": "kalari-kovilakom",
+    "name": "Kalari Kovilakom",
+    "area": "Kollengode / Kerala",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 10.61,
+      "lng": 76.69
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Panchakarma",
+      "Detox"
+    ],
+    "tags": [
+      "Classical Ayurveda",
+      "Palace Setting",
+      "CGH Earth",
+      "Minimum-Stay Protocols",
+      "Kerala"
+    ],
+    "note": "CGH Earth's \"palace for Ayurveda\" in Kerala — strict classical panchakarma protocols with minimum stays, in a heritage palace converted to a clinical retreat.",
+    "links": {
+      "website": "https://www.cghearth.com/kalari-kovilakom",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "kamalaya",
+    "name": "Kamalaya",
+    "area": "Koh Samui / Thailand",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 9.43,
+      "lng": 100.036
+    },
+    "bestFor": [
+      "Detox",
+      "Stress",
+      "Recovery",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Wellness Sanctuary",
+      "Detox",
+      "Stress & Burnout",
+      "Embracing Change",
+      "Holistic Medicine",
+      "Koh Samui"
+    ],
+    "note": "A founder-led wellness sanctuary on Koh Samui built around detox, stress and burnout, emotional balance and longevity programs, combining East-West holistic medicine in a contemplative coastal setting.",
+    "links": {
+      "website": "",
+      "instagram": "@kamalaya"
+    }
+  },
+  {
+    "id": "modern-elder-academy",
+    "name": "Modern Elder Academy",
+    "area": "El Pescadero / Baja + Santa Fe",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 23.36,
+      "lng": -110.17
+    },
+    "bestFor": [
+      "Midlife Transition",
+      "Purpose",
+      "Community"
+    ],
+    "tags": [
+      "Midlife Wisdom School",
+      "Chip Conley",
+      "Transition Programs",
+      "Baja",
+      "Santa Fe"
+    ],
+    "note": "Chip Conley's midlife wisdom school — beachfront Baja and Santa Fe ranch campuses running structured programs on transition, purpose, and regenerative ageing for accomplished mid-lifers.",
+    "links": {
+      "website": "https://www.modernelderacademy.com",
+      "instagram": "@meawisdom"
+    }
+  },
+  {
+    "id": "mycomeditations",
+    "name": "MycoMeditations",
+    "area": "Treasure Beach / Jamaica",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 17.89,
+      "lng": -77.76
+    },
+    "bestFor": [
+      "Psychedelic-Assisted",
+      "Therapeutic",
+      "Integration"
+    ],
+    "tags": [
+      "Psilocybin Retreats",
+      "Legal Jurisdiction",
+      "Therapeutic Focus",
+      "Jamaica"
+    ],
+    "note": "One of the longest-running legal psilocybin retreat operators, on Jamaica's south coast — therapeutically framed programs with screening and integration in a jurisdiction where psilocybin is unscheduled.",
+    "links": {
+      "website": "https://www.mycomeditations.com",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "oneworld-ayurveda",
+    "name": "Oneworld Ayurveda",
+    "area": "Ubud / Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": -8.51,
+      "lng": 115.26
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Panchakarma",
+      "Detox"
+    ],
+    "tags": [
+      "Panchakarma Center",
+      "Doctor-Led",
+      "Ubud",
+      "Bali"
+    ],
+    "note": "A dedicated panchakarma center outside Ubud running physician-led classical programs — Bali's serious-Ayurveda counterpoint to spa-style offerings.",
+    "links": {
+      "website": "https://oneworldayurveda.com",
+      "instagram": "@oneworldayurveda"
+    }
+  },
+  {
+    "id": "plum-village",
+    "name": "Plum Village",
+    "area": "Dordogne / France",
+    "region": "Europe",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 44.77,
+      "lng": 0.47
+    },
+    "bestFor": [
+      "Meditation",
+      "Mindfulness",
+      "Community",
+      "Contemplative"
+    ],
+    "tags": [
+      "Thich Nhat Hanh",
+      "Engaged Buddhism",
+      "Monastic Community",
+      "Mindfulness Retreats",
+      "France"
+    ],
+    "note": "Thich Nhat Hanh's monastic community in the Dordogne — the largest Buddhist monastery in Europe, running lay retreats in engaged mindfulness. Not luxury; included on significance.",
+    "links": {
+      "website": "https://plumvillage.org",
+      "instagram": "@plumvillagefrance"
+    }
+  },
+  {
+    "id": "rakxa-wellness",
+    "name": "RAKxa Wellness",
+    "area": "Bang Krachao / Bangkok",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 13.678,
+      "lng": 100.566
+    },
+    "bestFor": [
+      "Longevity",
+      "Diagnostics",
+      "Recovery",
+      "Detox"
+    ],
+    "tags": [
+      "Medical Wellness Retreat",
+      "VitalLife / Bumrungrad",
+      "Diagnostics",
+      "Thai Medicine",
+      "Hydrotherapy",
+      "Bangkok"
+    ],
+    "note": "A fully integrative medical wellness retreat on Bangkok's green island of Bang Krachao, pairing VitalLife (Bumrungrad) clinical diagnostics with traditional Thai medicine, hydrotherapy, and structured residential programs. Also runs a capped local membership.",
+    "links": {
+      "website": "",
+      "instagram": "@rakxawellness"
+    }
+  },
+  {
+    "id": "revivo-wellness-resort",
+    "name": "REVIVO Wellness Resort",
+    "area": "Nusa Dua / Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.798,
+      "lng": 115.23
+    },
+    "bestFor": [
+      "Longevity",
+      "Retreats",
+      "Recovery",
+      "Spa",
+      "Nutrition",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Wellness Resort",
+      "Longevity",
+      "Diagnostics",
+      "Biohacking",
+      "Regenerative Therapies",
+      "Retreats",
+      "Recovery",
+      "Spa",
+      "Hydrotherapy",
+      "Nutrition",
+      "Mindfulness",
+      "Movement"
+    ],
+    "note": "A luxury wellness resort in Nusa Dua combining tailored retreat programs, movement, mindfulness, hydrotherapy, nutrition, expert-led treatments, and a Vitality Centre for longevity, biohacking, aesthetics, and advanced wellness therapies. The resort brings destination hospitality, retreat programming, precision wellness, and longevity-oriented services into one integrated health environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "riffs-studios",
+    "name": "Riffs Studios",
+    "area": "Bird Rock / La Jolla",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 32.8227,
+      "lng": -117.262
+    },
+    "bestFor": [
+      "Practice",
+      "Classes",
+      "Recovery",
+      "Community",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Retreat / Practice Hub",
+      "Yoga",
+      "Live Music",
+      "Outdoor Studio",
+      "Massage",
+      "Sound Healing",
+      "Sauna",
+      "Cold Plunge",
+      "Red Light",
+      "Community",
+      "Lifestyle"
+    ],
+    "note": "A Bird Rock wellness sanctuary combining outdoor yoga, live music, massage, sound healing, sauna, cold plunge, red light, and community-oriented programming. The format blends practice, music, recovery, bodywork, and social connection in a grounded coastal wellness setting.",
+    "links": {
+      "website": "",
+      "instagram": "@riffsyogastudios"
+    }
+  },
+  {
+    "id": "sabda-studios",
+    "name": "SABDA Studios",
+    "area": "Barcelona / Eixample",
+    "region": "Europe",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.391,
+      "lng": 2.164
+    },
+    "bestFor": [
+      "Practice",
+      "Classes",
+      "Community",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Retreat / Practice Hub",
+      "Practice",
+      "Classes",
+      "Community",
+      "Immersive Studio",
+      "Breathwork",
+      "Sound Healing",
+      "Yoga",
+      "Pilates",
+      "Social Wellness"
+    ],
+    "note": "An immersive wellness studio in Barcelona combining 360 projections, spatial audio, yoga, pilates, breathwork, sound healing, and multidisciplinary wellness experiences. The space blends sensory design, movement, restorative practices, classes, and community programming into a brand-forward practice environment.",
+    "links": {
+      "website": "",
+      "instagram": "@sabda_studio"
+    }
+  },
+  {
+    "id": "santani-wellness-resort",
+    "name": "Santani Wellness Resort",
+    "area": "Kandy / Sri Lanka",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Wellness Resort",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 7.24,
+      "lng": 80.72
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Detox",
+      "Recovery",
+      "Nature"
+    ],
+    "tags": [
+      "Wellness Resort",
+      "Ayurveda",
+      "Design-Led",
+      "Mountain Setting",
+      "Sri Lanka"
+    ],
+    "note": "A design-led wellness resort in the Sri Lankan highlands combining Ayurvedic and integrative programs in an architecturally striking mountain estate.",
+    "links": {
+      "website": "https://www.santani.lk",
+      "instagram": "@santani_wellness"
+    }
+  },
+  {
+    "id": "soulshine-bali",
+    "name": "Soulshine Bali",
+    "area": "Ubud / Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": -8.53,
+      "lng": 115.26
+    },
+    "bestFor": [
+      "Yoga",
+      "Community",
+      "Lifestyle",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Yoga Retreat",
+      "Retreat Hotel",
+      "Community",
+      "Music",
+      "Ubud"
+    ],
+    "note": "A retreat resort outside Ubud combining yoga programming, retreat hosting, music and community-led wellness hospitality.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "spirit-rock-meditation-center",
+    "name": "Spirit Rock Meditation Center",
+    "area": "Woodacre / California",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 38.01,
+      "lng": -122.64
+    },
+    "bestFor": [
+      "Meditation",
+      "Contemplative",
+      "Silent Retreats"
+    ],
+    "tags": [
+      "Insight Meditation",
+      "Vipassana",
+      "Teacher Training",
+      "Marin County",
+      "Institution"
+    ],
+    "note": "The West Coast institution of insight meditation — silent vipassana retreats and teacher training in the Marin hills, anchoring the secular-dharma end of the contemplative category.",
+    "links": {
+      "website": "https://www.spiritrock.org",
+      "instagram": "@spirit_rock"
+    }
+  },
+  {
+    "id": "sukhavati-ayurvedic-retreat-and-spa",
+    "name": "Sukhavati Ayurvedic Retreat & Spa",
+    "area": "Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": -8.628,
+      "lng": 115.137
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Detox",
+      "Recovery",
+      "Mindfulness"
+    ],
+    "tags": [
+      "Ayurvedic Retreat",
+      "Panchakarma",
+      "Doctor-Led",
+      "Detox",
+      "Yoga",
+      "Bali"
+    ],
+    "note": "A dedicated Ayurvedic retreat in Bali centered on physician-led panchakarma, detox programs, yoga, and classical Ayurvedic treatment protocols in a residential retreat format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "the-istana",
+    "name": "The Istana",
+    "area": "Uluwatu",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.827,
+      "lng": 115.087
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Meditation",
+      "Breathwork",
+      "Spa"
+    ],
+    "tags": [
+      "Recovery / Practice Hub",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Hot / Cold",
+      "Meditation",
+      "Breathwork",
+      "Spa",
+      "Bodywork",
+      "Cliffside Wellness",
+      "Social Wellness"
+    ],
+    "note": "A cliffside wellness and recovery space in Uluwatu built around sauna, hot and cold contrast, spa treatments, meditation, breathwork, and restorative practice. The venue combines thermal recovery, bodywork, contemplative practice, and coastal hospitality in a ritual-led wellness environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "the-ranch",
+    "name": "The Ranch",
+    "area": "Malibu / Hudson Valley",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 34.07,
+      "lng": -118.83
+    },
+    "bestFor": [
+      "Fitness",
+      "Detox",
+      "Recovery",
+      "Nature"
+    ],
+    "tags": [
+      "Results-Driven Retreat",
+      "Hiking",
+      "Plant-Based",
+      "Structured Program",
+      "Malibu",
+      "Hudson Valley"
+    ],
+    "note": "A results-driven immersive fitness and wellness retreat built around daily hiking, plant-based nutrition and a strict structured program, operating in Malibu and Hudson Valley, New York.",
+    "links": {
+      "website": "",
+      "instagram": "@theranchmalibu"
+    }
+  },
+  {
+    "id": "trilogy-sanctuary",
+    "name": "Trilogy Sanctuary",
+    "area": "La Jolla",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 32.8495,
+      "lng": -117.2748
+    },
+    "bestFor": [
+      "Practice",
+      "Classes",
+      "Community",
+      "Lifestyle",
+      "Food / Cafe",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Retreat / Practice Hub",
+      "Yoga",
+      "Aerial Yoga",
+      "Rooftop Cafe",
+      "Vegan Cafe",
+      "Events",
+      "Spiritual Healing",
+      "Boutique",
+      "Community",
+      "Lifestyle"
+    ],
+    "note": "A long-running La Jolla wellness sanctuary combining indoor and outdoor yoga, aerial yoga, spiritual healing, events, trainings, a rooftop organic vegan cafe, boutique, and community programming. Trilogy Sanctuary is relevant as a lifestyle-oriented practice hub rather than a single-purpose studio, bringing together movement, food, events, spiritual wellness, and social community in one physical space.",
+    "links": {
+      "website": "",
+      "instagram": "@trilogysanctuary"
+    }
+  },
+  {
+    "id": "truenorth-health-center",
+    "name": "TrueNorth Health Center",
+    "area": "Santa Rosa / California",
+    "region": "North America",
+    "category": "Retreats",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 38.44,
+      "lng": -122.71
+    },
+    "bestFor": [
+      "Fasting",
+      "Detox",
+      "Medical Supervision"
+    ],
+    "tags": [
+      "Water Fasting",
+      "Medically Supervised",
+      "Plant-Based",
+      "Clinical Research",
+      "California"
+    ],
+    "note": "The leading center for medically supervised water-only fasting, with resident physicians and a clinical research record — the rigorous-clinical end of the fasting spectrum.",
+    "links": {
+      "website": "https://www.healthpromoting.com",
+      "instagram": "@truenorthhealthfoundation"
+    }
+  },
+  {
+    "id": "udara-bali",
+    "name": "Udara Bali",
+    "area": "Seseh / Bali",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.636,
+      "lng": 115.108
+    },
+    "bestFor": [
+      "Yoga",
+      "Detox",
+      "Recovery",
+      "Spa"
+    ],
+    "tags": [
+      "Yoga Retreat",
+      "Detox",
+      "Healing Center",
+      "Spa",
+      "Oceanfront",
+      "Bali"
+    ],
+    "note": "An oceanfront yoga, detox and healing retreat in Seseh combining daily practice, fasting and detox programs, spa and healing therapies in a residential retreat format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "vaidyagrama",
+    "name": "Vaidyagrama",
+    "area": "Coimbatore / India",
+    "region": "Asia-Pacific",
+    "category": "Retreats",
+    "primaryType": "Retreat / Practice Hub",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 10.9,
+      "lng": 76.95
+    },
+    "bestFor": [
+      "Ayurveda",
+      "Panchakarma",
+      "Healing"
+    ],
+    "tags": [
+      "Classical Ayurveda",
+      "Panchakarma",
+      "Physician-Led",
+      "Healing Village",
+      "Authentic Clinical"
+    ],
+    "note": "A physician-led classical Ayurveda healing village near Coimbatore practicing textbook panchakarma without resort softening — the authentic-clinical reference point of the category.",
+    "links": {
+      "website": "https://vaidyagrama.com",
+      "instagram": "@vaidyagramaayurveda"
+    }
+  },
+  {
+    "id": "vivamayr-altaussee",
+    "name": "VivaMayr Altaussee",
+    "area": "Altaussee / Austria",
+    "region": "Europe",
+    "category": "Retreats",
+    "primaryType": "Longevity / Clinic",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 47.64,
+      "lng": 13.76
+    },
+    "bestFor": [
+      "Detox",
+      "Gut Health",
+      "Recovery",
+      "Longevity"
+    ],
+    "tags": [
+      "Modern Mayr Medicine",
+      "Gut Health",
+      "Medical Detox",
+      "Lake Altaussee",
+      "Austria"
+    ],
+    "note": "Modern Mayr medicine in its alpine flagship form — medically led gut-health and detox programs on Lake Altaussee, with sister houses in Maria Wörth and London.",
+    "links": {
+      "website": "https://www.vivamayr.com",
+      "instagram": "@vivamayrmariawoerth"
+    }
+  },
+  {
+    "id": "39-monte-carlo",
+    "name": "39 Monte Carlo",
+    "area": "Monaco",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 43.7402,
+      "lng": 7.4266
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Lifestyle",
+      "Community"
+    ],
+    "tags": [
+      "Private Wellness Club",
+      "Performance",
+      "Nutrition",
+      "Social Club",
+      "Monaco"
+    ],
+    "note": "A private health and wellness members club in Monte Carlo combining training, nutrition, recovery and social club programming for Monaco's international community.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "alo-wellness-club",
+    "name": "Alo Wellness Club",
+    "area": "Los Angeles",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.06,
+      "lng": -118.44
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Lifestyle",
+      "Community"
+    ],
+    "tags": [
+      "Brand-Led Wellness Club",
+      "Training",
+      "Recovery",
+      "Fitness",
+      "Sauna",
+      "Cold Plunge",
+      "Hospitality",
+      "Curated Events",
+      "Community",
+      "Creator-Friendly Spaces",
+      "Lifestyle"
+    ],
+    "note": "An invite-only wellness club concept from Alo combining training studios, saunas, cold plunges, hospitality, curated events, and social spaces. The format extends the activewear brand into physical wellness infrastructure, blending fitness, recovery, community, and lifestyle programming inside a private club environment.",
+    "links": {
+      "website": "",
+      "instagram": "@aloyoga"
+    }
+  },
+  {
+    "id": "amo-spa-amo-baths",
+    "name": "AMO Spa / AMO Baths",
+    "area": "Canggu",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.648,
+      "lng": 115.137
+    },
+    "bestFor": [
+      "Recovery",
+      "Spa",
+      "Sauna",
+      "Ice Bath",
+      "Beauty",
+      "Relaxation"
+    ],
+    "tags": [
+      "Bathhouse / Spa",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Steam",
+      "Contrast Therapy",
+      "Spa",
+      "Skin Treatments",
+      "Body Treatments",
+      "Meditation",
+      "Beauty",
+      "Conscious Practice"
+    ],
+    "note": "A multi-level wellness destination in Canggu combining spa treatments, AMO Baths, sauna, ice bath, steam, beauty and skin services, body treatments, practice space, and cafe infrastructure. The venue brings bathhouse recovery, beauty, body care, relaxation, and practice-oriented wellness into one established Canggu destination.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "arc-community",
+    "name": "ARC Community",
+    "area": "Canary Wharf / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5045,
+      "lng": -0.0195
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Community",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Training",
+      "Recovery",
+      "Strength",
+      "Classes",
+      "Ice Bath",
+      "Sauna",
+      "Breathwork",
+      "Community",
+      "Social Wellness",
+      "Lifestyle"
+    ],
+    "note": "A community-led wellness club in Canary Wharf combining training, recovery, classes, sauna, ice bath, breathwork, and social programming. The space blends gym, recovery venue, and social club elements into an integrated urban health and community environment.",
+    "links": {
+      "website": "",
+      "instagram": "@arc.community"
+    }
+  },
+  {
+    "id": "bali-social-club",
+    "name": "Bali Social Club",
+    "area": "Canggu",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.651,
+      "lng": 115.138
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Community",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Padel / Wellness Club",
+      "Padel",
+      "Gym",
+      "Pool",
+      "Sauna",
+      "Ice Bath",
+      "Steam Room",
+      "Lagree",
+      "Recovery",
+      "Community",
+      "Lifestyle",
+      "Social Wellness",
+      "Canggu"
+    ],
+    "note": "A Canggu padel and wellness club combining padel courts, gym and classes, Lagree, pool, sauna, ice bath, steam room, bar, cafe, clubhouse, events, and membership infrastructure. The venue brings sport, training, recovery, food, and social programming into one lifestyle club format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "bambu-fitness-bali",
+    "name": "Bambu Fitness Bali",
+    "area": "Bingin / Uluwatu",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Functional Fitness",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.829,
+      "lng": 115.085
+    },
+    "bestFor": [
+      "Training",
+      "Classes",
+      "Community",
+      "Fitness Lifestyle",
+      "Food / Cafe"
+    ],
+    "tags": [
+      "Functional Fitness",
+      "Training",
+      "Strength",
+      "Conditioning",
+      "Group Classes",
+      "Personal Training",
+      "Community",
+      "Cafe",
+      "Nutrition",
+      "Fitness Lifestyle",
+      "Uluwatu"
+    ],
+    "note": "A premium functional fitness gym in Bingin / Uluwatu built around group classes, strength and conditioning, personal training, coaching quality, community, and a healthy cafe. The space combines structured training, nutrition, social routine, and active coastal lifestyle in a community-led fitness environment.",
+    "links": {
+      "website": "",
+      "instagram": "@bambufitnessbali"
+    }
+  },
+  {
+    "id": "bathhouse",
+    "name": "Bathhouse",
+    "area": "Williamsburg / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7176,
+      "lng": -73.9641
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Bathhouse",
+      "Sauna",
+      "Steam",
+      "Cold Plunge",
+      "Thermal Pools",
+      "Massage",
+      "Scrub",
+      "Social Wellness",
+      "Lifestyle"
+    ],
+    "note": "A modern urban bathhouse brand built around thermal pools, saunas, steam rooms, cold plunges, massage, scrubs, and repeat-use recovery. The format brings functional recovery, urban ritual, and social bathing culture together in a public-facing wellness environment.",
+    "links": {
+      "website": "",
+      "instagram": "@bathhouse"
+    }
+  },
+  {
+    "id": "bathhouse-clt",
+    "name": "BathHouse CLT",
+    "area": "Charlotte / South End",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 35.2045,
+      "lng": -80.8604
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Bathhouse",
+      "Sauna",
+      "Cold Plunge",
+      "Hot Tub",
+      "Steam Room",
+      "Contrast Therapy",
+      "Social Wellness",
+      "Outdoor Lounge",
+      "Urban Recovery",
+      "Charlotte"
+    ],
+    "note": "A luxury contrast therapy club in Charlotte's South End combining sauna, cold plunge, hot tub, steam room, appointment-based bathhouse sessions, and social wellness positioning. The venue packages European-inspired bathing, hot-cold recovery, and communal reset into a compact urban club format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "body-factory-bali",
+    "name": "Body Factory Bali",
+    "area": "Canggu / Nelayan",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.6485,
+      "lng": 115.139
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Strength",
+      "Lifestyle",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Premium Gym",
+      "Training",
+      "Strength",
+      "Fitness Lifestyle",
+      "Recovery",
+      "Spa",
+      "Ice Bath",
+      "Sauna",
+      "Cold Pools",
+      "Pool",
+      "Cafe",
+      "Meal Plans",
+      "Premium Fitness Crowd"
+    ],
+    "note": "A premium fitness and lifestyle facility in Canggu combining serious gym training, classes, personal training, recovery spa, ice bath, cold pools, sauna, swimming pool, cafe, and meal-plan support. The venue extends the gym format into a broader daily-use fitness lifestyle environment, combining training, recovery, food, and body-oriented services in one destination.",
+    "links": {
+      "website": "",
+      "instagram": "@bodyfactory_bali"
+    }
+  },
+  {
+    "id": "carlyle-and-co",
+    "name": "Carlyle & Co",
+    "area": "Rosewood Hong Kong",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Private Members Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 22.294,
+      "lng": 114.174
+    },
+    "bestFor": [
+      "Lifestyle",
+      "Community",
+      "Dining",
+      "Culture"
+    ],
+    "tags": [
+      "Private Members Club",
+      "Rosewood",
+      "Harbourfront",
+      "Culture",
+      "Hong Kong"
+    ],
+    "note": "Rosewood's private members club atop its Hong Kong flagship, blending residential-style club spaces, dining and culture for the city's international set.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "dyad",
+    "name": "DYAD",
+    "area": "Cheongdam / Seoul",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 37.524,
+      "lng": 127.042
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Social Wellness",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Private Wellness Club",
+      "Longevity",
+      "Social Club",
+      "Cheongdam",
+      "Seoul"
+    ],
+    "note": "A private wellness and social club concept in Cheongdam positioning longevity, recovery and lifestyle programming for Seoul's luxury market.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "equinox-e-clubs",
+    "name": "Equinox E Clubs",
+    "area": "London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Lifestyle",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Ultra-Premium Fitness Club",
+      "Training",
+      "Personal Training",
+      "Recovery",
+      "Spa",
+      "Pilates",
+      "Concierge Wellness",
+      "Private Suites",
+      "Limited Membership",
+      "Luxury Fitness",
+      "Lifestyle"
+    ],
+    "note": "An ultra-premium Equinox membership layer built around limited-access club environments, highly personalized training, private suites, concierge-level service, integrated recovery, Pilates, and spa infrastructure. The format takes Equinox's wider fitness-lifestyle model into a more exclusive, high-touch wellness club setting with stronger personalization and luxury positioning.",
+    "links": {
+      "website": "",
+      "instagram": "@equinox"
+    }
+  },
+  {
+    "id": "gray-wellness-club",
+    "name": "Gray Wellness Club",
+    "area": "Dubai",
+    "region": "Middle East",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 25.2,
+      "lng": 55.27
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Training",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Private Wellness Club",
+      "Longevity",
+      "Recovery",
+      "Dubai"
+    ],
+    "note": "A premium wellness club concept in Dubai combining longevity services, recovery and training in a private club format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "heimat",
+    "name": "HEIMAT",
+    "area": "Hollywood",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.0928,
+      "lng": -118.3287
+    },
+    "bestFor": [
+      "Training",
+      "Fitness Lifestyle",
+      "Lifestyle",
+      "Community",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Premium Gym",
+      "Fitness Lifestyle",
+      "Training",
+      "Community",
+      "Spa",
+      "Dining",
+      "Rooftop",
+      "Premium Fitness Crowd"
+    ],
+    "note": "A members-only fitness and lifestyle club in Hollywood combining high-design training facilities, group classes, spa, dining, rooftop pool, work/social areas, and private-club energy. The venue brings premium fitness, hospitality, design, and lifestyle culture into one polished club environment.",
+    "links": {
+      "website": "",
+      "instagram": "@heimatclub"
+    }
+  },
+  {
+    "id": "hume",
+    "name": "Hume",
+    "area": "Venice",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 33.985,
+      "lng": -118.4695
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Lifestyle",
+      "Social Wellness",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Recovery",
+      "Lifestyle",
+      "Social Wellness",
+      "Training",
+      "Bodywork",
+      "Premium Fitness Crowd"
+    ],
+    "note": "A private wellness club in Venice built around fitness, recovery, bodywork, spa-style services, hospitality, and member routine. The format blends gym, spa, recovery club, and private members club elements into a premium daily base for training, restoration, and social wellness.",
+    "links": {
+      "website": "",
+      "instagram": "@hume.losangeles"
+    }
+  },
+  {
+    "id": "icepass-la",
+    "name": "IcePass LA",
+    "area": "Los Angeles",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Community"
+    ],
+    "tags": [
+      "Sauna / Cold Plunge Club",
+      "Recovery",
+      "Finnish Sauna",
+      "Cold Plunge",
+      "Contrast Therapy",
+      "Membership",
+      "Stress Reset",
+      "Los Angeles",
+      "Urban Recovery",
+      "Social Wellness"
+    ],
+    "note": "A Los Angeles sauna and cold plunge club built around 200F Finnish saunas, commercial-grade cold plunges, guided sauna and cold immersion, independent amenity use, and multi-location access. The format packages heat, cold, stress reset, and repeat-use recovery into a focused membership-based wellness club.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "ilo-studios",
+    "name": "ILO Studios",
+    "area": "Barcelona / Eixample",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness",
+      "Community"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Breathwork",
+      "Contrast Therapy",
+      "Social Wellness",
+      "Community"
+    ],
+    "note": "A focused sauna and ice bath studio in Eixample built around guided sessions, open recovery, Finnish sauna, cold immersion, breathwork, and communal nervous-system reset. The format presents recovery as ritual, practice, and shared experience through structured contrast therapy and group-led sessions.",
+    "links": {
+      "website": "",
+      "instagram": "@ilostudios_"
+    }
+  },
+  {
+    "id": "inner-flow",
+    "name": "Inner Flow",
+    "area": "Barcelona / Barceloneta",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.3794,
+      "lng": 2.1885
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Practice",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Training",
+      "Recovery",
+      "Practice",
+      "Spa",
+      "Community",
+      "Biohacking",
+      "Float Tank",
+      "Hot/Cold",
+      "Performance"
+    ],
+    "note": "A full-spectrum wellness and performance studio combining indoor and outdoor training, yoga, meditation, immersive cycling, biohacking-style facilities, functional spa, hot and cold plunges, saunas, infrared light, and float tank. The space brings fitness, recovery, practice, spa, and performance tools into one urban wellness lifestyle venue.",
+    "links": {
+      "website": "",
+      "instagram": "@innerflow_barcelona"
+    }
+  },
+  {
+    "id": "janu-tokyo",
+    "name": "Janu Tokyo",
+    "area": "Azabudai Hills / Tokyo",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 35.66,
+      "lng": 139.741
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Spa",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Hotel Wellness Club",
+      "Aman Sister Brand",
+      "4",
+      "000 sqm Wellness",
+      "Spa",
+      "Tokyo"
+    ],
+    "note": "Aman's sister brand debut in Azabudai Hills with one of Tokyo's largest hotel wellness floors — roughly 4,000 sqm of training, spa, recovery and a members wellness collective.",
+    "links": {
+      "website": "",
+      "instagram": "@janu"
+    }
+  },
+  {
+    "id": "kold-bcn",
+    "name": "KOLD BCN",
+    "area": "Barcelona / El Born",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.3855,
+      "lng": 2.1822
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Contrast Therapy",
+      "Performance",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Contrast Therapy",
+      "Physiotherapy",
+      "Sports Massage",
+      "Performance",
+      "Social Wellness",
+      "Barcelona"
+    ],
+    "note": "A Barcelona recovery studio focused on traditional sauna, ice baths, physiotherapy, and sports massage. The space packages recovery, physical reset, and performance support into a focused urban contrast-therapy and recovery environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "kx-kxu",
+    "name": "KX / KXU",
+    "area": "Chelsea / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.492,
+      "lng": -0.175
+    },
+    "bestFor": [
+      "Training",
+      "Classes",
+      "Recovery",
+      "Lifestyle",
+      "Community"
+    ],
+    "tags": [
+      "Private Health Club",
+      "Premium Fitness Studio",
+      "Training",
+      "Classes",
+      "Personal Training",
+      "Spa",
+      "Restaurant",
+      "Nutrition",
+      "Wellness Technology",
+      "Practitioners",
+      "Chelsea"
+    ],
+    "note": "A Chelsea-based private health and fitness club ecosystem combining a members-only gym, spa, restaurant, personal training, over 80 weekly fitness classes, wellness technology, nutrition support, beauty therapists, and practitioner access. KXU extends the brand into a pay-as-you-go luxury fitness and wellness studio with classes, personal training, spa therapies, and treatment booking.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "long-lane",
+    "name": "Long Lane",
+    "area": "West Sussex / UK",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 50.984,
+      "lng": -0.755
+    },
+    "bestFor": [
+      "Longevity",
+      "Community",
+      "Lifestyle",
+      "Sober Social"
+    ],
+    "tags": [
+      "Sober Members Club",
+      "Country Club",
+      "Longevity Tier",
+      "Diagnostics",
+      "Farm-to-Table",
+      "UK"
+    ],
+    "note": "The UK's first sober members club and hotel at Dunford House, combining alcohol-free hospitality, country club membership and a longevity tier with diagnostics and ongoing health optimization.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "lore-bathing-club",
+    "name": "Lore Bathing Club",
+    "area": "NoHo / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7253,
+      "lng": -73.9947
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness",
+      "Community"
+    ],
+    "tags": [
+      "Bathing Club / Recovery Club",
+      "Sauna",
+      "Cold Plunge",
+      "Finnish Sauna",
+      "Infrared Sauna",
+      "Contrast Therapy",
+      "Thermal Bathing",
+      "Membership",
+      "Drop-in",
+      "Social Wellness",
+      "NoHo"
+    ],
+    "note": "A thermal bathing club in NoHo built around 75-minute contrast sessions with Finnish sauna, infrared sauna, and cold plunge. The venue packages hot-cold bathing, weekly recovery routine, and communal wellbeing into a focused downtown membership and drop-in format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "love-life",
+    "name": "Love.Life",
+    "area": "El Segundo / Los Angeles",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 33.9178,
+      "lng": -118.4163
+    },
+    "bestFor": [
+      "Longevity",
+      "Training",
+      "Recovery",
+      "Diagnostics",
+      "Community"
+    ],
+    "tags": [
+      "Integrated Health Club",
+      "Functional Medicine",
+      "Longevity",
+      "Diagnostics",
+      "Blood Testing",
+      "DEXA Scan",
+      "Fitness",
+      "Recovery",
+      "Cold Plunge",
+      "NAD+",
+      "Hyperbaric Oxygen",
+      "Cafe"
+    ],
+    "note": "A 45,000-square-foot wellness community and longevity center combining functional medical care, diagnostics, blood tests, DEXA scans, fitness, recovery, biohacking devices, cold plunge, NAD drips, hyperbaric oxygen, restaurant/cafe infrastructure, and community-oriented health programming. The venue brings medical care, fitness, nutrition, recovery, and longevity services into one large integrated health environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "mandala-club",
+    "name": "Mandala Club",
+    "area": "Bukit Pasoh / Singapore",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Private Members Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 1.28,
+      "lng": 103.842
+    },
+    "bestFor": [
+      "Lifestyle",
+      "Community",
+      "Dining",
+      "Wellness"
+    ],
+    "tags": [
+      "Private Members Club",
+      "Culture",
+      "Dining",
+      "Wellness Pillar",
+      "Singapore"
+    ],
+    "note": "A Singapore private members club spanning culture, dining and an expanding wellness pillar, anchoring the city's premium social-wellness crossover.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "matcha-club",
+    "name": "Matcha Club",
+    "area": "Al Quoz / Dubai",
+    "region": "Middle East",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 25.139,
+      "lng": 55.227
+    },
+    "bestFor": [
+      "Padel",
+      "Community",
+      "Lifestyle",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Padel & Lifestyle Club",
+      "Wellness Studio",
+      "Cafe",
+      "Community",
+      "Dubai"
+    ],
+    "note": "A padel-led lifestyle and social wellness club in Al Quoz combining courts, movement studio, cafe culture and community programming in a design-led compound.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "metropolitan-club",
+    "name": "Metropolitan Club",
+    "area": "Barcelona",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.39,
+      "lng": 2.154
+    },
+    "bestFor": [
+      "Training",
+      "Classes",
+      "Recovery",
+      "Community"
+    ],
+    "tags": [
+      "Premium Health Club",
+      "Training",
+      "Fitness",
+      "Classes",
+      "Spa",
+      "Hydrotherapy",
+      "Beauty Center",
+      "Medical Area",
+      "Physiotherapy",
+      "Nutrition",
+      "Restaurant",
+      "Community"
+    ],
+    "note": "A premium health club network in Barcelona combining fitness floors, group classes, spa and hydrotherapy areas, beauty services, physiotherapy, nutrition, sports medicine, restaurant/cafeteria infrastructure, and community-oriented training formats. The clubs bring training, wellness, recovery, beauty, food, and health services into a broad urban health-club environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "nirvana-life-bali",
+    "name": "Nirvana Life Bali",
+    "area": "Canggu / Berawa",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.6525,
+      "lng": 115.1405
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Classes",
+      "Community",
+      "Lifestyle",
+      "Work / Coworking"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Training",
+      "Recovery",
+      "Yoga",
+      "Classes",
+      "Sauna",
+      "Steam Room",
+      "Ice Bath",
+      "Infrared Sauna",
+      "Hyperbaric Chamber",
+      "Pool",
+      "Kitchen",
+      "Community",
+      "Lifestyle"
+    ],
+    "note": "A large wellness club in Canggu combining open-air gym facilities, yoga, 100+ weekly classes, recovery spa, dry sauna, steam room, infrared sauna, hot tub, ice baths, pools, clubhouse, kitchen, and member/community spaces. The venue functions as a daily-use lifestyle hub where fitness, recovery, food, work-friendly spaces, and community infrastructure sit under one roof.",
+    "links": {
+      "website": "",
+      "instagram": "@nirvanalifebali"
+    }
+  },
+  {
+    "id": "omni-bali",
+    "name": "Omni Bali",
+    "area": "Canggu / Berawa",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.652,
+      "lng": 115.1395
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Longevity",
+      "Work / Coworking",
+      "Lifestyle",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Training",
+      "Recovery",
+      "Longevity",
+      "Spa",
+      "Gym",
+      "Co-working",
+      "Nutrition Cafe",
+      "Blood Testing",
+      "Gut Testing",
+      "Biotech Lab",
+      "Social Wellness",
+      "Premium Fitness Crowd"
+    ],
+    "note": "A high-end wellness club in Bali combining gym, recovery, spa-style services, co-working, nutrition cafe, blood and gut testing, therapy, and biotech-oriented wellness infrastructure. The venue brings training, recovery, diagnostics, work, nutrition, and premium social wellness into one full-stack lifestyle environment.",
+    "links": {
+      "website": "",
+      "instagram": "@omni_bali"
+    }
+  },
+  {
+    "id": "othership",
+    "name": "Othership",
+    "area": "Williamsburg / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7223,
+      "lng": -73.9576
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Community",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Sauna",
+      "Ice Bath",
+      "Breathwork",
+      "Guided Sessions",
+      "Community",
+      "Social Wellness",
+      "Alcohol-Free Social"
+    ],
+    "note": "A social sauna and ice bath concept built around guided thermal sessions, breathwork, music, group experience, tea/lounge space, and alcohol-free connection. Recovery and emotional regulation are packaged as a repeatable communal ritual, combining contrast therapy with guided social practice.",
+    "links": {
+      "website": "",
+      "instagram": "@othership"
+    }
+  },
+  {
+    "id": "pause-studio",
+    "name": "Pause Studio",
+    "area": "Venice",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 33.985,
+      "lng": -118.47
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity"
+    ],
+    "tags": [
+      "Recovery / Wellness Studio",
+      "Recovery",
+      "Infrared Sauna",
+      "Cold Plunge",
+      "Float Therapy",
+      "Cryotherapy",
+      "IV Drips",
+      "LED Light Therapy",
+      "NAD+",
+      "Compression Therapy",
+      "Performance"
+    ],
+    "note": "A modern recovery and wellness studio concept offering private infrared sauna, cold plunge, float therapy, cryotherapy, IV drips, vitamin shots, LED light therapy, NAD+ support, and performance recovery services. The format brings multiple recovery and nervous-system reset modalities into one appointment-based wellness studio environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "peak-health-club-and-spa",
+    "name": "Peak Health Club & Spa",
+    "area": "Knightsbridge / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.4994,
+      "lng": -0.1618
+    },
+    "bestFor": [
+      "Training",
+      "Spa",
+      "Recovery",
+      "Lifestyle",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Premium Gym / Spa",
+      "Training",
+      "Spa",
+      "Recovery",
+      "Pool",
+      "Pilates",
+      "Personal Training",
+      "Steam Room",
+      "Sauna",
+      "Plunge Pool",
+      "Luxury Fitness",
+      "Hotel Wellness"
+    ],
+    "note": "A luxury health club and spa inside Jumeirah Carlton Tower in Knightsbridge, combining Technogym cardio and strength equipment, free weights, fitness classes, Pilates, personal training, recovery room, 20-metre pool, spa treatments, steam, sauna, and plunge facilities. The venue brings hotel-level hospitality, training, recovery, pool-based wellness, and spa services into a polished five-star fitness environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "peaq-wellness",
+    "name": "Peaq Wellness",
+    "area": "Dubai",
+    "region": "Middle East",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "To verify",
+    "coordinates": {
+      "lat": 25.21,
+      "lng": 55.275
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Longevity",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Performance",
+      "Recovery",
+      "Dubai"
+    ],
+    "note": "A performance and wellness club concept in Dubai combining training, recovery modalities and longevity-oriented services.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "pillar-wellbeing",
+    "name": "Pillar Wellbeing",
+    "area": "Raffles London at The OWO",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5062,
+      "lng": -0.1262
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Spa",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Hotel Wellness Club",
+      "Raffles",
+      "The OWO",
+      "Performance",
+      "Nutrition",
+      "Whitehall"
+    ],
+    "note": "A private wellness club within Raffles London at The Old War Office combining performance training, recovery, spa and nutrition in a heritage-luxury hotel setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "plunge-house",
+    "name": "Plunge House",
+    "area": "Charlotte",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 35.2271,
+      "lng": -80.8431
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Community"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Cold Plunge",
+      "Hot Plunge",
+      "Sauna",
+      "Steam Rock Sauna",
+      "Hydrotherapy",
+      "Normatec",
+      "Vitamin C Showers",
+      "Recovery",
+      "Community",
+      "Membership"
+    ],
+    "note": "A Charlotte recovery club built around cold and hot plunge contrast therapy, sauna, hydrotherapy, steam rock sauna, Normatec compression boots, vitamin C showers, towel service, and hot tea bar. The venue combines sports recovery, hot-cold therapy, and membership-based community infrastructure in a luxury recovery setting.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "proper-club",
+    "name": "Proper Club",
+    "area": "Ubud",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.51,
+      "lng": 115.258
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Finnish Sauna",
+      "Cold Plunge",
+      "Warm Mineral Pool",
+      "Contrast Therapy",
+      "Social Wellness",
+      "Ubud",
+      "Rejuvenation Sessions",
+      "Community",
+      "Wellness Ritual"
+    ],
+    "note": "A wellness and recovery club in Ubud built around Finnish sauna, cold plunges, warm mineral pool, daily rejuvenation sessions, and drop-in recovery access. The venue packages hot-cold therapy, mineral bathing, and casual social recovery into a compact Ubud wellness club format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "rebase-recovery",
+    "name": "Rebase Recovery",
+    "area": "Canggu",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.6495,
+      "lng": 115.136
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Breathwork",
+      "Community"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Contrast Therapy",
+      "Yoga",
+      "Breathwork",
+      "Guided Classes",
+      "Nervous System Reset",
+      "Community",
+      "Canggu"
+    ],
+    "note": "A recovery studio offering contrast classes that combine sauna, ice baths, yoga, and breathwork. The format packages heat, cold, movement, and guided nervous-system reset into structured recovery sessions designed for repeat practice and community participation.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "recoverie-nyc",
+    "name": "Recoverie NYC",
+    "area": "Brooklyn / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.689,
+      "lng": -73.99
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity"
+    ],
+    "tags": [
+      "Recovery / Wellness Studio",
+      "Recovery",
+      "Infrared Sauna",
+      "Ice Bath",
+      "Contrast Therapy",
+      "Red Light",
+      "Cryotherapy",
+      "IV Drips",
+      "Compression",
+      "Lymphatic Drainage",
+      "Memberships",
+      "Brooklyn"
+    ],
+    "note": "A Brooklyn recovery and wellness studio offering infrared sauna, dry sauna and ice bath contrast therapy, red light therapy, whole-body cryotherapy, IV drip therapy, compression, lymphatic drainage, and membership-based recovery services. The venue combines heat, cold, light, IV support, bodywork, and recovery technology into an urban wellness studio format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "recovery-lab",
+    "name": "Recovery Lab",
+    "area": "La Verne / Southern California",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.1008,
+      "lng": -117.7676
+    },
+    "bestFor": [
+      "Recovery",
+      "Longevity",
+      "Training"
+    ],
+    "tags": [
+      "Recovery / Wellness Center",
+      "Recovery",
+      "Cryotherapy",
+      "Hyperbaric Oxygen",
+      "Stretching",
+      "Red Light",
+      "Compression Therapy",
+      "Cold Plunge",
+      "Sauna",
+      "Sports Massage",
+      "Athletic Performance"
+    ],
+    "note": "A health and wellness recovery center with multiple Southern California locations, offering cryotherapy, hyperbaric oxygen, stretching, red light therapy, sauna, cold plunge, compression, stretch services, and sports massage. The venue brings athletic recovery, therapeutic technology, and performance-support services into a franchise-style wellness center format.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "remedy-place",
+    "name": "Remedy Place",
+    "area": "West Hollywood",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 34.09,
+      "lng": -118.3617
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity",
+      "IV Therapy",
+      "Red Light",
+      "Hyperbaric Oxygen",
+      "Social Wellness"
+    ],
+    "note": "A recovery-led social wellness club in West Hollywood built around contrast therapy, ice baths, infrared sauna, IV therapy, NAD+, red light, hyperbaric oxygen, acupuncture, chiropractic, and high-touch hospitality. The format combines clinical-style recovery treatments with the atmosphere and repeat-use behavior of a premium social club.",
+    "links": {
+      "website": "",
+      "instagram": "@remedyplace"
+    }
+  },
+  {
+    "id": "remedy-place-flatiron",
+    "name": "Remedy Place Flatiron",
+    "area": "Flatiron / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.7411,
+      "lng": -73.9897
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Longevity",
+      "IV Therapy",
+      "NAD+",
+      "Red Light",
+      "Hyperbaric Oxygen",
+      "Acupuncture",
+      "Social Wellness"
+    ],
+    "note": "A polished recovery and longevity club in Flatiron combining guided ice baths, saunas, IV therapy, NAD+, red light, hyperbaric oxygen, acupuncture, chiropractic, and social wellness positioning. The format combines advanced recovery treatments, clinical-luxury services, and high-touch hospitality inside a premium urban club environment.",
+    "links": {
+      "website": "",
+      "instagram": "@remedyplace"
+    }
+  },
+  {
+    "id": "reva-social-wellness",
+    "name": "Reva Social Wellness",
+    "area": "Singapore / Orchard Road",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 1.304,
+      "lng": 103.832
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness",
+      "Community"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Recovery",
+      "Ice Bath",
+      "Cold Pools",
+      "Hot Pool",
+      "Finnish Sauna",
+      "Contrast Therapy",
+      "Semi-Outdoor",
+      "Social Wellness",
+      "Urban Recovery"
+    ],
+    "note": "A semi-outdoor social recovery space in Orchard Road built around twin ice baths, hot pool, Finnish sauna, no-booking day-pass access, towels, swimwear, and communal contrast therapy. The venue packages hot-cold recovery as a casual urban wellness ritual for solo visits, friend groups, and social reset.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "revo-studios",
+    "name": "Revo Studios",
+    "area": "Barcelona / Sant Gervasi-Galvany",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 41.3965,
+      "lng": 2.149
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Training",
+      "Community"
+    ],
+    "tags": [
+      "Biohacking / Urban Wellness Studio",
+      "Biohacking",
+      "Recovery",
+      "Mental Health",
+      "Physical Optimization",
+      "Aesthetics",
+      "Guided Protocols",
+      "Personalized Wellness",
+      "Urban Wellness",
+      "Barcelona",
+      "Performance"
+    ],
+    "note": "An urban biohacking studio in Barcelona positioned around advanced therapies for mental, physical, and aesthetic optimization. The studio packages high-tech wellbeing treatments into guided, personalized routines designed to fit into everyday city life.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "rite-bali",
+    "name": "RITE Bali",
+    "area": "Canggu / Pererenan",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.653,
+      "lng": 115.132
+    },
+    "bestFor": [
+      "Training",
+      "Strength",
+      "Fitness Lifestyle",
+      "Recovery",
+      "Community",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Premium Gym",
+      "Training",
+      "Strength",
+      "Conditioning",
+      "Fitness Lifestyle",
+      "Classes",
+      "Personal Training",
+      "Recovery",
+      "Spa",
+      "Yoga",
+      "Community",
+      "Premium Fitness Crowd"
+    ],
+    "note": "A boutique lifestyle club in Pererenan combining gym facilities, elite trainers, strength and conditioning classes, yoga, recovery, and spa-oriented services. The venue brings structured training, recovery, coaching, and lifestyle infrastructure into a premium daily-use fitness club.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "saint-black",
+    "name": "Saint Black",
+    "area": "Melbourne / Australia",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "To verify",
+    "coordinates": {
+      "lat": -37.815,
+      "lng": 144.969
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Social Wellness",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Ultra-Premium Wellness Club",
+      "Gurner Group",
+      "Longevity",
+      "Private Club",
+      "Melbourne"
+    ],
+    "note": "Gurner Group's ultra-premium tier above Saint Haven — an invitation-led private wellness club concept combining longevity treatments, recovery and social club infrastructure.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "saint-haven",
+    "name": "Saint Haven",
+    "area": "Melbourne / Australia",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -37.8136,
+      "lng": 144.9631
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Social Wellness",
+      "Community",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Private Wellness Club",
+      "Longevity",
+      "Recovery",
+      "Biohacking",
+      "Hyperbaric Oxygen",
+      "Cryotherapy",
+      "Red Light",
+      "IV Therapy",
+      "Sauna",
+      "Cold Plunge",
+      "Co-working",
+      "Social Wellness",
+      "Private Members Club"
+    ],
+    "note": "A private wellness and social club from Gurner Group combining longevity treatments, recovery therapies, gym, yoga, pilates, sauna, cold plunge, hyperbaric oxygen, cryotherapy, red light, nutrition-led food, co-working, social spaces, and members-club infrastructure. The format brings luxury hospitality, health optimization, recovery, work, food, and social wellness into a private daily-use club environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "sauna-and-plunge",
+    "name": "Sauna & Plunge",
+    "area": "Shoreditch / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5247,
+      "lng": -0.0746
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Social Wellness",
+      "Community"
+    ],
+    "tags": [
+      "Sauna / Cold Plunge Club",
+      "Recovery",
+      "Sauna",
+      "Cold Plunge",
+      "Contrast Therapy",
+      "Social Wellness",
+      "Community",
+      "Urban Recovery",
+      "Relaxation",
+      "Shoreditch",
+      "Modern Sanctuary"
+    ],
+    "note": "A Shoreditch sauna and cold plunge studio built around heat, cold, connection, and recovery in a calm underground setting. The venue packages sauna, plunge, social reset, relaxation, and repeat-use recovery into a compact urban wellness community.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "sauna-house",
+    "name": "Sauna House",
+    "area": "Asheville",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 35.5951,
+      "lng": -82.5515
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Community",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Bathhouse / Recovery Club",
+      "Sauna",
+      "Cold Plunge",
+      "Nordic Bathing",
+      "Contrast Therapy",
+      "Communal Bathhouse",
+      "Private Bathhouse",
+      "Tech-Free Wellness",
+      "Recovery",
+      "Community",
+      "Social Wellness"
+    ],
+    "note": "A Nordic-inspired bathhouse brand built around communal saunas, cold plunges, heated bench recovery, private bathhouses, and a tech-free wellness environment. The format brings heat, cold, recovery, and community into a simple repeat-use bathhouse ritual.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "six-senses-place",
+    "name": "Six Senses Place",
+    "area": "Bayswater / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5125,
+      "lng": -0.1875
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Social Wellness",
+      "Work / Coworking",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Private Wellness Club",
+      "Six Senses",
+      "Hum2n Longevity Clinic",
+      "Biohacking",
+      "Pool",
+      "Social Wellness",
+      "The Whiteley"
+    ],
+    "note": "Six Senses' first urban members club at The Whiteley, combining a 2,300 sqm spa, biohacking lounge, recovery facilities, and a longevity clinic operated by Hum2n within a social-work-wellbeing hybrid. Further locations announced.",
+    "links": {
+      "website": "",
+      "instagram": "@sixsenses"
+    }
+  },
+  {
+    "id": "soul-plunge",
+    "name": "Soul Plunge",
+    "area": "La Jolla",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 32.8328,
+      "lng": -117.2713
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Ice Bath",
+      "Practice",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Recovery Club",
+      "Cold Plunge",
+      "Sauna",
+      "Yoga",
+      "Breathwork",
+      "Sound Healing",
+      "Red Light",
+      "Contrast Therapy",
+      "Social Wellness"
+    ],
+    "note": "A La Jolla studio built around yoga, breathwork, cold plunge, sauna, red light, sound healing, and guided contrast therapy. Soul Plunge is relevant as a smaller-scale recovery and practice node where discomfort, nervous-system training, and communal wellness rituals are packaged into a repeatable local experience rather than a standard spa appointment.",
+    "links": {
+      "website": "",
+      "instagram": "@soulplunge"
+    }
+  },
+  {
+    "id": "surrenne-belgravia",
+    "name": "Surrenne Belgravia",
+    "area": "Belgravia / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Longevity / Clinic",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.4975,
+      "lng": -0.151
+    },
+    "bestFor": [
+      "Longevity",
+      "Recovery",
+      "Lifestyle",
+      "Premium Fitness Crowd"
+    ],
+    "tags": [
+      "Luxury Longevity & Wellbeing Club",
+      "Longevity",
+      "Fitness",
+      "Spa",
+      "Biohacking",
+      "Medical Wellness",
+      "Beauty",
+      "Treatments",
+      "Consultations",
+      "Private Members Club",
+      "Luxury Hospitality"
+    ],
+    "note": "A private longevity and wellbeing club at The Emory in Belgravia, spread across four floors of health, fitness, beauty, treatments, consultations, and immersive wellbeing services. The club combines longevity doctors, biohacking technologies, medical wellness, spa treatments, fitness, beauty, and luxury hospitality inside a private members-club environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "the-arts-club",
+    "name": "The Arts Club",
+    "area": "Mayfair / London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Private Members Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5095,
+      "lng": -0.1432
+    },
+    "bestFor": [
+      "Lifestyle",
+      "Community",
+      "Dining",
+      "Culture"
+    ],
+    "tags": [
+      "Private Members Club",
+      "Mayfair",
+      "Culture",
+      "Dining",
+      "Lanserhof Partnership"
+    ],
+    "note": "A historic Mayfair private members club whose wellness dimension runs through the adjoining Lanserhof at The Arts Club medical gym — the social anchor of the club-clinic pairing.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "the-well",
+    "name": "The Well",
+    "area": "Flatiron / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.742,
+      "lng": -73.99
+    },
+    "bestFor": [
+      "Recovery",
+      "Longevity",
+      "Community",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Club",
+      "Functional Medicine",
+      "Spa",
+      "Massage",
+      "Facials",
+      "IV Drips",
+      "Infrared Sauna",
+      "Cold Plunge",
+      "Mindful Movement",
+      "Practitioners",
+      "Community"
+    ],
+    "note": "A wellness club and spa in New York combining functional medicine, personalized massages, facials, custom IV drips, infrared sauna, cold plunge, mindful movement classes, practitioners, events, and membership infrastructure. The venue brings clinical wellness, spa treatments, recovery, movement, and community programming into one designed urban wellness space.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "third-space",
+    "name": "Third Space",
+    "area": "London",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Premium Gym",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 51.5134,
+      "lng": -0.1276
+    },
+    "bestFor": [
+      "Training",
+      "Classes",
+      "Recovery",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Premium Health Club",
+      "Training",
+      "Classes",
+      "Personal Training",
+      "Recovery",
+      "Nutrition",
+      "Pool",
+      "Spa",
+      "Hot Yoga",
+      "Strength",
+      "Luxury Fitness"
+    ],
+    "note": "A London premium health club brand combining gym floors, personal training, group classes, nutrition support, recovery areas, pools, spa facilities, hot yoga, strength training, and club-based lifestyle infrastructure. The model brings training, recovery, nutrition, coaching, and daily-use fitness amenities into large-format urban health clubs.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "titi-batu-ubud-club",
+    "name": "Titi Batu Ubud Club",
+    "area": "Ubud",
+    "region": "Asia-Pacific",
+    "category": "Clubs",
+    "primaryType": "Wellness Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": -8.519,
+      "lng": 115.26
+    },
+    "bestFor": [
+      "Training",
+      "Recovery",
+      "Classes",
+      "Community",
+      "Work / Coworking",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness / Community Club",
+      "Training",
+      "Gym",
+      "Classes",
+      "Pool",
+      "Sauna",
+      "Steam Room",
+      "Cold Plunge",
+      "Co-working",
+      "Restaurant",
+      "Community",
+      "Family"
+    ],
+    "note": "A large Ubud community club combining gym, fitness classes, pool, hot and cold plunge, sauna, steam room, yoga studio, coworking space, restaurant, kids facilities, skate park, and sports infrastructure. The venue brings fitness, recovery, work, food, family facilities, and community programming into one broad daily-use club environment.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "wheelhouse-lisboa",
+    "name": "Wheelhouse Lisboa",
+    "area": "Lapa / Lisbon",
+    "region": "Europe",
+    "category": "Clubs",
+    "primaryType": "Wellness Coworking",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 38.7071,
+      "lng": -9.1611
+    },
+    "bestFor": [
+      "Work / Coworking",
+      "Community",
+      "Practice",
+      "Lifestyle"
+    ],
+    "tags": [
+      "Wellness Coworking",
+      "Community",
+      "Classes",
+      "Events",
+      "Treatments",
+      "Sound Baths",
+      "Breathwork",
+      "Yoga",
+      "Salt Cave",
+      "Lifestyle"
+    ],
+    "note": "A creative social wellness hub in Lisbon combining coworking, events, classes, treatments, tea/lounge space, and a salt cave experience. The venue brings bodywork, practice, creative work, workshops, and social wellness programming into one hybrid wellness-work-community environment.",
+    "links": {
+      "website": "",
+      "instagram": "@wheelhouse.lisboa"
+    }
+  },
+  {
+    "id": "world-spa",
+    "name": "World Spa",
+    "area": "Brooklyn / New York",
+    "region": "North America",
+    "category": "Clubs",
+    "primaryType": "Recovery Club",
+    "status": "Mapped",
+    "coordinates": {
+      "lat": 40.6782,
+      "lng": -73.9442
+    },
+    "bestFor": [
+      "Recovery",
+      "Sauna",
+      "Spa",
+      "Social Wellness"
+    ],
+    "tags": [
+      "Bathhouse / Spa",
+      "Banya",
+      "Finnish Sauna",
+      "Hammam",
+      "Cold Plunge",
+      "Pools",
+      "Onsen",
+      "Salt Room",
+      "Massage",
+      "Body Scrub",
+      "Restaurant",
+      "Brooklyn"
+    ],
+    "note": "A 50,000-square-foot Brooklyn spa and bathhouse combining Eastern European banyas, Finnish saunas, Turkish and Moroccan hammams, Japanese onsen-style pools, cold plunge, salt rooms, private treatment rooms, massage, body scrubs, lounge, and restaurant infrastructure. The venue brings global bathing traditions, spa treatments, recovery, food, and event-friendly hospitality into one large urban wellness destination.",
+    "links": {
+      "website": "",
+      "instagram": ""
+    }
+  }
+]
