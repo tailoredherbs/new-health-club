@@ -10,7 +10,7 @@ lng: 144.969
 bestFor: "Longevity, Recovery, Social Wellness, Lifestyle"
 tags: "Ultra-Premium Wellness Club, Gurner Group, Longevity, Private Club, Melbourne"
 website: ""
-instagram: ""
+instagram: "@saintprivateclub"
 ---
 
 Gurner Group's ultra-premium tier above Saint Haven — an invitation-led private wellness club concept combining longevity treatments, recovery and social club infrastructure.

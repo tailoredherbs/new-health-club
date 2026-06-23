@@ -10,7 +10,7 @@ lng: 1.512
 bestFor: "Longevity, Recovery, Spa, Lifestyle"
 tags: "Longevity Club, Six Senses, Diagnostics, IV Therapy, Cryotherapy, Regenerative Wellness, Ibiza"
 website: ""
-instagram: ""
+instagram: "@rosebar.longevity"
 ---
 
 The longevity and regenerative wellness club inside Six Senses Ibiza, combining diagnostics, IV therapy, cryotherapy, hyperbaric oxygen, and aesthetic medicine within a resort-club setting.

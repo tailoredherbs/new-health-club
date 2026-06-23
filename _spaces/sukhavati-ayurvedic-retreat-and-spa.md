@@ -10,7 +10,7 @@ lng: 115.137
 bestFor: "Ayurveda, Detox, Recovery, Mindfulness"
 tags: "Ayurvedic Retreat, Panchakarma, Doctor-Led, Detox, Yoga, Bali"
 website: ""
-instagram: ""
+instagram: "@sukhavati_bali"
 ---
 
 A dedicated Ayurvedic retreat in Bali centered on physician-led panchakarma, detox programs, yoga, and classical Ayurvedic treatment protocols in a residential retreat format.

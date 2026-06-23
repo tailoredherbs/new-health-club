@@ -10,7 +10,7 @@ lng: 127.042
 bestFor: "Longevity, Recovery, Social Wellness, Lifestyle"
 tags: "Private Wellness Club, Longevity, Social Club, Cheongdam, Seoul"
 website: ""
-instagram: ""
+instagram: "@dyad1_official"
 ---
 
 A private wellness and social club concept in Cheongdam positioning longevity, recovery and lifestyle programming for Seoul's luxury market.

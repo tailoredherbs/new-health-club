@@ -10,7 +10,7 @@ lng: 115.26
 bestFor: "Yoga, Community, Lifestyle, Mindfulness"
 tags: "Yoga Retreat, Retreat Hotel, Community, Music, Ubud"
 website: ""
-instagram: ""
+instagram: "@soulshinebali"
 ---
 
 A retreat resort outside Ubud combining yoga programming, retreat hosting, music and community-led wellness hospitality.

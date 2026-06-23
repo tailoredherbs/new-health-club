@@ -10,7 +10,7 @@ lng: 55.227
 bestFor: "Padel, Community, Lifestyle, Social Wellness"
 tags: "Padel & Lifestyle Club, Wellness Studio, Cafe, Community, Dubai"
 website: ""
-instagram: ""
+instagram: "@matchadxb"
 ---
 
 A padel-led lifestyle and social wellness club in Al Quoz combining courts, movement studio, cafe culture and community programming in a design-led compound.

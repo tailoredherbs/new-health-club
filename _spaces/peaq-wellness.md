@@ -10,7 +10,7 @@ lng: 55.275
 bestFor: "Training, Recovery, Longevity, Lifestyle"
 tags: "Wellness Club, Performance, Recovery, Dubai"
 website: ""
-instagram: ""
+instagram: "@peaqwellness"
 ---
 
 A performance and wellness club concept in Dubai combining training, recovery modalities and longevity-oriented services.

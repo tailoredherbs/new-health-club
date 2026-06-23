@@ -10,7 +10,7 @@ lng: -107.107
 bestFor: "Longevity, Recovery, Lifestyle, Nature"
 tags: "Wellness Ranch, Mayo Clinic Partnership, Diagnostics, Outdoor Pursuits, Luxury Hospitality, Longevity"
 website: ""
-instagram: ""
+instagram: "@threeforksranchlodge"
 ---
 
 A 200,000-acre luxury ranch on the Colorado–Wyoming border pairing outdoor pursuits with a Mayo Clinic-affiliated wellness program covering diagnostics, executive health, and longevity-oriented assessment in a remote destination setting.
