@@ -9,7 +9,7 @@ lat: -8.6485
 lng: 115.139
 bestFor: "Training, Recovery, Strength, Lifestyle, Premium Fitness Crowd"
 tags: "Premium Gym, Training, Strength, Fitness Lifestyle, Recovery, Spa, Ice Bath, Sauna, Cold Pools, Pool, Cafe, Meal Plans, Premium Fitness Crowd"
-website: ""
+website: "https://bodyfactorybali.com/"
 instagram: "@bodyfactory_bali"
 ---
 

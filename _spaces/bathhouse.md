@@ -9,7 +9,7 @@ lat: 40.7176
 lng: -73.9641
 bestFor: "Recovery, Sauna, Ice Bath, Lifestyle, Social Wellness"
 tags: "Recovery Club, Bathhouse, Sauna, Steam, Cold Plunge, Thermal Pools, Massage, Scrub, Social Wellness, Lifestyle"
-website: ""
+website: "https://www.abathhouse.com/"
 instagram: "@bathhouse"
 ---
 

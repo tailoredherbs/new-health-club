@@ -10,7 +10,7 @@ lng: 103.824
 bestFor: "Longevity, Diagnostics, Advanced Therapies"
 tags: "Longevity Clinic, Precision Medicine, Biological Age, Diagnostics, Healthspan, Medical-Led"
 website: ""
-instagram: ""
+instagram: "@chilongevity"
 ---
 
 A medical longevity clinic in Singapore led by clinical longevity specialists, built around biological age assessment, precision diagnostics, and physician-supervised healthspan programs.

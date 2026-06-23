@@ -9,8 +9,8 @@ lat: 5.111
 lng: 73.069
 bestFor: "Longevity, Spa, Recovery, Mindfulness"
 tags: "Resort Wellness, Integrated Medicine, Ayurveda, TCM, Regenerative Therapies, Maldives"
-website: ""
-instagram: ""
+website: "https://soneva.com/"
+instagram: "@soneva"
 ---
 
 Soneva's wellness concept combining integrative medicine, Ayurveda, Chinese medicine, regenerative therapies and spa across its Maldives and Thailand resorts, anchored by visiting specialist practitioners.

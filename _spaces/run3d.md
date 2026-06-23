@@ -10,7 +10,7 @@ lng: -1.258
 bestFor: "Biomechanics, Performance, Injury Prevention"
 tags: "3D Gait Analysis, Biomechanics, Running Clinic, Clinical Assessment, Performance"
 website: ""
-instagram: ""
+instagram: "@run3d"
 ---
 
 A clinical 3D gait analysis specialist using infrared motion-capture to assess running and walking biomechanics for injury prevention and performance, delivered through clinic partners.

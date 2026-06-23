@@ -9,8 +9,8 @@ lat: 41.8
 lng: 13.219
 bestFor: "Longevity, Diagnostics, Detox, Spa"
 tags: "Medical Wellness Resort, Diagnostics, Detox, Nutrition, Thermal Water, Anti-Aging, Luxury Hospitality"
-website: ""
-instagram: ""
+website: "https://www.palazzofiuggi.com/"
+instagram: "@palazzofiuggi"
 ---
 
 A medical wellness retreat in a restored palazzo outside Rome combining full diagnostics, medical-grade programs, thermal water heritage, nutrition by Heinz Beck, and structured longevity and detox protocols.

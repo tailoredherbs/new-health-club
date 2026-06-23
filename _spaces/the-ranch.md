@@ -9,8 +9,8 @@ lat: 34.07
 lng: -118.83
 bestFor: "Fitness, Detox, Recovery, Nature"
 tags: "Results-Driven Retreat, Hiking, Plant-Based, Structured Program, Malibu, Hudson Valley"
-website: ""
-instagram: ""
+website: "https://www.theranchmalibu.com/"
+instagram: "@theranchmalibu"
 ---
 
 A results-driven immersive fitness and wellness retreat built around daily hiking, plant-based nutrition and a strict structured program, operating in Malibu and Hudson Valley, New York.

@@ -10,7 +10,7 @@ lng: -74.002
 bestFor: "Longevity, Diagnostics, Recovery, Advanced Therapies"
 tags: "Longevity Clinic, Integrative Medicine, Diagnostics, Regenerative Therapies, Pain Medicine, NYC"
 website: ""
-instagram: ""
+instagram: "@hudsonhealth"
 ---
 
 A New York integrative and longevity medicine center combining advanced diagnostics, regenerative therapies, pain and performance medicine, and physician-led optimization protocols.

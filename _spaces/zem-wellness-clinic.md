@@ -10,7 +10,7 @@ lng: -0.052
 bestFor: "Longevity, Diagnostics, Recovery, Performance"
 tags: "Medical Wellness Clinic, Diagnostics, Longevity, Sports Medicine, Nutrition, Mediterranean"
 website: ""
-instagram: ""
+instagram: "@zemwellness"
 ---
 
 A destination medical wellness clinic in Altea on the Spanish Mediterranean combining diagnostics, longevity programs, sports medicine, nutrition, and recovery in a resort-clinic format.
