@@ -9,7 +9,7 @@ lat: 40.7223
 lng: -73.9576
 bestFor: "Recovery, Sauna, Ice Bath, Community, Social Wellness"
 tags: "Recovery Club, Sauna, Ice Bath, Breathwork, Guided Sessions, Community, Social Wellness, Alcohol-Free Social"
-website: ""
+website: "https://www.othership.us/williamsburg"
 instagram: "@othership"
 ---
 

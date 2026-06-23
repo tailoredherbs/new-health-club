@@ -9,7 +9,7 @@ lat: 41.39
 lng: 2.154
 bestFor: "Training, Classes, Recovery, Community"
 tags: "Premium Health Club, Training, Fitness, Classes, Spa, Hydrotherapy, Beauty Center, Medical Area, Physiotherapy, Nutrition, Restaurant, Community"
-website: ""
+website: "https://clubmetropolitan.com/"
 instagram: "@themetropolitanclub"
 ---
 

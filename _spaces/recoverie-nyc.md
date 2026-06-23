@@ -9,7 +9,7 @@ lat: 40.689
 lng: -73.99
 bestFor: "Recovery, Sauna, Ice Bath, Longevity"
 tags: "Recovery / Wellness Studio, Recovery, Infrared Sauna, Ice Bath, Contrast Therapy, Red Light, Cryotherapy, IV Drips, Compression, Lymphatic Drainage, Memberships, Brooklyn"
-website: ""
+website: "https://www.recoverienyc.com/"
 instagram: "@recoverienyc"
 ---
 

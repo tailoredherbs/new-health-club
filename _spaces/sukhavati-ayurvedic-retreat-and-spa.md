@@ -9,7 +9,7 @@ lat: -8.628
 lng: 115.137
 bestFor: "Ayurveda, Detox, Recovery, Mindfulness"
 tags: "Ayurvedic Retreat, Panchakarma, Doctor-Led, Detox, Yoga, Bali"
-website: ""
+website: "https://www.sukhavatibali.com/"
 instagram: "@sukhavati_bali"
 ---
 

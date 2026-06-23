@@ -9,7 +9,7 @@ lat: 1.28
 lng: 103.842
 bestFor: "Lifestyle, Community, Dining, Wellness"
 tags: "Private Members Club, Culture, Dining, Wellness Pillar, Singapore"
-website: ""
+website: "https://www.mandala.club/"
 instagram: "@mandalaclub.sg"
 ---
 

@@ -9,7 +9,7 @@ lat: 38.72
 lng: -9.14
 bestFor: "Longevity, Recovery, Sauna, Ice Bath"
 tags: "Longevity / Recovery Club, Longevity, Sauna, Cold Plunge, Red Light, Hyperbaric Oxygen, Float Therapy, Hydrogen Therapy, IHHT, Vibroacoustic, Structured Protocols, Community"
-website: ""
+website: "https://healthyhorizon.com/"
 instagram: "@healthyhorizon_lisbon"
 ---
 

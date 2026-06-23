@@ -9,7 +9,7 @@ lat: 41.3794
 lng: 2.1885
 bestFor: "Training, Recovery, Practice, Lifestyle, Social Wellness"
 tags: "Wellness Club, Training, Recovery, Practice, Spa, Community, Biohacking, Float Tank, Hot/Cold, Performance"
-website: ""
+website: "https://innerflow.es/"
 instagram: "@innerflow_barcelona"
 ---
 

@@ -9,7 +9,7 @@ lat: 41.391
 lng: 2.164
 bestFor: "Practice, Classes, Community, Lifestyle, Social Wellness"
 tags: "Retreat / Practice Hub, Practice, Classes, Community, Immersive Studio, Breathwork, Sound Healing, Yoga, Pilates, Social Wellness"
-website: ""
+website: "https://sabdastudio.com/"
 instagram: "@sabda_studio"
 ---
 

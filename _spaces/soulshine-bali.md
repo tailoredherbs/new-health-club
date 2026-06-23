@@ -9,7 +9,7 @@ lat: -8.53
 lng: 115.26
 bestFor: "Yoga, Community, Lifestyle, Mindfulness"
 tags: "Yoga Retreat, Retreat Hotel, Community, Music, Ubud"
-website: ""
+website: "https://www.soulshinebali.com/"
 instagram: "@soulshinebali"
 ---
 

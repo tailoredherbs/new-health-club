@@ -9,7 +9,7 @@ lat: -8.829
 lng: 115.085
 bestFor: "Training, Classes, Community, Fitness Lifestyle, Food / Cafe"
 tags: "Functional Fitness, Training, Strength, Conditioning, Group Classes, Personal Training, Community, Cafe, Nutrition, Fitness Lifestyle, Uluwatu"
-website: ""
+website: "https://www.bambufitnessbali.com/"
 instagram: "@bambufitnessbali"
 ---
 

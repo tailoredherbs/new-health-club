@@ -9,7 +9,7 @@ lat: -8.798
 lng: 115.23
 bestFor: "Longevity, Retreats, Recovery, Spa, Nutrition, Mindfulness"
 tags: "Wellness Resort, Longevity, Diagnostics, Biohacking, Regenerative Therapies, Retreats, Recovery, Spa, Hydrotherapy, Nutrition, Mindfulness, Movement"
-website: ""
+website: "https://www.revivoresorts.com/"
 instagram: "@revivo_wellness_resorts"
 ---
 

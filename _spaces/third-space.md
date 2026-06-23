@@ -9,7 +9,7 @@ lat: 51.5134
 lng: -0.1276
 bestFor: "Training, Classes, Recovery, Lifestyle"
 tags: "Premium Health Club, Training, Classes, Personal Training, Recovery, Nutrition, Pool, Spa, Hot Yoga, Strength, Luxury Fitness"
-website: ""
+website: "https://www.thirdspace.london/"
 instagram: "@thirdspace"
 ---
 

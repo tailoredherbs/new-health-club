@@ -9,7 +9,7 @@ lat: 51.4994
 lng: -0.1618
 bestFor: "Training, Spa, Recovery, Lifestyle, Premium Fitness Crowd"
 tags: "Premium Gym / Spa, Training, Spa, Recovery, Pool, Pilates, Personal Training, Steam Room, Sauna, Plunge Pool, Luxury Fitness, Hotel Wellness"
-website: ""
+website: "https://www.jumeirah.com/en/stay/london/jumeirah-carlton-tower/wellbeing/the-peak-fitness-club"
 instagram: "@peakfitnessclubandspa"
 ---
 

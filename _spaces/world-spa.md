@@ -9,7 +9,7 @@ lat: 40.6782
 lng: -73.9442
 bestFor: "Recovery, Sauna, Spa, Social Wellness"
 tags: "Bathhouse / Spa, Banya, Finnish Sauna, Hammam, Cold Plunge, Pools, Onsen, Salt Room, Massage, Body Scrub, Restaurant, Brooklyn"
-website: ""
+website: "https://worldspa.com/"
 instagram: "@worldspawellness"
 ---
 

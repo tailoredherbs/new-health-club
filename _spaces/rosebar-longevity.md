@@ -9,7 +9,7 @@ lat: 39.094
 lng: 1.512
 bestFor: "Longevity, Recovery, Spa, Lifestyle"
 tags: "Longevity Club, Six Senses, Diagnostics, IV Therapy, Cryotherapy, Regenerative Wellness, Ibiza"
-website: ""
+website: "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/wellness-spa/programs/longevity-with-rosebar/"
 instagram: "@rosebar.longevity"
 ---
 

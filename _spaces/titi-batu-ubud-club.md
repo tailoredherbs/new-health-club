@@ -9,7 +9,7 @@ lat: -8.519
 lng: 115.26
 bestFor: "Training, Recovery, Classes, Community, Work / Coworking, Lifestyle"
 tags: "Wellness / Community Club, Training, Gym, Classes, Pool, Sauna, Steam Room, Cold Plunge, Co-working, Restaurant, Community, Family"
-website: ""
+website: "https://www.titibatu.com/"
 instagram: "@titi_batu"
 ---
 

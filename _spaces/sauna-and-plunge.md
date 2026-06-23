@@ -9,7 +9,7 @@ lat: 51.5247
 lng: -0.0746
 bestFor: "Recovery, Sauna, Ice Bath, Social Wellness, Community"
 tags: "Sauna / Cold Plunge Club, Recovery, Sauna, Cold Plunge, Contrast Therapy, Social Wellness, Community, Urban Recovery, Relaxation, Shoreditch, Modern Sanctuary"
-website: ""
+website: "https://saunaandplunge.life/"
 instagram: "@saunaandplunge"
 ---
 

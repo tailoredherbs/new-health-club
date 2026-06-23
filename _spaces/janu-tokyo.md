@@ -9,7 +9,7 @@ lat: 35.66
 lng: 139.741
 bestFor: "Training, Recovery, Spa, Lifestyle"
 tags: "Hotel Wellness Club, Aman Sister Brand, 4,000 sqm Wellness, Spa, Tokyo"
-website: ""
+website: "https://www.janu.com/janu-tokyo/wellness/"
 instagram: "@janu"
 ---
 

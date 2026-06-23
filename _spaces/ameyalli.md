@@ -9,7 +9,7 @@ lat: 40.512
 lng: -111.474
 bestFor: "Longevity, Recovery, Spa, Lifestyle"
 tags: "Wellness Resort, Deepak Chopra, Geothermal Springs, Wellbeing Center, Longevity, Wellness Real Estate"
-website: ""
+website: "https://www.ameyalli.com/"
 instagram: "@ameyalli"
 ---
 

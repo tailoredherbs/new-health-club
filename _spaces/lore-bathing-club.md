@@ -9,7 +9,7 @@ lat: 40.7253
 lng: -73.9947
 bestFor: "Recovery, Sauna, Ice Bath, Social Wellness, Community"
 tags: "Bathing Club / Recovery Club, Sauna, Cold Plunge, Finnish Sauna, Infrared Sauna, Contrast Therapy, Thermal Bathing, Membership, Drop-in, Social Wellness, NoHo"
-website: ""
+website: "https://www.lorebathingclub.com/"
 instagram: "@lorebathingclub"
 ---
 

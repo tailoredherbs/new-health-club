@@ -9,7 +9,7 @@ lat: -8.6525
 lng: 115.1405
 bestFor: "Training, Recovery, Classes, Community, Lifestyle, Work / Coworking"
 tags: "Wellness Club, Training, Recovery, Yoga, Classes, Sauna, Steam Room, Ice Bath, Infrared Sauna, Hyperbaric Chamber, Pool, Kitchen, Community, Lifestyle"
-website: ""
+website: "https://nirvanalife.com/bali/"
 instagram: "@nirvanalifebali"
 ---
 

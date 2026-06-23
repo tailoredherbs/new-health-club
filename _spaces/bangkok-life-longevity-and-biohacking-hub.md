@@ -9,7 +9,7 @@ lat: 13.7244
 lng: 100.5365
 bestFor: "Longevity, Recovery, Diagnostics, Advanced Therapies"
 tags: "Longevity / Biohacking Hub, Longevity, Biohacking, Diagnostics, Medical Wellness, Hyperbaric Oxygen, Cryotherapy, Recovery, Deep Tissue Massage, Data-Driven Wellness, Urban Luxury"
-website: ""
+website: "https://www.life-longevity.com/bangkok-life/"
 instagram: "@lifelongevity.bangkok"
 ---
 

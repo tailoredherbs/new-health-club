@@ -9,7 +9,7 @@ lat: 50.984
 lng: -0.755
 bestFor: "Longevity, Community, Lifestyle, Sober Social"
 tags: "Sober Members Club, Country Club, Longevity Tier, Diagnostics, Farm-to-Table, UK"
-website: ""
+website: "https://www.longlane.co.uk/"
 instagram: "@joinlonglane"
 ---
 

@@ -9,7 +9,7 @@ lat: 51.492
 lng: -0.175
 bestFor: "Training, Classes, Recovery, Lifestyle, Community"
 tags: "Private Health Club, Premium Fitness Studio, Training, Classes, Personal Training, Spa, Restaurant, Nutrition, Wellness Technology, Practitioners, Chelsea"
-website: ""
+website: "https://www.kxlife.co.uk/"
 instagram: "@kx_london"
 ---
 

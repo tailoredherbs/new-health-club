@@ -9,7 +9,7 @@ lat: 51.5125
 lng: -0.1875
 bestFor: "Longevity, Recovery, Social Wellness, Work / Coworking, Lifestyle"
 tags: "Private Wellness Club, Six Senses, Hum2n Longevity Clinic, Biohacking, Pool, Social Wellness, The Whiteley"
-website: ""
+website: "https://www.thewhiteleylondon.com/six-senses"
 instagram: "@sixsenses"
 ---
 

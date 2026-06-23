@@ -9,7 +9,7 @@ lat: 35.2045
 lng: -80.8604
 bestFor: "Recovery, Sauna, Ice Bath, Social Wellness"
 tags: "Recovery Club, Bathhouse, Sauna, Cold Plunge, Hot Tub, Steam Room, Contrast Therapy, Social Wellness, Outdoor Lounge, Urban Recovery, Charlotte"
-website: ""
+website: "https://sundayhotsprings.com/"
 instagram: "@sundayhotsprings"
 ---
 

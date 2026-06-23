@@ -9,7 +9,7 @@ lat: 34.09
 lng: -118.3617
 bestFor: "Recovery, Sauna, Ice Bath, Longevity, Social Wellness"
 tags: "Recovery Club, Recovery, Sauna, Ice Bath, Longevity, IV Therapy, Red Light, Hyperbaric Oxygen, Social Wellness"
-website: ""
+website: "https://www.remedyplace.com/clubs/weho"
 instagram: "@remedyplace"
 ---
 

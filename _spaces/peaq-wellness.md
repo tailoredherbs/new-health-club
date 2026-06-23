@@ -9,7 +9,7 @@ lat: 25.21
 lng: 55.275
 bestFor: "Training, Recovery, Longevity, Lifestyle"
 tags: "Wellness Club, Performance, Recovery, Dubai"
-website: ""
+website: "https://peaqwellness.com/"
 instagram: "@peaqwellness"
 ---
 

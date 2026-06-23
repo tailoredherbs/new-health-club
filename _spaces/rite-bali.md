@@ -9,7 +9,7 @@ lat: -8.653
 lng: 115.132
 bestFor: "Training, Strength, Fitness Lifestyle, Recovery, Community, Premium Fitness Crowd"
 tags: "Premium Gym, Training, Strength, Conditioning, Fitness Lifestyle, Classes, Personal Training, Recovery, Spa, Yoga, Community, Premium Fitness Crowd"
-website: ""
+website: "https://ritebali.com/"
 instagram: "@rite.bali"
 ---
 

@@ -9,7 +9,7 @@ lat: 13.678
 lng: 100.566
 bestFor: "Longevity, Diagnostics, Recovery, Detox"
 tags: "Medical Wellness Retreat, VitalLife / Bumrungrad, Diagnostics, Thai Medicine, Hydrotherapy, Bangkok"
-website: ""
+website: "https://rakxawellness.com/"
 instagram: "@rakxawellness"
 ---
 

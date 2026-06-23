@@ -9,7 +9,7 @@ lat: 40.742
 lng: -73.99
 bestFor: "Recovery, Longevity, Community, Lifestyle"
 tags: "Wellness Club, Functional Medicine, Spa, Massage, Facials, IV Drips, Infrared Sauna, Cold Plunge, Mindful Movement, Practitioners, Community"
-website: ""
+website: "https://www.the-well.com/new-york"
 instagram: "@thewell"
 ---
 

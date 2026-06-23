@@ -9,7 +9,7 @@ lat: -8.652
 lng: 115.1395
 bestFor: "Training, Recovery, Longevity, Work / Coworking, Lifestyle, Premium Fitness Crowd"
 tags: "Wellness Club, Training, Recovery, Longevity, Spa, Gym, Co-working, Nutrition Cafe, Blood Testing, Gut Testing, Biotech Lab, Social Wellness, Premium Fitness Crowd"
-website: ""
+website: "https://omni.club/"
 instagram: "@omni_bali"
 ---
 

@@ -9,7 +9,7 @@ lat: -8.651
 lng: 115.138
 bestFor: "Training, Recovery, Community, Lifestyle, Social Wellness"
 tags: "Padel / Wellness Club, Padel, Gym, Pool, Sauna, Ice Bath, Steam Room, Lagree, Recovery, Community, Lifestyle, Social Wellness, Canggu"
-website: ""
+website: "https://www.balisocialclub.co/"
 instagram: "@bali.socialclub"
 ---
 

@@ -9,7 +9,7 @@ lat: -8.648
 lng: 115.137
 bestFor: "Recovery, Spa, Sauna, Ice Bath, Beauty, Relaxation"
 tags: "Bathhouse / Spa, Recovery, Sauna, Ice Bath, Steam, Contrast Therapy, Spa, Skin Treatments, Body Treatments, Meditation, Beauty, Conscious Practice"
-website: ""
+website: "https://amospa.com/"
 instagram: "@amospabali"
 ---
 

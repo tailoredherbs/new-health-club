@@ -9,7 +9,7 @@ lat: 45.37
 lng: -78.78
 bestFor: "Psychedelic-Assisted, Somatic, Nature, Recovery"
 tags: "Legal Psilocybin-Adjacent Retreat, Clinical Team, Somatic Therapy, Nature Immersion, Luxury Retreat"
-website: ""
+website: "https://dimensionsretreats.com/"
 instagram: "@dimensionsretreats"
 ---
 

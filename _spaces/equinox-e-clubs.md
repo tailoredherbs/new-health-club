@@ -9,7 +9,7 @@ lat: 51.5074
 lng: -0.1278
 bestFor: "Training, Recovery, Lifestyle, Premium Fitness Crowd"
 tags: "Ultra-Premium Fitness Club, Training, Personal Training, Recovery, Spa, Pilates, Concierge Wellness, Private Suites, Limited Membership, Luxury Fitness, Lifestyle"
-website: ""
+website: "https://www.equinox.com/"
 instagram: "@equinox"
 ---
 

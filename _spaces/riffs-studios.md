@@ -9,7 +9,7 @@ lat: 32.8227
 lng: -117.262
 bestFor: "Practice, Classes, Recovery, Community, Lifestyle, Social Wellness"
 tags: "Retreat / Practice Hub, Yoga, Live Music, Outdoor Studio, Massage, Sound Healing, Sauna, Cold Plunge, Red Light, Community, Lifestyle"
-website: ""
+website: "https://riffsyogastudios.com/"
 instagram: "@riffsyogastudios"
 ---
 

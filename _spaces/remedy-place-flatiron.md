@@ -9,7 +9,7 @@ lat: 40.7411
 lng: -73.9897
 bestFor: "Recovery, Sauna, Ice Bath, Longevity, Social Wellness"
 tags: "Recovery Club, Recovery, Sauna, Ice Bath, Longevity, IV Therapy, NAD+, Red Light, Hyperbaric Oxygen, Acupuncture, Social Wellness"
-website: ""
+website: "https://www.remedyplace.com/clubs/flatiron"
 instagram: "@remedyplace"
 ---
 

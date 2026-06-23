@@ -9,7 +9,7 @@ lat: -8.827
 lng: 115.087
 bestFor: "Recovery, Sauna, Ice Bath, Meditation, Breathwork, Spa"
 tags: "Recovery / Practice Hub, Recovery, Sauna, Ice Bath, Hot / Cold, Meditation, Breathwork, Spa, Bodywork, Cliffside Wellness, Social Wellness"
-website: ""
+website: "https://theistana.com/"
 instagram: "@the_istana"
 ---
 

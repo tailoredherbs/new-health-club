@@ -9,7 +9,7 @@ lat: 33.985
 lng: -118.47
 bestFor: "Recovery, Sauna, Ice Bath, Longevity"
 tags: "Recovery / Wellness Studio, Recovery, Infrared Sauna, Cold Plunge, Float Therapy, Cryotherapy, IV Drips, LED Light Therapy, NAD+, Compression Therapy, Performance"
-website: ""
+website: "https://pausestudio.com/"
 instagram: "@_pause.studio_"
 ---
 
