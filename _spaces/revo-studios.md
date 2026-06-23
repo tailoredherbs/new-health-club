@@ -10,7 +10,7 @@ lng: 2.149
 bestFor: "Longevity, Recovery, Training, Community"
 tags: "Biohacking / Urban Wellness Studio, Biohacking, Recovery, Mental Health, Physical Optimization, Aesthetics, Guided Protocols, Personalized Wellness, Urban Wellness, Barcelona, Performance"
 website: ""
-instagram: ""
+instagram: "@revo_studios"
 ---
 
 An urban biohacking studio in Barcelona positioned around advanced therapies for mental, physical, and aesthetic optimization. The studio packages high-tech wellbeing treatments into guided, personalized routines designed to fit into everyday city life.

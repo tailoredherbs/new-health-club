@@ -10,7 +10,7 @@ lng: -78.78
 bestFor: "Psychedelic-Assisted, Somatic, Nature, Recovery"
 tags: "Legal Psilocybin-Adjacent Retreat, Clinical Team, Somatic Therapy, Nature Immersion, Luxury Retreat"
 website: ""
-instagram: ""
+instagram: "@dimensionsretreats"
 ---
 
 A clinician-supported retreat in the Algonquin Highlands combining somatic and therapeutic programming with nature immersion in a luxury lakeside setting.
